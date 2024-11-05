@@ -8,7 +8,7 @@ export const HowItWorksAnimation = () => {
       ScrollTrigger.create({
         trigger: ".video-section",
         start: "top top",
-        end: "+=2000",
+        end: "+=3000",
         pin: true,
         scrub: true,
         onUpdate: (self) => {
