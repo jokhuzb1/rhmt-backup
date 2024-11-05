@@ -2,6 +2,7 @@
 import { NavbarSection } from "./sections/navbar.js";
 import { HeaderSection } from "./sections/header.js";
 import { PayReviewSection } from "./sections/pay-review.js";
+import { PayReviewMobileSection } from "./sections/pay-review-mobile.js";
 import { HowItWorksSection } from "./sections/how-it-works.js";
 import { ScanQrSection } from "./sections/scan-qr.js";
 import { AdvantagesSection } from "./sections/advantages.js";
@@ -12,18 +13,19 @@ import { FaqSection } from "./sections/faq.js";
 import { FooterSection } from "./sections/footer.js";
 import { Contacts } from "./sections/contact.js";
 
+import { InteractWithDom } from "./scripts/dom-interact.js";
+import { Gsap } from "./scripts/gsap/index.js";
+import { MultiLanguage } from "./scripts/multi-lang.js";
+import { starLoader } from "./scripts/gsap/start-loader.js";
+
 document.addEventListener("DOMContentLoaded", async () => {
   try {
-    const { InteractWithDom } = await import("./scripts/dom-interact.js");
-    const { Gsap } = await import("./scripts/gsap/index.js");
-    const { MultiLanguage } = await import("./scripts/multi-lang.js");
-    const { starLoader } = await import("./scripts/gsap/start-loader.js");
-
     const functions = [
       NavbarSection,
       HeaderSection,
       PayReviewSection,
       HowItWorksSection,
+      PayReviewMobileSection,
       ScanQrSection,
       AdvantagesSection,
       PosSystemsSection,

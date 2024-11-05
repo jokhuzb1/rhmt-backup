@@ -8,13 +8,13 @@
   transition: 0.3s ease;
   min-width: 140px;
   height: 32px;
-  background-color: #f05039;
+  background-color: #F05039;
   border: 1px solid transparent;
 }
 
 .btn:active {
-  background-color: #c2260dff;
-  transform: scale(0.95) !important;
+  background-color: #C2260DFF;
+  transform: scale(.95) !important;
 }
 
 .btn:hover {
@@ -40,21 +40,21 @@
 
 .btn.disabled {
   pointer-events: none;
-  opacity: 0.6;
+  opacity: .6;
 }
 
 .btn.white {
-  background-color: #fbfbfb;
-  border-color: #d8d9d8;
+  background-color: #FBFBFB;
+  border-color: #D8D9D8;
   color: #000;
 }
 
 .btn.white:active {
-  background-color: #c0c0c0ff;
+  background-color: #C0C0C0FF;
 }
 
 .btn.white:hover {
-  background-color: #d8d9d8;
+  background-color: #D8D9D8;
 }
 
 /* Icon button */
@@ -68,7 +68,7 @@
   transition: background-color 0.3s ease;
   width: 40px;
   height: 40px;
-  background-color: #f05039;
+  background-color: #F05039;
 }
 
 .icon-btn.big {
@@ -77,8 +77,8 @@
 }
 
 .icon-btn:active {
-  background-color: #c2260dff;
-  transform: scale(0.95);
+  background-color: #C2260DFF;
+  transform: scale(.95);
 }
 
 .icon-btn:hover {
@@ -86,16 +86,16 @@
 }
 
 .icon-btn.white {
-  background-color: #fbfbfb;
-  border-color: #d8d9d8;
+  background-color: #FBFBFB;
+  border-color: #D8D9D8;
 }
 
 .icon-btn.white:active {
-  background-color: #c0c0c0ff;
+  background-color: #C0C0C0FF;
 }
 
 .icon-btn.white:hover {
-  background-color: #d8d9d8;
+  background-color: #D8D9D8;
 }
 
 .icon {
@@ -112,10 +112,8 @@
 .dropdown-button {
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: #fbfbfb;
-  border: 1px solid #d8d9d8;
-  flex-wrap: nowrap;
+  background-color: #FBFBFB;
+  border: 1px solid #D8D9D8;
   color: black;
   font-size: 14px;
   font-weight: 500;
@@ -128,11 +126,11 @@
 }
 
 .dropdown-button:hover {
-  background-color: #d8d9d8;
+  background-color: #D8D9D8;
 }
 
 .dropdown-button:active {
-  background-color: #c0c0c0ff;
+  background-color: #C0C0C0FF;
 }
 
 .dropdown-button div {
@@ -165,11 +163,11 @@
 }
 
 .dropdown-button div span.active {
-  color: #f05039;
+  color: #F05039;
 }
 
 .dropdown-button div span:hover {
-  color: #f05039;
+  color: #F05039;
 }
 
 .chevron {

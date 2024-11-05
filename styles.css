@@ -193,6 +193,37 @@ img {
 
   pointer-events: none;
 }
+.text-top-left {
+  position: absolute;
+  top: 1rem; /* Adjust as needed */
+  left: 1rem; /* Adjust as needed */
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.text-top-right {
+  position: absolute;
+  top: 1rem; /* Adjust as needed */
+  right: 1rem; /* Adjust as needed */
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.text-bottom-left {
+  position: absolute;
+  bottom: 1rem; /* Adjust as needed */
+  left: 1rem; /* Adjust as needed */
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.text-bottom-right {
+  position: absolute;
+  bottom: 1rem; /* Adjust as needed */
+  right: 1rem; /* Adjust as needed */
+  opacity: 0;
+  transition: opacity 0.5s;
+}
 
 /* WIll Change  */
 
@@ -208,7 +239,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: start;
-  height: 260rem;
+  height: 250rem;
   width: 100%;
   position: relative;
   overflow: hidden;
