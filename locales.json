@@ -109,7 +109,15 @@
     "howItWorksBusinessAfter": "After menu review, order and pay bill plus tip seamlessly via Rahmat's integrated system.",
     "howItWorksBusinessLeave": "Leave review",
     "howItWorksBusinessWaiter": "The waiter may offer to leave a review.",
-    "howItWorksBusinessYou": " You can leave a review upon the waiter's request."
+    "howItWorksBusinessYou": " You can leave a review upon the waiter's request.",
+    "howItWorksBusinessScan": "Scan QR-code",
+    "howItWorksBusinessMenu": "Menu",
+    "SelfService":"Self-service information terminal",
+    "SelfServiceInformation":"Self-service information terminal",
+    "SelfServiceInfoterminal":"Infoterminal is a hardware and software complex that ensuresthe acceptance of payments from individuals.",
+   " SelfServiceHow":"How it works",
+   "SelfServiceGuests" :" Guests can browse the menu, place orders, and pay, all without waiting for a waiter. Payment and tipping are done directly through the Infoterminal."
+   
   },
   "ru": {
     "projects": "Проекты.",
@@ -221,7 +229,15 @@
     "howItWorksBusinessAfter": "После просмотра меню легко закажите и оплатите счет, а также чаевые через интегрированную систему Rahmat.",
     "howItWorksBusinessLeave": "Оставить отзыв",
     "howItWorksBusinessWaiter": "Официант может предложить оставить отзыв.",
-    "howItWorksBusinessYou": " Вы можете оставить отзыв по просьбе официанта."
+    "howItWorksBusinessYou": " Вы можете оставить отзыв по просьбе официанта.",
+    "howItWorksBusinessScan": "Сканировать QR-код",
+    "howItWorksBusinessMenu": " Меню",
+    "SelfService":"Информационный терминал самообслуживания",
+    "SelfServiceInformation":"Информационный терминал самообслуживания",
+    "SelfServiceInfoterminal":"Инфотерминал – аппаратно-программный комплекс, обеспечивающий прием платежей от физических лиц.",
+    "SelfServiceHow":" Как это работает",
+    "SelfServiceGuests" :" Гости могут просматривать меню, размещать заказы и оплачивать их, не дожидаясь официанта. Оплата и чаевые производятся непосредственно через Инфотерминал.."
+
   },
   "uz": {
     "projects": "Loyihalar.",
@@ -333,6 +349,13 @@
     "howItWorksBusinessAfter": "Menyuni ko'rib chiqqandan so'ng, Rahmatning o'rnatilgan tizimi orqali to'lovni buyurtma qiling va to'lang.",
     "howItWorksBusinessLeave": "Ko'rib chiqishni qoldiring",
     "howItWorksBusinessWaiter": "Ofitsiant sharh qoldirishni taklif qilishi mumkin.",
-    "howItWorksBusinessYou": " Ofitsiantning iltimosiga binoan sharh qoldirishingiz mumkin."
+    "howItWorksBusinessYou": " Ofitsiantning iltimosiga binoan sharh qoldirishingiz mumkin.",
+    "howItWorksBusinessScan": "QR-kodni skanerlang",
+     "howItWorksBusinessMenu": "Menyu",
+     "SelfService":"O'z-o'ziga xizmat ko'rsatish ma'lumot terminali",
+     "SelfServiceInformation":"O'z-o'ziga xizmat ko'rsatish ma'lumot terminali",
+     "SelfServiceInfoterminal":"Infoterminal - bu jismoniy shaxslardan to'lovlarni qabul qilish imkonini beruvchi apparat-dasturiy kompleks.",
+     "SelfServiceHow":" U qanday ishlaydi",
+     "SelfServiceGuests" :"Mehmonlar ofitsiantsiz menyuni ko'rib chiqishlari, buyurtma berishlari va to'lashlari mumkin. To'lov va to'lov to'g'ridan-to'g'ri Infoterminal orqali amalga oshiriladi."
   }
 }
