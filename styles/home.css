@@ -44,7 +44,6 @@ section {
 .word,
 .partner-text-word,
 .header-text-word,
-.become-valued-partner-word,
 .pos-system-text-word,
 .details {
   display: inline-block; /* Consolidated common styles */
@@ -353,6 +352,11 @@ summary::-webkit-details-marker {
 }
 
 .animated-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
   width: 325px;
 }
 

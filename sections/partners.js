@@ -6,85 +6,83 @@ export const PartnersSection = () => {
 
     if (partners) {
       partners.innerHTML = html`
-        <div class="container relative partners-section-container my-7">
+        <div class="container relative partners-section-container">
           <div class="partners-section">
-            <div class="min-h-[270vh]">
-              <div class="partners-images">
-                <div
-                  class="partners-card animated-card animated-card-1 absolute z-[3]"
-                >
-                  <img
-                    src="./assets/partners/img_1.png"
-                    alt="partner 1"
-                    class="max-w-[200px]"
-                  />
-                </div>
-                <div
-                  class="partners-card animated-card animated-card-2 absolute"
-                >
-                  <img
-                    src="./assets/partners/img_2.png"
-                    alt="partner 1"
-                    class="max-w-[200px]"
-                  />
-                </div>
-                <div
-                  class="partners-card animated-card animated-card-3 absolute"
-                >
-                  <img
-                    src="./assets/partners/img_3.png"
-                    alt="partner 1"
-                    class="max-w-[200px]"
-                  />
-                </div>
-                <div
-                  class="partners-card animated-card animated-card-4 absolute"
-                >
-                  <img
-                    src="./assets/partners/img_4.png"
-                    alt="partner 1"
-                    class="max-w-[200px]"
-                  />
-                </div>
-                <div
-                  class="partners-card animated-card animated-card-5 absolute"
-                >
-                  <img
-                    src="./assets/partners/img_5.png"
-                    alt="partner 1"
-                    class="max-w-[200px]"
-                  />
-                </div>
-                <div
-                  class="partners-card animated-card animated-card-6 absolute"
-                >
-                  <img
-                    src="./assets/partners/img_6.png"
-                    alt="partner 1"
-                    class="max-w-[200px]"
-                  />
-                </div>
-                <div
-                  class="partners-card animated-card animated-card-7 absolute"
-                >
-                  <img
-                    src="./assets/partners/img_7.png"
-                    alt="partner 1"
-                    class="max-w-[200px]"
-                  />
-                </div>
-                <div
-                  class="partners-card animated-card animated-card-8 absolute"
-                >
-                  <img
-                    src="./assets/partners/img_8.png"
-                    alt="partner 1"
-                    class="max-w-[200px]"
-                  />
-                </div>
+            <div class="min-h-[240vh]">
+              <div
+                class="partners-card animated-card animated-card-1 fixed top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-[3]"
+              >
+                <img
+                  src="./assets/partners/img_1.png"
+                  alt="partner 1"
+                  class="max-w-[200px]"
+                />
               </div>
               <div
-                class="flex justify-center items-center flex-col h-[100vh] mt-[100px] max-md:hidden max-sm:mt-[0] our-partners-title"
+                class="partners-card animated-card animated-card-2 fixed top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
+              >
+                <img
+                  src="./assets/partners/img_2.png"
+                  alt="partner 1"
+                  class="max-w-[200px]"
+                />
+              </div>
+              <div
+                class="partners-card animated-card animated-card-3 fixed top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
+              >
+                <img
+                  src="./assets/partners/img_3.png"
+                  alt="partner 1"
+                  class="max-w-[200px]"
+                />
+              </div>
+              <div
+                class="partners-card animated-card animated-card-4 fixed top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
+              >
+                <img
+                  src="./assets/partners/img_4.png"
+                  alt="partner 1"
+                  class="max-w-[200px]"
+                />
+              </div>
+              <div
+                class="partners-card animated-card animated-card-5 fixed top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
+              >
+                <img
+                  src="./assets/partners/img_5.png"
+                  alt="partner 1"
+                  class="max-w-[200px]"
+                />
+              </div>
+              <div
+                class="partners-card animated-card animated-card-6 fixed top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
+              >
+                <img
+                  src="./assets/partners/img_6.png"
+                  alt="partner 1"
+                  class="max-w-[200px]"
+                />
+              </div>
+              <div
+                class="partners-card animated-card animated-card-7 fixed top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
+              >
+                <img
+                  src="./assets/partners/img_7.png"
+                  alt="partner 1"
+                  class="max-w-[200px]"
+                />
+              </div>
+              <div
+                class="partners-card animated-card animated-card-8 fixed top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
+              >
+                <img
+                  src="./assets/partners/img_8.png"
+                  alt="partner 1"
+                  class="max-w-[200px]"
+                />
+              </div>
+              <div
+                class="flex justify-start items-center flex-col h-[100vh] max-md:hidden max-sm:mt-[0] our-partners-title"
               >
                 <p
                   class="section-title !text-[black] partners-section-title"
@@ -100,7 +98,7 @@ export const PartnersSection = () => {
                 </h2>
               </div>
               <div
-                class="grid  grid-cols-4 max-lg:grid-cols-3  max-md:grid-cols-2 gap-[15px] relative max-sm:top-[70px]"
+                class="grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 gap-[15px] relative max-sm:top-[70px]"
               >
                 <div class="partners-card">
                   <img
@@ -235,7 +233,7 @@ export const PartnersSection = () => {
                     class="max-w-[200px]"
                   />
                 </div>
-                <div class="partners-card">
+                <div class="partners-card bg-black">
                   <img
                     src="./assets/partners/img_21.png"
                     alt="partner 1"

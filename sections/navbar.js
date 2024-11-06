@@ -30,7 +30,7 @@ export const NavbarSection = () => {
                   <!-- Dropdown toggle button -->
                   <button
                     id="dropdownToggle"
-                    class="text-[18px] leading-[26px]  max-lg:!block  dropdown-button dropdownButton proj"
+                    class="text-[18px] leading-[26px]    dropdown-button dropdownButton proj"
                   >
                     <span>Projects</span>
                     <img

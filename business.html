@@ -16,28 +16,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.3.1/framer-motion.umd.js"></script>
-    
+
     <link rel="stylesheet" href="./input.css" />
     <link rel="stylesheet" href="./output.css" />
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="./styles/business.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
     <link rel="stylesheet" href="./styles/button.css" />
-    <!-- <link rel="stylesheet" href="./styles.css" /> -->
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
   </head>
   <body>
-      
-    <div id="progress-bar"></div>
+
+    <!-- Placeholder for Navbar -->
     <div id="navbar"></div>
+
+    <!-- Placeholder for Header Section -->
     <div id="header-section"></div>
-    <div id="how-it-works-business"></div>
-     <section id="business-advantages"></section>
-     <section id="contacts"></section>
-     <footer id="footer"></footer>
+    <div id="how-it-works"></div>
     <script type="module" defer>
       import { NavbarSection } from './sections/navbar.js';
       import { HeaderSection } from './sections/business-header.js';
-      import { HowItWorksBusinessSection } from './sections/how-it-works-business.js';
+      // import { payReview } from './sections/how-it-works-business.js';
+      import { HowItWorksSection } from './sections/how-it-works.js';
 
       document.addEventListener("DOMContentLoaded", () => {
         NavbarSection()
@@ -46,11 +45,13 @@
         HeaderSection()
           .then((message) => console.log(message))
           .catch((error) => console.error(error));
-          HowItWorksBusinessSection()
+        HowItWorksSection()
           .then((message) => console.log(message))
           .catch((error) => console.error(error));
       });
     </script>
-    <script type="module" src="./app-business.js" defer></script>
   </body>
 </html>
+  
+\
+
