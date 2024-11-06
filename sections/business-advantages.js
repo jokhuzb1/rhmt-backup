@@ -50,7 +50,7 @@ export const BusinessAdvantages = () => {
                 </div>
                 <div>
                   <div class="card">
-                    <h2>03</h2>
+                    <h2 class="top">03</h2>
                     <video
                       src="../assets/business/advantages.mp4"
                       class="image"
@@ -58,7 +58,7 @@ export const BusinessAdvantages = () => {
                       loop
                       muted
                     ></video>
-                    <div class="content-text">
+                    <div class="content-text top">
                       <h2>Seamless Ordering and Tipping</h2>
                       <p>
                         The built-in QR payment service RAHMAT will make it
@@ -70,7 +70,7 @@ export const BusinessAdvantages = () => {
                 </div>
                 <div>
                   <div class="card">
-                    <h2>04</h2>
+                    <h2 class="top">04</h2>
                     <video
                       src="../assets/business/scheme.mp4"
                       class="image"
@@ -78,7 +78,7 @@ export const BusinessAdvantages = () => {
                       loop
                       muted
                     ></video>
-                    <div class="content-text">
+                    <div class="content-text top">
                       <h2>Fast Sales Boost</h2>
                       <p>
                         Increases sales volumes, thanks to fast customer
@@ -89,9 +89,15 @@ export const BusinessAdvantages = () => {
                 </div>
                 <div>
                   <div class="card">
-                    <h2>05</h2>
-                    <img src="../menu.png" alt="test" class="image" />
-                    <div class="content-text">
+                    <h2 class="top">05</h2>
+                    <video
+                      src="../assets/business/5.mp4"
+                      class="image "
+                      autoplay
+                      loop
+                      muted
+                    ></video>
+                    <div class="content-text top">
                       <h2>Easy Menu Updates</h2>
                       <p>
                         Always up-to-date menu, easy change of the list of
@@ -103,7 +109,13 @@ export const BusinessAdvantages = () => {
                 <div>
                   <div class="card">
                     <h2>06</h2>
-                    <img src="../menu.png" alt="test" class="image" />
+                    <video
+                      src="../assets/business/6.mp4"
+                      class="image"
+                      autoplay
+                      loop
+                      muted
+                    ></video>
                     <div class="content-text">
                       <h2>Save your time!</h2>
                       <p>Everything will be quick and easy!</p>

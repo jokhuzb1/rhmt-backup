@@ -16,7 +16,7 @@ export const InteractWithDom = async () => {
     const faqButtonsContainer = $("#faqButtons");
     const faqContentContainer = $("#faqContent");
     let currentCategoryIdx = 0;
-
+    let currentLang = localStorage.getItem("selectedLanguage");
     // Attach event listeners only if elements exist
     allDropDownButtons?.forEach((btn) => {
       btn.addEventListener("click", (e) => {
@@ -72,7 +72,7 @@ export const InteractWithDom = async () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://api.rahmatqr.uz/api/get_faq/"
+          "https://rahmatback.pythonanywhere.com/api/get_faq/"
         );
         const data = response.data;
         renderCategories(data);
@@ -84,10 +84,11 @@ export const InteractWithDom = async () => {
     };
 
     const getTextByLang = (details, field) =>
-      details?.[`${field}_${currentLang}`] || "";
+      details?.[`${field}_${currentLang}`] || "en";
 
     const renderCategories = (data) => {
-      faqButtonsContainer.innerHTML = "";
+      faqButtonsContainer.innerHTML = ""; // Clear the container before rendering new buttons
+
       data.forEach((category, index) => {
         const button = document.createElement("button");
         button.className = `btn big ${
@@ -102,7 +103,7 @@ export const InteractWithDom = async () => {
           addAnimation();
         });
 
-        faqButtonsContainer.appendChild(button);
+        faqButtonsContainer.appendChild(button); // Append the new button to the container
       });
     };
 

@@ -1,4 +1,4 @@
-/* Global Styles */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -33,7 +33,7 @@
 
 /* Default Positions */
 .text-top-left {
-  top: 3.6rem;
+  top: 4.6rem;
   left: 1rem;
 }
 .text-top-right {
@@ -65,26 +65,32 @@
 
   /* Center bottom-left at the top with 100% width */
   .text-bottom-left {
-    top: 2rem; /* Adjust as needed */
+    top: 4rem;
     left: 0;
     right: 0;
     transform: none;
     width: 100%;
+    font-size: 2rem;
+    font-weight: 400;
     text-align: center;
     bottom: auto;
   }
 
-  /* Center bottom-right at the bottom with 100% width */
   .text-bottom-right {
     bottom: 1rem;
     left: 0;
     right: 0;
     width: 100%;
+    font-size: 5rem;
     text-align: center;
+  }
+  .text-bottom-right > p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
   }
 }
 
-/* Video Container Styles */
 .video-container {
   height: 100vh;
   position: relative;
@@ -106,7 +112,6 @@
   transition: opacity 0.5s;
 }
 
-/* Horizontal Scroll Section */
 #horizontal-scoll {
   padding: 100px 0;
   display: flex;
@@ -138,33 +143,47 @@
   position: relative;
   padding: 0;
 }
+.card > .image {
+  flex: 1 0 70%;
+}
 
 .horizontal .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: stretch;
   width: 540px;
-  padding: 2rem; /* Responsive padding */
+  padding: 2rem;
   background: #ffff;
   border-radius: 38px;
   color: #4b4b4b;
   border: 1px solid #fac8c0;
+  height: 100%; /* Ensure the card has a defined height for children to take percentages */
 }
+/* .horizontal .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 540px;
+  padding: 2rem;
+  background: #ffff;
+  border-radius: 38px;
+  color: #4b4b4b;
+  border: 1px solid #fac8c0;
+} */
 
 .card > h2 {
-  font-size: 2rem; /* Base font size */
+  font-size: 2rem;
   font-weight: 500;
 }
 
-/* Image Centering */
 .image {
   margin: 0 auto;
 }
 
-/* Text Styling for Content Section */
 .content-text h1 {
-  font-size: 2.5rem; /* Base font size */
+  font-size: 2.5rem;
   color: #010101;
   font-weight: 500;
   margin-bottom: 1rem;
@@ -175,8 +194,8 @@
   margin-bottom: 0.5rem;
 }
 
-.content-text p {
-  font-size: 1rem; /* Base font size */
+.content-text > p {
+  font-size: 1.2rem; /* Base font size */
   color: #4b4b4b;
   line-height: 1.5;
 }
@@ -201,10 +220,10 @@
     font-size: 2.2rem; /* Responsive font size */
   }
   .content-text h2 {
-    font-size: 1.75rem; /* Responsive font size */
+    font-size: 1rem; /* Responsive font size */
   }
-  .content-text p {
-    font-size: 0.9rem; /* Responsive font size */
+  .content-text > p {
+    font-size: 0.6rem; /* Responsive font size */
   }
 
   .ad-title {
@@ -233,7 +252,7 @@
   .content-text h2 {
     font-size: 1.5rem; /* Responsive font size */
   }
-  .content-text p {
+  .content-text > p {
     font-size: 0.85rem; /* Responsive font size */
   }
 
@@ -325,25 +344,22 @@
   }
   .horizontal .card {
     width: 260px;
-    padding: 1.5rem; /* Responsive padding */
+    padding: 1.5rem;
     border-radius: 15px;
   }
 }
 .self-container {
   display: grid;
-  grid-template-columns: repeat(
-    3,
-    1fr
-  ); /* Three equal columns on larger screens */
-  gap: 1rem; /* Adjust spacing between grid items */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 
 .self-container > div {
-  padding: 1rem; /* Add padding to each child */
-  width: 100%; /* Ensure it takes up full width in grid */
-  max-width: 70%; /* Maximum width for larger screens */
-  box-sizing: border-box; /* Ensures padding is included in the element's total width */
-  margin: 0 auto; /* Center align each child element within the grid container */
+  padding: 1rem;
+  width: 100%;
+  max-width: 70%;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .self-text-wrapper {
@@ -356,14 +372,14 @@
 .text-content > h2 {
   font-size: 2.8rem;
   font-weight: 400;
-  text-align: center; /* Center-align heading text */
+  text-align: center;
 }
 
 .self-steps {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
-  text-align: center; /* Center-align step text */
+  text-align: center;
 }
 .responsive {
   display: none;
@@ -372,24 +388,23 @@
   .text-content > h2 {
     font-size: 1.3rem;
     font-weight: 400;
-    text-align: center; /* Center-align heading text */
+    text-align: center;
   }
   .text-content > p {
     font-size: 1rem;
     text-align: center;
   }
 }
-/* Responsive layout: single column on smaller screens, center content */
 @media (max-width: 768px) {
   .text-content {
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
   }
   .unres {
     display: none;
   }
   .self-container {
-    grid-template-columns: 1fr; /* Single column on smaller screens */
-    grid-template-rows: auto auto auto; /* Define rows explicitly */
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
   }
   .terminal {
     margin: 0 auto;
@@ -408,39 +423,84 @@
   }
   .self-top-text {
     font-size: 1rem;
-    grid-row: 1; /* First item */
+    grid-row: 1;
   }
 
   .terminal {
-    grid-row: 2; /* Center item */
+    max-height: 60vh;
+    grid-row: 2;
     text-align: center;
+  }
+  .terminal > img {
+    object-fit: cover;
+    max-width: 50%;
   }
 
   .self-bottom-text {
-    grid-row: 3; /* Last item */
+    grid-row: 3;
   }
 
   .self-container > div {
-    padding: 0; /* Remove all padding */
-    width: 100%; /* Ensure full width for mobile view */
+    padding: 0;
+    width: 100%;
   }
 
   .text-content > h2 {
-    font-size: 2.2rem; /* Adjust font size for smaller screens */
+    font-size: 2.2rem;
   }
 
   .self-steps {
-    gap: 0.4rem; /* Slightly reduce the gap between items */
+    gap: 0.4rem;
+    padding: 2rem;
   }
 }
 
-/* Extra-small screens adjustments */
 @media (max-width: 480px) {
   .text-content > h2 {
-    font-size: 1.8rem; /* Further reduce font size for very small screens */
+    font-size: 1.8rem;
   }
 
   .self-container > div {
-    width: 100%; /* Full width for very small screens */
+    width: 100%;
   }
+}
+.business-faq-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.business-faq-item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.business-faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 15px;
+  background-color: #f4f4f4;
+}
+
+.business-faq-question.open {
+  background-color: #ddd; /* Light gray when open */
+}
+
+.business-faq-answer {
+  padding: 15px;
+  background-color: #f7f7f7;
+  display: none;
+  overflow: hidden;
+  opacity: 0;
+  height: 0;
+  margin-top: 10px;
+}
+
+.toggle-answer {
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }

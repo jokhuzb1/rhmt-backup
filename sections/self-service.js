@@ -61,7 +61,7 @@ export const SelfService = () => {
         gsap.fromTo(
           texts,
           { opacity: 0, y: 20 },
-          { opacity: 1, y: 0, duration: 0.5, stagger: 0.2 }
+          { opacity: 1, y: 0, duration: 0.3, stagger: 0.2 }
         );
 
         // Animate images with stagger effect

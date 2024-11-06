@@ -8,6 +8,7 @@ import { HowItWorksBusinessAnimation } from "./scripts/gsap/how-it-workds-busine
 import { MultiLanguage } from "./scripts/multi-lang.js";
 import { BusinessAdvantages } from "./sections/business-advantages.js";
 import { SelfService } from "./sections/self-service.js";
+import { BusinessFaqSection } from "./sections/business-faq.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
   try {
@@ -17,6 +18,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     HowItWorksBusinessAnimation();
     BusinessAdvantages();
     SelfService();
+    BusinessFaqSection();
     FooterSection();
     FooterAnimation();
     InteractWithDom();
