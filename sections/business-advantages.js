@@ -14,7 +14,14 @@ export const BusinessAdvantages = () => {
                 <div>
                   <div class="card">
                     <h2>01</h2>
-                    <img src="../menu.png" alt="test" class="image" />
+                    <!-- <img src="../menu.png" alt="test" class="image" /> -->
+                    <video
+                      src="../assets/business/order.mp4"
+                      class="image"
+                      autoplay
+                      loop
+                      muted
+                    ></video>
                     <div class="content-text">
                       <h2>Instant Online Orders</h2>
                       <p>
@@ -28,7 +35,13 @@ export const BusinessAdvantages = () => {
                 <div>
                   <div class="card">
                     <h2>02</h2>
-                    <img src="../menu.png" alt="test" class="image" />
+                    <video
+                      src="../assets/business/noapplication.mp4"
+                      class="image"
+                      autoplay
+                      loop
+                      muted
+                    ></video>
                     <div class="content-text">
                       <h2>No need application</h2>
                       <p>No need to install a separate application.</p>
@@ -38,7 +51,13 @@ export const BusinessAdvantages = () => {
                 <div>
                   <div class="card">
                     <h2>03</h2>
-                    <img src="../menu.png" alt="test" class="image" />
+                    <video
+                      src="../assets/business/advantages.mp4"
+                      class="image"
+                      autoplay
+                      loop
+                      muted
+                    ></video>
                     <div class="content-text">
                       <h2>Seamless Ordering and Tipping</h2>
                       <p>
@@ -52,7 +71,13 @@ export const BusinessAdvantages = () => {
                 <div>
                   <div class="card">
                     <h2>04</h2>
-                    <img src="../menu.png" alt="test" class="image" />
+                    <video
+                      src="../assets/business/scheme.mp4"
+                      class="image"
+                      autoplay
+                      loop
+                      muted
+                    ></video>
                     <div class="content-text">
                       <h2>Fast Sales Boost</h2>
                       <p>
@@ -96,10 +121,10 @@ export const BusinessAdvantages = () => {
 
       let horizontalSection = document.querySelector(".horizontal");
 
-      console.log(horizontalSection.scrollWidth);
+      // console.log(horizontalSection.scrollWidth);
 
-      gsap.to(".horizontal", {
-        x: () => horizontalSection.scrollWidth * -1,
+      gsap.to(horizontalSection, {
+        x: () => horizontalSection.scrollWidth * -1.1,
         xPercent: 100,
         scrollTrigger: {
           trigger: ".horizontal",
