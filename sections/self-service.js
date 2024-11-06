@@ -7,18 +7,22 @@ export const SelfService = () => {
     if (advantages) {
       advantages.innerHTML = html`
         <div class="self-wrapper">
-          <span class="ad-title">Self-service information terminal</span>
+          <span data-key="SelfService" class="ad-title"
+            >Self-service information terminal</span
+          >
           <div class="self-container">
             <div class="self-text-wrapper">
               <div class="self-top-text text-content">
-                <h2>Self-service information terminal</h2>
-                <p>
+                <h2 data-key="SelfServiceInformation">
+                  Self-service information terminal
+                </h2>
+                <p data-key="SelfServiceInfoterminal">
                   Infoterminal is a hardware and software complex that ensures
                   the acceptance of payments from individuals.
                 </p>
               </div>
               <div class="self-bottom-text text-content unres ">
-                <h2>How it works</h2>
+                <h2 data-key="SelfServiceHow">How it works</h2>
                 <p>
                   Guests can browse the menu, place orders, and pay, all without
                   waiting for a waiter. Payment and tipping are done directly

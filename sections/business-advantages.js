@@ -8,7 +8,9 @@ export const BusinessAdvantages = () => {
       advantages.innerHTML = html`
         <div class="card-wrapped">
           <section id="horizontal-scoll">
-            <span class="ad-title">Advantages</span>
+            <span class="ad-title" data-key="advantagesTitleSpan"
+              >Advantages</span
+            >
             <div class="horizontal-scoll-wrapper">
               <div class="horizontal">
                 <div>
@@ -23,8 +25,10 @@ export const BusinessAdvantages = () => {
                       muted
                     ></video>
                     <div class="content-text">
-                      <h2>Instant Online Orders</h2>
-                      <p>
+                      <h2 data-key="advantagesTitleInstant">
+                        Instant Online Orders
+                      </h2>
+                      <p data-key="advantagesTitleOnline">
                         The Rahmat online menu allows visitors to your
                         establishment to choose the desired dish and place an
                         order on their own, without waiting for the waiter.
@@ -43,8 +47,12 @@ export const BusinessAdvantages = () => {
                       muted
                     ></video>
                     <div class="content-text">
-                      <h2>No need application</h2>
-                      <p>No need to install a separate application.</p>
+                      <h2 data-key="advantagesTitleApplication">
+                        No need application
+                      </h2>
+                      <p data-key="advantagesTitleInstall">
+                        No need to install a separate application.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -59,8 +67,10 @@ export const BusinessAdvantages = () => {
                       muted
                     ></video>
                     <div class="content-text">
-                      <h2>Seamless Ordering and Tipping</h2>
-                      <p>
+                      <h2 data-key="advantagesTitleSeamless">
+                        Seamless Ordering and Tipping
+                      </h2>
+                      <p data-key="advantagesTitleBuilt">
                         The built-in QR payment service RAHMAT will make it
                         possible to pay for an order and tip without a terminal.
                         Leave a royal review!
@@ -79,8 +89,8 @@ export const BusinessAdvantages = () => {
                       muted
                     ></video>
                     <div class="content-text">
-                      <h2>Fast Sales Boost</h2>
-                      <p>
+                      <h2 data-key="advantagesTitleFast">Fast Sales Boost</h2>
+                      <p data-key="advantagesTitleIncreases">
                         Increases sales volumes, thanks to fast customer
                         service.
                       </p>
@@ -92,8 +102,8 @@ export const BusinessAdvantages = () => {
                     <h2>05</h2>
                     <img src="../menu.png" alt="test" class="image" />
                     <div class="content-text">
-                      <h2>Easy Menu Updates</h2>
-                      <p>
+                      <h2 data-key="advantagesTitleEasy">Easy Menu Updates</h2>
+                      <p data-key="advantagesTitleAlways">
                         Always up-to-date menu, easy change of the list of
                         dishes.
                       </p>
@@ -105,8 +115,10 @@ export const BusinessAdvantages = () => {
                     <h2>06</h2>
                     <img src="../menu.png" alt="test" class="image" />
                     <div class="content-text">
-                      <h2>Save your time!</h2>
-                      <p>Everything will be quick and easy!</p>
+                      <h2 data-key="advantagesTitleSave">Save your time!</h2>
+                      <p data-key="advantagesTitleEverything">
+                        Everything will be quick and easy!
+                      </p>
                     </div>
                   </div>
                 </div>
