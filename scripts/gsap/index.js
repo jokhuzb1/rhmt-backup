@@ -5,7 +5,6 @@ export const Gsap = async () => {
 
       const { PayReviewAnimation } = await import("./pay-review-animation.js");
       const { applyGSAPAnimations } = await import("./apply-gsap-animation.js");
-      const { ScanQrAnimation } = await import("./scan-qr-animation.js");
       const { AdvantagesAnimation } = await import("./advantages-animation.js");
       const { PosSystemsAnimation } = await import(
         "./pos-systems-animation.js"
@@ -32,7 +31,6 @@ export const Gsap = async () => {
       await FaqAnimation();
       await FooterAnimation();
       await AdvantagesAnimation();
-      await ScanQrAnimation();
       await PosSystemsAnimation();
       await HowItWorksAnimation();
       await PartnersAnimation();

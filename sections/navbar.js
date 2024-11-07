@@ -9,7 +9,7 @@ export const NavbarSection = () => {
         <div class="absolute w-full top-0 left-0 navbar z-[100]  ">
           <div class="container">
             <div
-              class="flex justify-between items-start my-[10px] max-md:mt-[20px]"
+              class="flex justify-between items-start my-[10px] max-md:mt-[10px]"
             >
               <img src="/assets/logo.svg" alt="Logo" class="logo" />
               <div class="flex items-start">

@@ -175,194 +175,7 @@ export const AdvantagesSection = () => {
           </div>
         </div>
 
-        <div class="hidden mt-[150px]">
-          <div class="advantages-scroll relative">
-            <div
-              class="advantages-item bg-[#010101] w-full h-[100vh] rounded-[16px] py-[20px]"
-            >
-              <div class="container">
-                <div
-                  class="flex justify-between items-center flex-col h-[90vh]"
-                >
-                  <p class="section-title" data-key="advantages">Advantages</p>
-                  <div class="w-full">
-                    <h2
-                      class="text-[30px] text-[#fff] z-[2] relative text-center"
-                      data-key="forBusinessMobile"
-                    >
-                      For business
-                    </h2>
-                    <div class="flex justify-center">
-                      <img
-                        src="/assets/gifs/advantages-text-bg.gif"
-                        alt="gif"
-                        class="absolute max-w-[360px] max-sm:w-full h-[250px] object-cover top-[30vh]"
-                      />
-                    </div>
-                  </div>
-                  <button
-                    class="active:scale-[.95] scrollToNextButtonMobile"
-                  ></button>
-                </div>
-              </div>
-            </div>
-            <div
-              class="advantages-item advantages-details h-[100vh] bg-[#FFFFFF] rounded-[8px] w-full mt-[20px] relative"
-            >
-              <h2
-                class="text-[25px] text-center mt-[40px] max-w-[250px]"
-                data-key="advantage1"
-              >
-                Seamless <span class="text-[gray]">Integration</span> <br />
-                and Fast Payments!
-              </h2>
-              <video
-                class="max-w-[350px] mt-[20px] !touch-none"
-                autoplay
-                muted
-                loop
-                playsinline
-                webkit-playsinline
-              >
-                <source src="./assets/gifs/integrations.mp4" type="video/mp4" />
-              </video>
-              <div class="h-[146px]"></div>
-              <img
-                src="./assets/icons/showcase-bottom-illustrator.svg"
-                alt="down-illustrator"
-                class="absolute bottom-0"
-              />
-            </div>
-            <div
-              class="advantages-item bg-[#010101] w-full h-[100vh] rounded-[16px] py-[20px]"
-            >
-              <div class="container">
-                <div
-                  class="flex justify-between items-center flex-col h-[90vh]"
-                >
-                  <p class="section-title" data-key="advantages">Advantages</p>
-                  <div class="w-full">
-                    <h2
-                      class="text-[30px] text-[#fff] z-[2] relative text-center"
-                      data-key="forEmployeesMobile"
-                    >
-                      For employees
-                    </h2>
-                    <div class="flex justify-center">
-                      <video
-                        class="absolute max-w-[360px] max-sm:w-full h-[250px] object-cover top-[30vh] !touch-none"
-                        autoplay
-                        muted
-                        loop
-                        playsinline
-                        webkit-playsinline
-                      >
-                        <source
-                          src="./assets/gifs/advantages-text-bg.mp4"
-                          type="video/mp4"
-                        />
-                      </video>
-                    </div>
-                  </div>
-                  <button class="active:scale-[.95] scrollToNextButtonMobile">
-                    <img src="./assets/icons/to-down-icon.svg" alt="to down" />
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div
-              class="advantages-item advantages-details h-[100vh] bg-[#FFFFFF] rounded-[8px] w-full mt-[20px] relative"
-            >
-              <h2
-                class="text-[25px] text-center mt-[40px] max-w-[250px]"
-                data-key="advantage1"
-              >
-                Instant Tips, Feedback, and Analytics for
-                <span class="text-[gray]">Waitstaff</span>!
-              </h2>
-              <video
-                class="max-w-[350px] mt-[20px] !touch-none"
-                autoplay
-                muted
-                loop
-                playsinline
-                webkit-playsinline
-              >
-                <source src="./assets/gifs/analytics.mp4" type="video/mp4" />
-              </video>
-              <div class="h-[146px]"></div>
-              <img
-                src="./assets/icons/showcase-bottom-illustrator.svg"
-                alt="down-illustrator"
-                class="absolute bottom-0"
-              />
-            </div>
-            <div
-              class="advantages-item bg-[#010101] w-full rounded-[16px] py-[20px]"
-            >
-              <div class="container">
-                <div
-                  class="flex justify-between items-center flex-col h-[90vh]"
-                >
-                  <p class="section-title" data-key="advantages">Advantages</p>
-                  <div class="w-full">
-                    <h2
-                      class="text-[30px] text-[#fff] z-[2] relative text-center"
-                      data-key="forCustomersMobile"
-                    >
-                      For customers
-                    </h2>
-                    <div class="flex justify-center">
-                      <video
-                        class="absolute max-w-[360px] max-sm:w-full h-[250px] object-cover top-[30vh] !touch-none"
-                        autoplay
-                        muted
-                        loop
-                        playsinline
-                        webkit-playsinline
-                      >
-                        <source
-                          src="./assets/gifs/advantages-text-bg.mp4"
-                          type="video/mp4"
-                        />
-                      </video>
-                    </div>
-                  </div>
-                  <button class="active:scale-[.95] scrollToNextButtonMobile">
-                    <img src="./assets/icons/to-down-icon.svg" alt="to down" />
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div
-              class="advantages-item advantages-details h-[100vh] bg-[#FFFFFF] rounded-[8px] w-full my-[20px] relative"
-            >
-              <h2
-                class="text-[25px] text-center mt-[40px] max-w-[250px]"
-                data-key="advantage1"
-              >
-                Easy and <span class="text-[gray]">Quick Payments</span>, Tips,
-                and Reviews with RAHMAT!
-              </h2>
-              <video
-                class="max-w-[350px] mt-[20px] !touch-none"
-                autoplay
-                muted
-                loop
-                playsinline
-                webkit-playsinline
-              >
-                <source src="./assets/gifs/integration.mp4" type="video/mp4" />
-              </video>
-              <div class="h-[146px]"></div>
-              <img
-                src="./assets/icons/showcase-bottom-illustrator.svg"
-                alt="down-illustrator"
-                class="absolute bottom-0"
-              />
-            </div>
-          </div>
-        </div>
+        <!-- mobile -->
         <div class="hidden max-lg:block mt-[200px]">
           <div class="relative advantages-1">
             <div class="bg-[#010101] w-full rounded-[16px] py-[20px]">
@@ -520,7 +333,7 @@ export const AdvantagesSection = () => {
               </div>
             </div>
             <div
-              class="advantages-details bg-[#FFFFFF] rounded-[8px] w-full my-[20px] relative"
+              class="advantages-details bg-[#D8D9D8] rounded-[8px] w-full my-[20px] relative"
             >
               <h2
                 class="text-[25px] text-center mt-[40px] max-w-[250px]"
@@ -539,7 +352,6 @@ export const AdvantagesSection = () => {
               >
                 <source src="./assets/gifs/integration.mp4" type="video/mp4" />
               </video>
-              <div class="h-[146px]"></div>
               <img
                 src="./assets/icons/showcase-bottom-illustrator.svg"
                 alt="down-illustrator"
@@ -555,7 +367,3 @@ export const AdvantagesSection = () => {
     }
   });
 };
-
-/**
-
- */

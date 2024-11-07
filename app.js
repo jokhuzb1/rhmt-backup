@@ -3,12 +3,11 @@ import { NavbarSection } from "./sections/navbar.js";
 import { HeaderSection } from "./sections/header.js";
 import { PayReviewSection } from "./sections/pay-review.js";
 import { HowItWorksSection } from "./sections/how-it-works.js";
-import { ScanQrSection } from "./sections/scan-qr.js";
 import { AdvantagesSection } from "./sections/advantages.js";
 import { PosSystemsSection } from "./sections/pos-systems.js";
 import { PartnersSection } from "./sections/partners.js";
 import { PosSystemsMobileSection } from "./sections/pos-systems-mobile.js";
-import { FaqSection } from "./sections/faq.js";
+// import { FaqSection } from "./sections/faq.js";
 import { FooterSection } from "./sections/footer.js";
 import { Contacts } from "./sections/contact.js";
 
@@ -24,12 +23,11 @@ document.addEventListener("DOMContentLoaded", async () => {
       HeaderSection,
       PayReviewSection,
       HowItWorksSection,
-      ScanQrSection,
       AdvantagesSection,
       PosSystemsSection,
       PartnersSection,
       PosSystemsMobileSection,
-      FaqSection,
+      // FaqSection,
       FooterSection,
       MultiLanguage,
       Contacts,

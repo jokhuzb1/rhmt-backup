@@ -7,7 +7,9 @@ export const HeaderSection = () => {
     if (header) {
       header.innerHTML = html`
         <div class="max-lg:hidden">
-          <div class="absolute left-0 top-[280px] w-max flex items-center">
+          <div
+            class="absolute left-1 top-[280px]  flex items-center justify-center"
+          >
             <img
               src="./assets/icons/header-img-left-1.svg"
               alt="Illustration"
