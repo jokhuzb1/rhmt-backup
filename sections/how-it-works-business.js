@@ -21,7 +21,7 @@ export const HowItWorksBusinessSection = () => {
                 playsinline
                 webkit-playsinline
               >
-                <source src="./assets/howitworks/1.mp4" type="video/mp4" />
+                <source src="./assets/howitworks/1.webm" type="video/webm" />
               </video>
               <div style="color:white;" class="overlay-text text-top-left ">
                 Scan QR-code
