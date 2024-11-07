@@ -11,7 +11,9 @@
   background-color: #f05039;
   border: 1px solid transparent;
 }
-
+.hidden {
+  display: hidden;
+}
 .btn:active {
   background-color: #c2260dff;
   transform: scale(0.95) !important;
