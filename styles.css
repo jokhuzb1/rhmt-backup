@@ -199,7 +199,6 @@ img {
 
 @media screen and (max-width: 435px) {
   .texts-for-video,
-  .overlay-text,
   .video-container {
     padding: 5px !important;
   }
@@ -246,7 +245,8 @@ img {
 }
 
 .text-bottom-right > p {
-  font-size: 1.5rem; /* Base font size */
+  font-size: 1rem; /* Base font size */
+  max-width: 320px;
 }
 
 /* Default Positions */
@@ -257,6 +257,7 @@ img {
 .text-top-right {
   top: 3.6rem;
   right: 1rem;
+  padding: 0 !important;
 }
 .text-bottom-left {
   bottom: 1rem;
