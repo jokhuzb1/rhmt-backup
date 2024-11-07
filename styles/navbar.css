@@ -31,6 +31,7 @@
   backdrop-filter: blur(5.2px);
   -webkit-backdrop-filter: blur(5.2px);
   border: 1px solid rgba(229, 229, 229, 0.64);
+
 }
 @keyframes fadeUp {
   0% {

@@ -17,9 +17,7 @@ export const PayReviewSection = () => {
               alt="Right Illustrator"
             />
           </div>
-          <div
-            class="top-divs flex gap-[10px] z-[999]   !h-[15vh] -translate-x-[2000px]"
-          >
+          <div class="top-divs flex  z-[999]   !h-[15vh] -translate-x-[1500px]">
             <img
               src="/assets/payment-images/img_0.png"
               alt="animated payment img"
@@ -51,7 +49,7 @@ export const PayReviewSection = () => {
             />
           </div>
           <div
-            class="bottom-divs flex gap-[10px] z-[999]   !h-[15vh] translate-x-[2000px]"
+            class="bottom-divs flex z-[999] max-[1200px]:w-full  !h-[15vh] translate-x-[1500px]"
           >
             <img
               src="/assets/payment-images/img_4.png"

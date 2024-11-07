@@ -22,7 +22,6 @@ export const HeaderAnimation = () => {
         return resolve("Header animation skipped due to missing spans.");
       }
 
-      // Apply GSAP animation
       gsap.fromTo(
         headerTextSpan,
         { y: 100, opacity: 0 },
@@ -48,6 +47,42 @@ export const HeaderAnimation = () => {
           end: "bottom 50%",
           scrub: true,
         },
+      });
+
+      gsap.from(".header-img-1", {
+        x: "-100%",
+        opacity: 0,
+        duration: 0.8,
+        delay: 0.2,
+        scrollTrigger: {
+          trigger: header,
+          start: "top 75%",
+        },
+        xPercent: -3,
+      });
+
+      gsap.from(".header-img-2", {
+        x: "-100%",
+        opacity: 0,
+        duration: 0.8,
+        delay: 0.4,
+        scrollTrigger: {
+          trigger: header,
+          start: "top 75%",
+        },
+        xPercent: -6,
+      });
+
+      gsap.from(".header-img-3", {
+        x: "-100%",
+        opacity: 0,
+        duration: 0.8,
+        delay: 0.8,
+        scrollTrigger: {
+          trigger: header,
+          start: "top 75%",
+        },
+        xPercent: -9,
       });
 
       resolve("Header animation is ready");
