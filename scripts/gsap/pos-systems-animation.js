@@ -1,10 +1,11 @@
 export const PosSystemsAnimation = () => {
   return new Promise((resolve, reject) => {
     try {
-      // Element Selectors
-
       const posSystemText = document.querySelector(".pos-system-text");
-      // Prepare text spans for animation
+      if (!posSystemText) {
+        console.warn("Element .pos-system-text not found.");
+        return reject(new Error("Element .pos-system-text not found."));
+      }
       const words = posSystemText.innerText.split(" ");
       posSystemText.innerHTML = words
         .map((word) => `<span class="word">${word}</span>`)
