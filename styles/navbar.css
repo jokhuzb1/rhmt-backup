@@ -3,7 +3,7 @@
 }
 #navbar {
   margin: 6px auto;
-  position: fixed;
+  position: sticky;
   margin-left: 1%;
   width: 98%;
   z-index: 999;
@@ -31,7 +31,6 @@
   backdrop-filter: blur(5.2px);
   -webkit-backdrop-filter: blur(5.2px);
   border: 1px solid rgba(229, 229, 229, 0.64);
-
 }
 @keyframes fadeUp {
   0% {

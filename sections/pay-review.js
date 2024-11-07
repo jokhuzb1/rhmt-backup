@@ -7,7 +7,7 @@ export const PayReviewSection = () => {
     if (payReview) {
       payReview.innerHTML = html`
         <div
-          class="container-pay-review  flex flex-col items-center justify-between !py-[65px] !h-[100vh]    overflow-hidden w-full opacity-0"
+          class="container-pay-review  flex flex-col items-center justify-between  !h-[100vh]    overflow-hidden w-full opacity-0"
         >
           <div
             class="right-illustrator  fixed opacity-0 -z-[99] top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%]"
