@@ -8,12 +8,12 @@ export const Contacts = () => {
       contacts.innerHTML = html`
         <div class="flex-container">
           <div class="text-content">
-            <h2>Contact Us</h2>
-            <p>
+            <h2 data-key="ContactOne">Contact Us</h2>
+            <p data-key="ContactHear">
               We'd love to hear from you! Please fill out the form on the right
               or reach out to us via email or phone.
             </p>
-            <p>
+            <p data-key="ContactOur">
               Our team is available to assist you with any inquiries or support
               you may need.
             </p>
