@@ -47,12 +47,13 @@ export const PayReviewAnimation = () => {
           {
             opacity: 0,
             position: "fixed",
-            left: "50%",
+            left: "50vw",
+            xPercent: -50,
           },
           {
             opacity: 1,
             position: "fixed",
-            left: "35%",
+            x: "-17vw",
             ease: "power2.out",
             duration: 0.5,
           },
@@ -63,12 +64,13 @@ export const PayReviewAnimation = () => {
           {
             opacity: 0,
             position: "fixed",
-            left: "50%",
+            left: "50vw",
+            xPercent: -50,
           },
           {
             opacity: 1,
             position: "fixed",
-            left: "65%",
+            x: "17vw",
             ease: "power2.out",
             duration: 0.5,
           },
@@ -86,18 +88,18 @@ export const PayReviewAnimation = () => {
         )
         .fromTo(
           TopDivs,
-          { x: "-2000px" },
+          { x: "-1700px" },
           {
-            x: "200px",
+            x: "0px",
             duration: 1,
             stagger: 0.2,
           }
         )
         .fromTo(
           BottomDivs,
-          { x: "2000px" },
+          { x: "1700px" },
           {
-            x: "-200px",
+            x: "0px",
             duration: 1,
             stagger: 0.2,
           },
@@ -128,13 +130,13 @@ export const PayReviewAnimation = () => {
         pinSpacing: true,
         onLeave: () => {
           gsap.to(TopDivs, {
-            x: "2000px",
+            x: "1700px",
             duration: 0.5,
             ease: "power2.inOut",
           });
 
           gsap.to(BottomDivs, {
-            x: "-2000px",
+            x: "-1700px",
             duration: 0.5,
             ease: "power2.inOut",
           });

@@ -21,9 +21,7 @@
   pointer-events: none;
 }
 
-.overlay-text,
-.texts-for-video {
-  color: #ffff;
+.overlay-text {
   font-size: 2rem; /* Base font size */
   padding: 2rem;
 }

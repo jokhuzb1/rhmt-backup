@@ -1,14 +1,16 @@
 export const HowItWorksAnimation = () => {
   return new Promise((resolve, reject) => {
     try {
-      const videos = document.querySelectorAll(".vid");
-      const textGroups = document.querySelectorAll(".texts-for-video");
+      const videos = document.querySelectorAll("#how-it-works .vid");
+      const overlayTexts = document.querySelectorAll(
+        "#how-it-works .overlay-text"
+      );
       let currentIndex = 0;
 
       ScrollTrigger.create({
-        trigger: ".video-section",
+        trigger: "#how-it-works .video-section",
         start: "top top",
-        end: "+=2000",
+        end: "+=3000",
         pin: true,
         scrub: true,
         onUpdate: (self) => {
@@ -22,13 +24,36 @@ export const HowItWorksAnimation = () => {
       });
 
       function changeVideoAndText(index) {
-        videos.forEach((video, i) => {
-          gsap.to(video, { opacity: i === index ? 1 : 0, duration: 0.5 });
-          i === index ? video.play() : video.pause();
+        // Hide all videos first
+        if (videos) {
+          videos.forEach((video) => {
+            gsap.to(video, { opacity: 0, duration: 0.5 });
+            video.pause(); // Pause all videos
+          });
+        }
+
+        // Hide all overlay texts first
+        overlayTexts.forEach((text) => {
+          gsap.to(text, { opacity: 0, duration: 0.5 }); // Hide all texts
         });
 
-        textGroups.forEach((text, i) => {
-          gsap.to(text, { opacity: i === index ? 1 : 0, duration: 0.5 });
+        // Show the current video
+        if (videos && videos[index]) {
+          gsap.to(videos[index], { opacity: 1, duration: 0.5 });
+          videos[index]?.play();
+        }
+        // Play the current video
+
+        // Show the overlay texts for the current video
+        const textsToShow = [
+          document.querySelectorAll(".text-top-left")[index],
+          document.querySelectorAll(".text-top-right")[index],
+          document.querySelectorAll(".text-bottom-left")[index],
+          document.querySelectorAll(".text-bottom-right")[index],
+        ];
+
+        textsToShow.forEach((text) => {
+          gsap.to(text, { opacity: 1, duration: 0.5 }); // Show active corner texts
         });
       }
 
