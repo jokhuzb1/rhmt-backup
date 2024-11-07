@@ -10,7 +10,8 @@ export const PartnersSection = () => {
           <div class="partners-section">
             <div class="min-h-[240vh]">
               <div
-                class="partners-card animated-card animated-card-1 fixed top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-[3]"
+                style="opacity:0;"
+                class="partners-card animated-card animated-card-1  fixed top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-[3]"
               >
                 <img
                   src="./assets/partners/img_1.png"
@@ -19,7 +20,8 @@ export const PartnersSection = () => {
                 />
               </div>
               <div
-                class="partners-card animated-card animated-card-2 fixed top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
+                style="opacity:0;"
+                class="partners-card animated-card animated-card-2  fixed top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
               >
                 <img
                   src="./assets/partners/img_2.png"
@@ -28,7 +30,8 @@ export const PartnersSection = () => {
                 />
               </div>
               <div
-                class="partners-card animated-card animated-card-3 fixed top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
+                style="opacity:0;"
+                class="partners-card animated-card animated-card-3  fixed top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
               >
                 <img
                   src="./assets/partners/img_3.png"
@@ -37,6 +40,7 @@ export const PartnersSection = () => {
                 />
               </div>
               <div
+                style="opacity:0;"
                 class="partners-card animated-card animated-card-4 fixed top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
               >
                 <img
@@ -46,6 +50,7 @@ export const PartnersSection = () => {
                 />
               </div>
               <div
+                style="opacity:0;"
                 class="partners-card animated-card animated-card-5 fixed top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
               >
                 <img
@@ -55,6 +60,7 @@ export const PartnersSection = () => {
                 />
               </div>
               <div
+                style="opacity:0;"
                 class="partners-card animated-card animated-card-6 fixed top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
               >
                 <img
@@ -64,6 +70,7 @@ export const PartnersSection = () => {
                 />
               </div>
               <div
+                style="opacity:0;"
                 class="partners-card animated-card animated-card-7 fixed top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
               >
                 <img
@@ -73,6 +80,7 @@ export const PartnersSection = () => {
                 />
               </div>
               <div
+                style="opacity:0;"
                 class="partners-card animated-card animated-card-8 fixed top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
               >
                 <img

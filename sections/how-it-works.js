@@ -27,6 +27,7 @@ export const HowItWorksSection = () => {
                 padding: 0px 23px;
                 border-radius: 50px;
                 border: 1px solid #d8d9d8;
+                font-size: 16px;
               "
               >
                 Scan QR-code
@@ -58,12 +59,13 @@ export const HowItWorksSection = () => {
                 <source src="./assets/howitworks/2.mp4" type="video/mp4" />
               </video>
               <div
-                class="overlay-text text-top-left"
+                class="overlay-text  text-top-left"
                 data-key="payment"
                 style="
                 padding: 0px 23px;
                 border-radius: 50px;
                 border: 1px solid #d8d9d8;
+                font-size: 16px;
               "
               >
                 Payment
@@ -103,6 +105,7 @@ export const HowItWorksSection = () => {
                 padding: 0px 23px;
                 border-radius: 50px;
                 border: 1px solid #d8d9d8;
+                font-size: 16px;
               "
               >
                 Gratuities
@@ -140,6 +143,7 @@ export const HowItWorksSection = () => {
                 padding: 0px 23px;
                 border-radius: 50px;
                 border: 1px solid #d8d9d8;
+                font-size: 16px;
               "
               >
                 Reviews
