@@ -51,7 +51,7 @@ img {
 .section-title {
   font-size: 16px;
   color: white;
-  padding: 0 23px 2px 23px;
+  padding: 0 23px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -199,7 +199,6 @@ img {
 
 @media screen and (max-width: 435px) {
   .texts-for-video,
-  .overlay-text,
   .video-container {
     padding: 5px !important;
   }
@@ -246,7 +245,8 @@ img {
 }
 
 .text-bottom-right > p {
-  font-size: 1.5rem; /* Base font size */
+  font-size: 1rem; /* Base font size */
+  max-width: 320px;
 }
 
 /* Default Positions */
@@ -257,6 +257,7 @@ img {
 .text-top-right {
   top: 3.6rem;
   right: 1rem;
+  padding: 0 !important;
 }
 .text-bottom-left {
   bottom: 1rem;
@@ -302,16 +303,22 @@ img {
     text-align: center;
   }
 }
-
+.container-pay-review {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 .bottom-divs,
 .top-divs {
   gap: 100px;
+}
+.bottom-div,
+.top-div {
+  width: 120px;
 }
 
 @media screen and (max-width: 1200px) {
   .bottom-divs,
   .top-divs {
-    gap: 1px;
     max-width: 100%;
     justify-content: space-between;
   }
@@ -320,6 +327,7 @@ img {
 @media screen and (max-width: 900px) {
   .bottom-divs,
   .top-divs {
+    gap: 30px;
     height: 50vh;
   }
   .bottom-div,
@@ -332,10 +340,11 @@ img {
 @media screen and (max-width: 700px) {
   .bottom-divs,
   .top-divs {
-    height: 20vh;
+    height: 40vh !important;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     display: grid;
-    column-gap: 45px;
+    column-gap: 75px;
+    row-gap: 30px;
   }
   .bottom-div,
   .top-div {
@@ -344,7 +353,7 @@ img {
     margin: 0 auto;
   }
   .main-div {
-    height: 40vh;
+    height: 35vh;
   }
 }
 

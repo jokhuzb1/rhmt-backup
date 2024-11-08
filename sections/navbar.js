@@ -39,16 +39,14 @@ export const NavbarSection = () => {
                       class="chevron chevronIcon"
                     />
                   </button>
-
-                  <!-- Dropdown menu -->
                   <ul
                     id="dropdownMenu"
-                    class="nav-links mr-[134px] max-lg:!hidden absolute bg-white shadow-lg rounded-md py-2 hidden "
+                    class="nav-links  mr-[134px] max-lg:!hidden absolute bg-white shadow-lg rounded-md py-2 hidden "
                   >
                     <li>
                       <a
                         href="/"
-                        class="block px-4 py-4  text-[18px] leading-[22px] hover:bg-gray-100 lang-btn"
+                        class="block px-1 py-4 w-full  text-[18px] leading-[22px] hover:bg-gray-100 lang-btn"
                         data-key="payments"
                       >
                         Payments
@@ -57,7 +55,7 @@ export const NavbarSection = () => {
                     <li>
                       <a
                         href="/"
-                        class="block px-4 py-4  text-[18px] leading-[22px] hover:bg-gray-100"
+                        class="block px-1 py-4 w-full  text-[18px] leading-[22px] hover:bg-gray-100"
                         data-key="onlineMenu"
                       >
                         Online Menu
@@ -66,7 +64,7 @@ export const NavbarSection = () => {
                     <li>
                       <a
                         href="/"
-                        class="block px-4 py-4  text-[18px] leading-[22px] hover:bg-gray-100"
+                        class="block px-1 py-4  w-full text-[18px] leading-[22px] hover:bg-gray-100"
                         data-key="delivery"
                       >
                         Delivery
@@ -280,4 +278,3 @@ export const NavbarSection = () => {
     }
   });
 };
-// window.NavbarSection = NavbarSection;
