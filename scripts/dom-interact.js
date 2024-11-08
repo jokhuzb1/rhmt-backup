@@ -17,7 +17,7 @@ export const InteractWithDom = async () => {
     const faqContentContainer = $("#faqContent");
     let currentCategoryIdx = 0;
     let currentLang = localStorage.getItem("selectedLanguage");
-    // Attach event listeners only if elements exist
+
     allDropDownButtons?.forEach((btn) => {
       btn.addEventListener("click", (e) => {
         e.stopPropagation();
@@ -83,11 +83,13 @@ export const InteractWithDom = async () => {
       }
     };
 
-    const getTextByLang = (details, field) =>
-      details?.[`${field}_${currentLang}`] || "en";
+    const getTextByLang = (details, field) => {
+      const currentDetail = details?.[`${field}_${currentLang}`] || "en";
+      return currentDetail;
+    };
 
     const renderCategories = (data) => {
-      faqButtonsContainer.innerHTML = ""; // Clear the container before rendering new buttons
+      faqButtonsContainer.innerHTML = "";
 
       data.forEach((category, index) => {
         const button = document.createElement("button");
@@ -103,7 +105,7 @@ export const InteractWithDom = async () => {
           addAnimation();
         });
 
-        faqButtonsContainer.appendChild(button); // Append the new button to the container
+        faqButtonsContainer.appendChild(button);
       });
     };
 
@@ -114,12 +116,12 @@ export const InteractWithDom = async () => {
       category.items.forEach((details, index) => {
         const detailsElement = document.createElement("details");
         detailsElement.className =
-          "py-[30px] px-[40px] max-md:p-0 max-md:border-b-[1px] max-md:border-b-[#88888880] max-md:pb-[15px]";
-
+          "py-[30px] px-[40px]  max-md:border-b-[1px] max-md:border-b-[#88888880] max-md:pb-[15px]";
+        detailsElement.style = "padding:15px 20px;width:100%";
         detailsElement.innerHTML = `
           <summary class="flex justify-between items-center">
-            <h3 class="max-md:hidden text-[16px]">0${index + 1}</h3>
-            <div class="flex items-center justify-between w-[50%] max-md:w-full">
+            <h3 class="max-md:hidden text-[16px] mr-2">0${index + 1}</h3>
+            <div class="flex items-center justify-between w-full">
               <h1 class="text-[30px] max-w-[350px] max-lg:text-[25px] max-sm:text-[16px] max-sm:max-w-[200px]">
                 ${getTextByLang(details, "question")}
               </h1>
@@ -127,7 +129,7 @@ export const InteractWithDom = async () => {
                 <button class="icon-btn white plus">
                   <img src="./assets/icons/plus-icon.svg" alt="plus" />
                 </button>
-                <button class="icon-btn hidden minus">
+                <button class="icon-btn minus" style="display: none;">
                   <img src="./assets/icons/minus-icon.svg" alt="minus" />
                 </button>
               </div>
@@ -135,8 +137,8 @@ export const InteractWithDom = async () => {
           </summary>
           <div class="content flex justify-between items-center">
             <div class="max-md:hidden"></div>
-            <div class="w-[50%] max-md:w-full">
-              <p class="max-w-[430px] max-md:w-full max-sm:text-[12px]">
+            <div class="max-w-[430px] w-full">
+              <p class=" w-full max-sm:text-[12px]">
                 ${getTextByLang(details, "answer")}
               </p>
             </div>
@@ -147,7 +149,7 @@ export const InteractWithDom = async () => {
       });
     };
 
-    const updateButtons = (data) => {
+    const updateButtons = () => {
       faqButtonsContainer
         .querySelectorAll("button")
         .forEach((button, index) => {
@@ -169,17 +171,13 @@ export const InteractWithDom = async () => {
           if (el.open) {
             slideUp(content, () => {
               el.open = false;
-              plusBtn.classList.toggle("block", true);
-              plusBtn.classList.toggle("hidden", false);
-              minusBtn.classList.toggle("block", false);
-              minusBtn.classList.toggle("hidden", true);
+              plusBtn.style.display = "block";
+              minusBtn.style.display = "none";
             });
           } else {
             el.open = true;
-            plusBtn.classList.toggle("block", false);
-            plusBtn.classList.toggle("hidden", true);
-            minusBtn.classList.toggle("block", true);
-            minusBtn.classList.toggle("hidden", false);
+            plusBtn.style.display = "none";
+            minusBtn.style.display = "block";
             slideDown(content);
           }
         });
@@ -188,7 +186,7 @@ export const InteractWithDom = async () => {
 
     const slideUp = (element, callback) => {
       element.style.height = element.offsetHeight + 45 + "px";
-      element.offsetHeight; // Trigger reflow
+      element.offsetHeight;
       element.style.height = "0";
       element.style.paddingTop = "0";
 
@@ -200,7 +198,7 @@ export const InteractWithDom = async () => {
 
     const slideDown = (element) => {
       element.style.height = "0";
-      element.offsetHeight; // Trigger reflow
+      element.offsetHeight;
 
       const paddingTop = window.innerWidth <= 600 ? "20px" : "40px";
       element.style.height =

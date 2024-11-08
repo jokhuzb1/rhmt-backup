@@ -29,13 +29,13 @@ export const Gsap = async () => {
 
       await HeaderAnimation();
       await FaqAnimation();
-      await FooterAnimation();
       await AdvantagesAnimation();
       await PosSystemsAnimation();
       await HowItWorksAnimation();
       await PartnersAnimation();
       await PayReviewAnimation();
       await applyGSAPAnimations();
+      await FooterAnimation();
       resolve("GSAP animations ready");
     } catch (err) {
       console.log(err, "gsap");

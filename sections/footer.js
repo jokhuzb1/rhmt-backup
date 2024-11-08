@@ -25,7 +25,7 @@ export const FooterSection = () => {
               </h3>
             </div>
           </div>
-          <div class="container">
+          <div class="container footer-container">
             <div
               class="relative py-[60px] border-b-[#D8D9D8] border-b-[1px] flex justify-between max-sm:flex-col max-sm:gap-[23px]"
             >
