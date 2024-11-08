@@ -21,17 +21,6 @@
   }
 }
 
-@keyframes transitionLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(15px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
 .scroll-down-button {
   position: relative;
   animation: jumpInfinite 1.5s infinite;
@@ -189,13 +178,21 @@ section {
 .pos-system-right-content.active .pos-system-button {
   animation: popUp 0.3s ease forwards 0.9s;
 }
+@keyframes transitionLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 .faq-section.active .faq-title,
 .faq-section.active h2,
 .faq-section.active .select-btn,
-.faq-section.active details,
-.footer.active p,
-.footer.active a {
+.faq-section.active details {
   animation: transitionLeft 0.5s ease forwards;
 }
 
