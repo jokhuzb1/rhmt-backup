@@ -84,6 +84,57 @@ section {
   animation-delay: 0.3s;
 }
 
+.header-img-1,
+.header-img-2,
+.header-img-3 {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.header-img-1 {
+  animation: slideIn1 0.8s ease forwards 0.2s;
+}
+
+.header-img-2 {
+  animation: slideIn2 0.8s ease forwards 0.4s;
+}
+
+.header-img-3 {
+  transform: translateX(-150%);
+  animation: slideIn3 0.8s ease forwards 0.8s;
+}
+
+@keyframes slideIn1 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideIn2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-40%);
+  }
+}
+
+@keyframes slideIn3 {
+  0% {
+    transform: translateX(-150%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-70%);
+    opacity: 1;
+  }
+}
+
 .pos-system-right-content img {
   transform: scale(0.6);
   opacity: 0;
