@@ -6,45 +6,44 @@ export const PosSystemsSection = () => {
 
     if (posSystems) {
       posSystems.innerHTML = html`
-          <div class="pos-system-section">
-            <div class="h-[100vh]">
-              <div
-                class="flex justify-center items-center flex-col text-center font-[400] h-[100vh]"
+        <div class="pos-system-section">
+          <div class="h-[100vh]">
+            <div
+              class="flex justify-center items-center flex-col text-center font-[400] h-[100vh]"
+            >
+              <video
+                class="ellipse-gif fixed max-w-[550px] !touch-none max-lg:hidden"
+                autoplay
+                muted
+                loop
+                playsinline
+                webkit-playsinline
               >
-                <video
-                  class="ellipse-gif fixed max-w-[550px] !touch-none max-lg:hidden"
-                  autoplay
-                  muted
-                  loop
-                  playsinline
-                  webkit-playsinline
-                >
-                  <source src="../assets/gifs/rmbg.mp4" type="video/mp4" />
-                </video>
-                <video
-                  class="absolute ellipse-gif-mobile !touch-none max-sm:top-[33vh] max-w-[550px] hidden max-lg:block max-md:max-w-[400px] max-sm:max-w-[235px]"
-                  autoplay
-                  muted
-                  loop
-                  playsinline
-                  webkit-playsinline
-                >
-                  <source src="../assets/gifs/rmbg.mp4" type="video/mp4" />
-                </video>
-                <p
-                  class="section-title !text-[#000] min-w-[150px] pos-system-title"
-                  data-key="ourGoalTitle"
-                >
-                  Our goal
-                </p>
-                <h3
-                  class="pos-system-text max-w-[900px] text-[60px] mt-[30px] text-[#9F9F9FFF] max-lg:text-[40px] max-sm:text-[25px]"
-                  data-key="ourGoalDescription"
-                >
-                  Provide an easy and quick way to pay, tip, and leave feedback
-                  with just a QR code!
-                </h3>
-              </div>
+                <source src="../assets/gifs/rmbg.mp4" type="video/mp4" />
+              </video>
+              <video
+                class="absolute ellipse-gif-mobile !touch-none max-sm:top-[33vh] max-w-[550px] hidden max-lg:block max-md:max-w-[400px] max-sm:max-w-[235px]"
+                autoplay
+                muted
+                loop
+                playsinline
+                webkit-playsinline
+              >
+                <source src="../assets/gifs/rmbg.mp4" type="video/mp4" />
+              </video>
+              <p
+                class="section-title !text-[#000] min-w-[150px] pos-system-title"
+                data-key="ourGoalTitle"
+              >
+                Our goal
+              </p>
+              <h3
+                class="pos-system-text max-w-[900px] text-[60px] mt-[30px] text-[#9F9F9FFF] max-lg:text-[40px] max-sm:text-[25px]"
+                data-key="ourGoalDescription"
+              >
+                Provide an easy and quick way to pay, tip, and leave feedback
+                with just a QR code!
+              </h3>
             </div>
           </div>
         </div>
@@ -64,7 +63,7 @@ export const PosSystemsSection = () => {
                   </div>
                   <div class="max-sm:flex max-sm:justify-center">
                     <h2
-                      class="text-[50px] mt-[30px] pos-system-text-word max-lg:text-center max-md:text-[35px] max-sm:text-[25px] max-sm:max-w-[235px]"
+                      class="text-[50px] mt-[30px] pos-system-text-word opacity-0 max-lg:text-center max-md:text-[35px] max-sm:text-[25px] max-sm:max-w-[235px]"
                       data-key="supportAllPos"
                     >
                       We support all popular POS systems
@@ -105,6 +104,7 @@ export const PosSystemsSection = () => {
               </div>
             </div>
           </div>
+        </div>
       `;
       resolve("pos systems loaded");
     } else {

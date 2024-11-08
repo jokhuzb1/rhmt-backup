@@ -32,7 +32,7 @@ export const HeaderAnimation = () => {
           duration: 2,
           ease: "power4.out",
           scrollTrigger: {
-            trigger: HeaderSection || HeaderText,
+            trigger: HeaderSection,
             start: "top center",
             end: "bottom top",
           },
@@ -54,8 +54,9 @@ export const HeaderAnimation = () => {
         opacity: 0,
         duration: 0.8,
         delay: 0.2,
+        stagger: 0.1,
         scrollTrigger: {
-          trigger: header,
+          trigger: HeaderSection,
           start: "top 75%",
         },
         xPercent: -3,
@@ -66,8 +67,9 @@ export const HeaderAnimation = () => {
         opacity: 0,
         duration: 0.8,
         delay: 0.4,
+        stagger: 0.1,
         scrollTrigger: {
-          trigger: header,
+          trigger: HeaderSection,
           start: "top 75%",
         },
         xPercent: -6,
@@ -78,12 +80,75 @@ export const HeaderAnimation = () => {
         opacity: 0,
         duration: 0.8,
         delay: 0.8,
+        stagger: 0.1,
         scrollTrigger: {
-          trigger: header,
+          trigger: HeaderSection,
           start: "top 75%",
         },
         xPercent: -9,
       });
+
+      /* NAVBAR */
+      const logo = document.querySelector(".logo");
+      const dropdownButtons = document.querySelectorAll(".dropdown-button");
+      const BurgerIcon = document.querySelector(".burger-icon");
+      gsap.fromTo(
+        logo,
+        {
+          opacity: 0,
+          scale: 0.7,
+        },
+        {
+          scale: 1,
+          opacity: 1,
+          duration: 0.8,
+          delay: 0.5,
+          stagger: 0.1,
+          scrollTrigger: {
+            trigger: HeaderSection,
+            start: "top bottom",
+          },
+        }
+      );
+      dropdownButtons.forEach((dropdownButton) => {
+        gsap.fromTo(
+          dropdownButton,
+          {
+            opacity: 0,
+            scale: 0.8,
+          },
+          {
+            scale: 1,
+            opacity: 1,
+            duration: 0.8,
+            delay: 0.5,
+            stagger: 0.1,
+            scrollTrigger: {
+              trigger: HeaderSection,
+              start: "top bottom",
+            },
+          }
+        );
+      });
+
+      gsap.fromTo(
+        BurgerIcon,
+        {
+          scale: 0.8,
+          opacity: 0,
+        },
+        {
+          scale: 1,
+          opacity: 1,
+          duration: 0.8,
+          delay: 0.5,
+          stagger: 0.1,
+          scrollTrigger: {
+            trigger: HeaderSection,
+            start: "top bottom",
+          },
+        }
+      );
 
       resolve("Header animation is ready");
     } catch (err) {
