@@ -87,7 +87,12 @@ export const InteractWithDom = async () => {
       details?.[`${field}_${currentLang}`] || "en";
 
     const renderCategories = (data) => {
-      faqButtonsContainer.innerHTML = ""; // Clear the container before rendering new buttons
+      if (!faqButtonsContainer) {
+        console.error("faqButtonsContainer not found in the DOM.");
+        return;
+      }
+
+      faqButtonsContainer.innerHTML = "";
 
       data.forEach((category, index) => {
         const button = document.createElement("button");
@@ -108,7 +113,11 @@ export const InteractWithDom = async () => {
     };
 
     const renderFAQContent = (category) => {
-      faqContentContainer.innerHTML = "";
+      if (!faqContentContainer) {
+        console.error("faqContentContainer not found in the DOM.");
+        return;
+      }
+      faqContentContainer.innerHTML = contentData;
       if (!category?.items) return;
 
       category.items.forEach((details, index) => {
