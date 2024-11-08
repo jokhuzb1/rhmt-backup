@@ -21,17 +21,6 @@
   }
 }
 
-@keyframes transitionLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(15px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
 .scroll-down-button {
   position: relative;
   animation: jumpInfinite 1.5s infinite;
@@ -82,6 +71,57 @@ section {
 
 .explore-btn {
   animation-delay: 0.3s;
+}
+
+/* .header-img-1,
+.header-img-2,
+.header-img-3 {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.header-img-1 {
+  animation: slideIn1 0.8s ease forwards 0.2s;
+}
+
+.header-img-2 {
+  animation: slideIn2 0.8s ease forwards 0.4s;
+}
+
+.header-img-3 {
+  transform: translateX(-150%);
+  animation: slideIn3 0.8s ease forwards 0.8s;
+} */
+
+@keyframes slideIn1 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideIn2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-40%);
+  }
+}
+
+@keyframes slideIn3 {
+  0% {
+    transform: translateX(-150%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-70%);
+    opacity: 1;
+  }
 }
 
 .pos-system-right-content img {
@@ -138,13 +178,21 @@ section {
 .pos-system-right-content.active .pos-system-button {
   animation: popUp 0.3s ease forwards 0.9s;
 }
+@keyframes transitionLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 .faq-section.active .faq-title,
 .faq-section.active h2,
 .faq-section.active .select-btn,
-.faq-section.active details,
-.footer.active p,
-.footer.active a {
+.faq-section.active details {
   animation: transitionLeft 0.5s ease forwards;
 }
 

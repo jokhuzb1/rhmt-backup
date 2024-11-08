@@ -13,11 +13,10 @@ export const FaqAnimation = () => {
       gsap.fromTo(
         faqSection,
         {
-          className: "mt-[450px] z-[5] relative max-md:mt-[100px] faq-section",
+          className: "z-[5] relative faq-section",
         },
         {
-          className:
-            "mt-[450px] z-[5] relative max-md:mt-[100px] faq-section active",
+          className: "z-[5] relative faq-section active",
           stagger: 0.5,
           duration: 3,
           ease: "power4.out",
