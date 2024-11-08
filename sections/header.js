@@ -7,7 +7,9 @@ export const HeaderSection = () => {
     if (header) {
       header.innerHTML = html`
         <div class="max-lg:hidden">
-          <div class="absolute left-0 top-[280px] w-max flex items-center">
+          <div
+            class="absolute left-1 top-[280px]  flex items-center justify-center"
+          >
             <img
               src="./assets/icons/header-img-left-1.svg"
               alt="Illustration"
@@ -35,7 +37,7 @@ export const HeaderSection = () => {
               style="height: 100%"
             >
               <h1
-                class="text-[58px] max-w-[474px] mr-[200px] z-[2] header-text max-lg:text-center max-lg:max-w-full max-lg:mr-0 max-md:text-[40px] max-sm:text-[30px]"
+                class="text-[58px] max-w-[474px] mr-[200px] z-[2] header-text  max-lg:text-center max-lg:max-w-full max-lg:mr-0 max-md:text-[40px] max-sm:text-[30px]"
                 data-key="headerTitle"
               >
                 Pay the Bill, Leave Reviews and Tips via QR Code Now!

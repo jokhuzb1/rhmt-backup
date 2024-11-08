@@ -7,7 +7,7 @@ export const PayReviewSection = () => {
     if (payReview) {
       payReview.innerHTML = html`
         <div
-          class="container-pay-review  flex flex-col items-center justify-between !py-[65px] !h-[100vh]    overflow-hidden w-full opacity-0"
+          class="container-pay-review  flex flex-col items-center justify-between  !h-[100vh]    overflow-hidden w-full opacity-0"
         >
           <div
             class="right-illustrator  fixed opacity-0 -z-[99] top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%]"
@@ -17,9 +17,7 @@ export const PayReviewSection = () => {
               alt="Right Illustrator"
             />
           </div>
-          <div
-            class="top-divs flex gap-[10px] z-[999]   !h-[15vh] -translate-x-[2000px]"
-          >
+          <div class="top-divs flex  z-[999]   !h-[15vh] -translate-x-[1500px]">
             <img
               src="/assets/payment-images/img_0.png"
               alt="animated payment img"
@@ -51,7 +49,7 @@ export const PayReviewSection = () => {
             />
           </div>
           <div
-            class="bottom-divs flex gap-[10px] z-[999]   !h-[15vh] translate-x-[2000px]"
+            class="bottom-divs flex z-[999] max-[1200px]:w-full  !h-[15vh] translate-x-[1500px]"
           >
             <img
               src="/assets/payment-images/img_4.png"

@@ -8,16 +8,27 @@ export const BusinessAdvantages = () => {
       advantages.innerHTML = html`
         <div class="card-wrapped">
           <section id="horizontal-scoll">
-            <span class="ad-title">Advantages</span>
+            <span class="ad-title" data-key="advantagesTitleSpan"
+              >Advantages</span
+            >
             <div class="horizontal-scoll-wrapper">
               <div class="horizontal">
                 <div>
                   <div class="card">
                     <h2>01</h2>
-                    <img src="../menu.png" alt="test" class="image" />
+                    <!-- <img src="../menu.png" alt="test" class="image" /> -->
+                    <video
+                      src="../assets/business/order.mp4"
+                      class="image"
+                      autoplay
+                      loop
+                      muted
+                    ></video>
                     <div class="content-text">
-                      <h2>Instant Online Orders</h2>
-                      <p>
+                      <h2 data-key="advantagesTitleInstant">
+                        Instant Online Orders
+                      </h2>
+                      <p data-key="advantagesTitleOnline">
                         The Rahmat online menu allows visitors to your
                         establishment to choose the desired dish and place an
                         order on their own, without waiting for the waiter.
@@ -28,20 +39,39 @@ export const BusinessAdvantages = () => {
                 <div>
                   <div class="card">
                     <h2>02</h2>
-                    <img src="../menu.png" alt="test" class="image" />
+                    <video
+                      src="../assets/business/noapplication.mp4"
+                      class="image"
+                      autoplay
+                      loop
+                      muted
+                    ></video>
                     <div class="content-text">
-                      <h2>No need application</h2>
-                      <p>No need to install a separate application.</p>
+                      <h2 data-key="advantagesTitleApplication">
+                        No need application
+                      </h2>
+                      <p data-key="advantagesTitleInstall">
+                        No need to install a separate application.
+                      </p>
                     </div>
                   </div>
                 </div>
                 <div>
                   <div class="card">
-                    <h2>03</h2>
-                    <img src="../menu.png" alt="test" class="image" />
+                    <h2 class="top">03</h2>
+                    <video
+                      src="../assets/business/advantages.mp4"
+                      class="image"
+                      autoplay
+                      loop
+                      muted
+                    ></video>
                     <div class="content-text">
-                      <h2>Seamless Ordering and Tipping</h2>
-                      <p>
+                      <h2 data-key="advantagesTitleSeamless">
+                        Seamless Ordering and Tipping
+                      </h2>
+                      <p data-key="advantagesTitleBuilt">
+
                         The built-in QR payment service RAHMAT will make it
                         possible to pay for an order and tip without a terminal.
                         Leave a royal review!
@@ -51,11 +81,19 @@ export const BusinessAdvantages = () => {
                 </div>
                 <div>
                   <div class="card">
-                    <h2>04</h2>
-                    <img src="../menu.png" alt="test" class="image" />
+                    <h2 class="top">04</h2>
+                    <video
+                      src="../assets/business/scheme.mp4"
+                      class="image"
+                      autoplay
+                      loop
+                      muted
+                    ></video>
+
                     <div class="content-text">
-                      <h2>Fast Sales Boost</h2>
-                      <p>
+                      <h2 data-key="advantagesTitleFast">Fast Sales Boost</h2>
+                      <p data-key="advantagesTitleIncreases">
+
                         Increases sales volumes, thanks to fast customer
                         service.
                       </p>
@@ -64,11 +102,18 @@ export const BusinessAdvantages = () => {
                 </div>
                 <div>
                   <div class="card">
-                    <h2>05</h2>
-                    <img src="../menu.png" alt="test" class="image" />
-                    <div class="content-text">
-                      <h2>Easy Menu Updates</h2>
-                      <p>
+
+                    <h2 class="top">05</h2>
+                    <video
+                      src="../assets/business/5.mp4"
+                      class="image "
+                      autoplay
+                      loop
+                      muted
+                    ></video>
+                    <div class="content-text top">
+                      <h2 data-key="advantagesTitleEasy">Easy Menu Updates</h2>
+                      <p data-key="advantagesTitleAlways">
                         Always up-to-date menu, easy change of the list of
                         dishes.
                       </p>
@@ -78,10 +123,18 @@ export const BusinessAdvantages = () => {
                 <div>
                   <div class="card">
                     <h2>06</h2>
-                    <img src="../menu.png" alt="test" class="image" />
+                    <video
+                      src="../assets/business/6.mp4"
+                      class="image"
+                      autoplay
+                      loop
+                      muted
+                    ></video>
                     <div class="content-text">
-                      <h2>Save your time!</h2>
-                      <p>Everything will be quick and easy!</p>
+                      <h2 data-key="advantagesTitleSave">Save your time!</h2>
+                      <p data-key="advantagesTitleEverything">
+                        Everything will be quick and easy!
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -96,10 +149,10 @@ export const BusinessAdvantages = () => {
 
       let horizontalSection = document.querySelector(".horizontal");
 
-      console.log(horizontalSection.scrollWidth);
+      // console.log(horizontalSection.scrollWidth);
 
-      gsap.to(".horizontal", {
-        x: () => horizontalSection.scrollWidth * -1,
+      gsap.to(horizontalSection, {
+        x: () => horizontalSection.scrollWidth * -1.1,
         xPercent: 100,
         scrollTrigger: {
           trigger: ".horizontal",

@@ -6,8 +6,6 @@ export const AdvantagesAnimation = () => {
         document.querySelector(".advantages-2"),
         document.querySelector(".advantages-3"),
       ];
-      const advantagesItem = document.querySelectorAll(".advantages-item");
-      const advantagesScroll = document.querySelector(".advantages-scroll");
       const button = document.getElementById("scrollToNextButton");
       const sections = document.querySelectorAll(".advantages-details");
 
@@ -53,25 +51,13 @@ export const AdvantagesAnimation = () => {
 
       advantages.forEach(animateAdvantages);
 
-      gsap.to(advantagesItem, {
-        xPercent: -100 * (advantagesItem.length - 0.7),
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".advantages-scroll",
-          pin: true,
-          scrub: 1,
-          snap: 1 / (advantagesItem.length - 1),
-          end: () => "+=" + (advantagesScroll.offsetWidth + 200),
-        },
-      });
-
       let currentSectionIndex = 0;
 
       function scrollToNextSection() {
         if (currentSectionIndex < sections.length - 1) {
           currentSectionIndex++;
         } else {
-          currentSectionIndex = sections.length - 1; // Prevent going beyond
+          currentSectionIndex = sections.length - 1;
         }
         sections[currentSectionIndex].scrollIntoView({
           behavior: "smooth",

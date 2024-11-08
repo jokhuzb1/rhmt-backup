@@ -1,9 +1,13 @@
 .logo {
-  animation: popUp 0.8s ease;
+  opacity: 0;
+  transform: scale(0.7);
+  /* animation: popUp 0.8s ease; */
 }
 #navbar {
-  position: fixed;
-  width: 100%;
+  margin: 6px auto;
+  position: sticky;
+  margin-left: 1%;
+  width: 98%;
   z-index: 999;
 }
 #dropdownMenu {
@@ -17,18 +21,17 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(1.9px);
   -webkit-backdrop-filter: blur(6.9px);
-  border: 1px solid rgba(255, 255, 255, 0.97);
+  border: 1px solid rgb(255, 255, 255);
   opacity: 0;
   animation: fadeUp 0.2s ease forwards;
 }
 .navbar {
   background: rgba(255, 255, 255, 0);
-  border-radius: 9px;
-  margin-top: 0.4rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(1.7px);
-  -webkit-backdrop-filter: blur(1.7px);
-  border: 1px solid rgba(224, 211, 211, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.24);
 }
 @keyframes fadeUp {
   0% {
@@ -41,8 +44,8 @@
   }
 }
 .nav-buttons button:nth-child(1) {
-  opacity: 0;
-  animation: popUp 0.8s ease forwards 0.1s;
+  /* opacity: 0; */
+  /* animation: popUp 0.8s ease forwards 0.1s; */
 }
 .proj {
   margin-left: 1rem;
@@ -51,24 +54,29 @@
 .nav-buttons button:nth-child(2) {
   transform: scale(0.8);
   opacity: 0;
-  animation: popUp 0.8s ease forwards 0.3s;
+  /* animation: popUp 0.8s ease forwards 0.3s; */
 }
 
 .dropdown-button {
   transform: scale(0.8);
   opacity: 0;
-  animation: popUp 0.8s ease forwards 0.4s;
+  /* animation: popUp 0.8s ease forwards 0.4s; */
 }
 
 .burger-icon {
   transform: scale(0.8);
   opacity: 0;
-  animation: popUp 0.8s ease forwards 0.5s;
+  /* animation: popUp 0.8s ease forwards 0.5s; */
 }
 
 .nav-links a {
   position: relative;
   transition: 0.3s ease;
+}
+
+.nav-links li {
+  position: relative;
+  width: 100%;
 }
 
 .nav-links li:nth-child(1) {
@@ -102,7 +110,8 @@
 .nav-links a:after {
   content: "";
   position: absolute;
-  top: 6px;
+  top: 50%;
+  transform: translateY(-50%);
   left: -15px;
   width: 8px;
   height: 8px;
@@ -126,7 +135,7 @@
   box-shadow: 0px 4px 10px 0px #0000001a;
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.6);
   width: 500px;
   right: 15px;
   top: 15px;
@@ -162,14 +171,14 @@
   transform: translateX(5%);
 }
 
-.main-menu .pop-up-animation {
+/* .main-menu .pop-up-animation {
   transform: scale(0.7);
   opacity: 0;
-}
+} */
 
-.main-menu.active .pop-up-animation {
+/* .main-menu.active .pop-up-animation {
   animation: popUp 0.5s ease forwards 0.6s;
-}
+} */
 
 .main-menu.active .question-links a {
   transform: scale(0.7);
@@ -274,4 +283,44 @@
 .navbar.active .nav-links-drop-down {
   display: block;
   margin-right: 134px;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  padding: 0.2rem;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Default text and navbar colors */
+body {
+  background-color: white;
+  color: black;
+}
+
+/* Navbar styles when background is black */
+.navbar.white-theme {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Navbar styles when background is black */
+.navbar.black-theme {
+  background-color: #000;
+  color: #fff;
+}
+
+.section {
+  padding: 50px;
+}
+
+.white-bg {
+  background-color: #fff;
+}
+
+.black-bg {
+  background-color: #000;
+  color: white;
 }

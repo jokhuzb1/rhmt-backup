@@ -1,34 +1,42 @@
 export const FooterAnimation = () => {
   return new Promise((resolve, reject) => {
     try {
-      // Safely query the footer section
-      const footerSection = document.querySelector(".footer");
+      const footerTextElementsP = document.querySelectorAll(".footer p");
+      const footerTextElementsA = document.querySelectorAll(".footer a");
+      const both = [footerTextElementsA, footerTextElementsP];
 
-      if (!footerSection) {
-        console.warn("Footer section not found.");
-        return resolve("Footer animation skipped due to missing element.");
-      }
+      const timeline = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#footer",
+          start: "50% bottom",
+          end: "50% 70%",
+          scrub: true,
+          toggleActions: "play none none reset",
+        },
+      });
 
-      // Apply GSAP animation
-      gsap.fromTo(
-        footerSection,
-        { className: "footer" },
-        {
-          className: "footer active",
-          stagger: 0.5,
-          duration: 3,
-          ease: "power4.out",
-          scrollTrigger: {
-            trigger: footerSection,
-            start: "top bottom",
-            end: "bottom top",
-            scrub: true,
-            toggleActions: "restart none none none",
-          },
-        }
-      );
+      both.forEach((footerElement) => {
+        footerElement.forEach((i, idx) => {
+          timeline.fromTo(
+            i,
+            {
+              opacity: 0,
+              scale: 0.7,
+              y: 20, // Starting with a slight vertical offset
+            },
+            {
+              scale: 1.05, // Scale slightly above 1 for a subtle pulse effect
+              opacity: 1,
+              y: 0, // Moves to the final position
+              duration: 2, // Adjusted duration for a slower effect
+              ease: "power2.out",
+            },
+            idx * 0.25 // Increased stagger for smoother element spacing
+          );
+        });
+      });
 
-      resolve("Footer animation is ready");
+      resolve("Footer animation is ready with added effects");
     } catch (err) {
       console.error("Error in Footer animation:", err);
       reject(err);

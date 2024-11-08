@@ -6,7 +6,7 @@ export const FaqSection = () => {
 
     if (faq) {
       faq.innerHTML = html`
-        <div class="container mt-6 min-h-[60vh]">
+        <div class="container min-h-[60vh]">
           <div class="max-md:flex max-md:justify-center">
             <p
               class="section-title !text-[#010101] min-w-[150px] w-max faq-title"
