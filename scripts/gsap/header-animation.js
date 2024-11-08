@@ -17,11 +17,6 @@ export const HeaderAnimation = () => {
 
       const headerTextSpan = document.querySelectorAll(".header-text-word");
 
-      if (headerTextSpan.length === 0) {
-        console.warn("No words found to animate.");
-        return resolve("Header animation skipped due to missing spans.");
-      }
-
       gsap.fromTo(
         headerTextSpan,
         { y: 100, opacity: 0 },
