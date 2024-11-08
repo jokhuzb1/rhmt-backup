@@ -11,7 +11,6 @@ export const FooterAnimation = () => {
           start: "50% bottom",
           end: "50% 70%",
           scrub: true,
-          markers: true,
           toggleActions: "play none none reset",
         },
       });
