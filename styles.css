@@ -322,6 +322,10 @@ img {
     max-width: 100%;
     justify-content: space-between;
   }
+  .right-illustrator img,
+  .left-illustrator img {
+    height: 35vh !important;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -343,8 +347,31 @@ img {
     height: 40vh !important;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     display: grid;
-    column-gap: 75px;
-    row-gap: 30px;
+  }
+  .top-div:nth-of-type(1) {
+    transform: translateX(20px);
+  }
+  .top-div:nth-of-type(2) {
+    transform: translateX(-20px);
+  }
+  .top-div:nth-of-type(3) {
+    transform: translateX(-60px);
+  }
+  .top-div:nth-of-type(4) {
+    transform: translateX(60px);
+  }
+
+  .bottom-div:nth-of-type(1) {
+    transform: translateX(-60px);
+  }
+  .bottom-div:nth-of-type(2) {
+    transform: translateX(60px);
+  }
+  .bottom-div:nth-of-type(3) {
+    transform: translateX(20px);
+  }
+  .bottom-div:nth-of-type(4) {
+    transform: translateX(-20px);
   }
   .bottom-div,
   .top-div {
@@ -353,18 +380,76 @@ img {
     margin: 0 auto;
   }
   .main-div {
-    height: 35vh;
+    height: 45vh;
+  }
+  .right-illustrator img,
+  .left-illustrator img {
+    height: 30vh !important;
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 450px) {
   .bottom-divs,
   .top-divs {
-    height: 10vh;
+    height: 20vh;
   }
 
-  .bottom-divs {
-    margin-bottom: 40px;
+  .top-div:nth-of-type(1) {
+    transform: translateX(10px);
+  }
+  .top-div:nth-of-type(2) {
+    transform: translateX(-10px);
+  }
+  .top-div:nth-of-type(3) {
+    transform: translateX(-30px);
+  }
+  .top-div:nth-of-type(4) {
+    transform: translateX(30px);
+  }
+
+  .bottom-div:nth-of-type(1) {
+    transform: translateX(-30px);
+  }
+  .bottom-div:nth-of-type(2) {
+    transform: translateX(30px);
+  }
+  .bottom-div:nth-of-type(3) {
+    transform: translateX(10px);
+  }
+  .bottom-div:nth-of-type(4) {
+    transform: translateX(-10px);
+  }
+
+  .main-div {
+    height: 35vh;
+  }
+
+  .right-illustrator img,
+  .left-illustrator img {
+    height: 20vh !important;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .container-pay-review {
+    padding: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .bottom-divs,
+  .top-divs {
+    height: 25vh !important;
+    grid-template-columns: 2;
+    gap: 0px;
+    padding: 0px;
+  }
+
+  .bottom-div,
+  .top-div {
+    transform: translateX(0px) !important;
+  }
+  .main-div {
+    height: 30vh !important;
   }
 }
 

@@ -1,4 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 .overlay-text,
 .texts-for-video,
@@ -16,15 +22,15 @@
 }
 
 .overlay-text {
-  font-size: 2rem; /* Base font size */
+  font-size: 2rem; 
   padding: 2rem;
   text-align: start;
 }
 .text-bottom-right > p {
-  font-size: 1.5rem; /* Base font size */
+  font-size: 1.5rem; 
 }
 
-/* Default Positions */
+
 .text-top-left {
   top: 1rem;
   left: 1rem;
@@ -42,7 +48,7 @@
   right: 1rem;
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 768px) {
   .overlay-text {
     font-size: 1.6rem;
@@ -50,12 +56,14 @@
   .overlay-text > p {
     font-size: 1rem;
   }
+
+
   .text-top-left,
   .text-top-right {
     display: none;
   }
 
-  /* Center bottom-left at the top with 100% width */
+
   .text-bottom-left {
     top: 1rem;
     left: 0;
@@ -121,7 +129,7 @@
   padding: 0 5px;
 }
 
-/* Card Styles */
+
 .card-wrapped {
   position: relative;
   padding: 20px 0;
@@ -148,6 +156,7 @@
 .card > video {
   max-height: 300px;
 }
+
 .card > h2 {
   font-size: 1.2em;
   font-weight: 400;
@@ -232,7 +241,7 @@
     font-size: 0.85rem; /* Responsive font size */
   }
 
-  .ad-title {
+  jahongirOka, [09.11.2024 16: 00] .ad-title {
     top: 6rem;
     font-size: 1.2rem; /* Responsive font size */
     padding: 0.3rem 1.2rem;

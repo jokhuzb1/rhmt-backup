@@ -53,7 +53,9 @@ export const HowItWorksAnimation = () => {
         ];
 
         textsToShow.forEach((text) => {
-          gsap.to(text, { opacity: 1, duration: 0.5 }); // Show active corner texts
+          if (text) {
+            gsap.to(text, { opacity: 1, duration: 0.5 }); // Show active corner texts
+          }
         });
       }
 
