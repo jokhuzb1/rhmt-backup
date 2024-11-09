@@ -1,11 +1,6 @@
 export const AdvantagesAnimation = () => {
   return new Promise(async (resolve, reject) => {
     try {
-      const advantages = [
-        document.querySelector(".advantages-1"),
-        document.querySelector(".advantages-2"),
-        document.querySelector(".advantages-3"),
-      ];
       const button = document.getElementById("scrollToNextButton");
       const sections = document.querySelectorAll(".advantages-details");
 
@@ -24,11 +19,15 @@ export const AdvantagesAnimation = () => {
         end: "bottom bottom",
         pin: ".advantages-left",
         animation,
+        marker: true,
         scrub: 1,
-        onEnter: () => navbar.classList.add("active"),
       });
-
-      const animateAdvantages = (element) => {
+      const advantages = [
+        document.querySelector(".advantages-1"),
+        document.querySelector(".advantages-2"),
+        document.querySelector(".advantages-3"),
+      ];
+      advantages.forEach((element) => {
         gsap.fromTo(
           element,
           { y: 300, opacity: 0 },
@@ -47,9 +46,7 @@ export const AdvantagesAnimation = () => {
             },
           }
         );
-      };
-
-      advantages.forEach(animateAdvantages);
+      });
 
       let currentSectionIndex = 0;
 

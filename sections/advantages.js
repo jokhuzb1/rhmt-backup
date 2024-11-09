@@ -33,7 +33,6 @@ export const AdvantagesSection = () => {
                     />
                   </video>
                   <div class="flex items-center z-[2]">
-                    <!-- Add data-key for translation -->
                     <h2
                       class="text-[50px] text-[#fff]"
                       data-key="advantagesFor"
@@ -43,7 +42,6 @@ export const AdvantagesSection = () => {
                     <div
                       class="flex flex-col ml-[20px] h-[65px] relative overflow-hidden"
                     >
-                      <!-- Add data-key for dynamic business, employees, and customers text -->
                       <span
                         class="text-[#fff] text-[50px] relative"
                         data-key="forBusiness"
