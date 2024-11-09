@@ -58,7 +58,9 @@ export const BusinessAdvantages = () => {
                 </div>
                 <div>
                   <div class="card">
-                    <h2 class="top">03</h2>
+                    <div class="content-text">
+                      <h2 class="top">03</h2>
+                    </div>
                     <video
                       src="../assets/business/advantages.mp4"
                       class="image"
@@ -71,7 +73,6 @@ export const BusinessAdvantages = () => {
                         Seamless Ordering and Tipping
                       </h2>
                       <p data-key="advantagesTitleBuilt">
-
                         The built-in QR payment service RAHMAT will make it
                         possible to pay for an order and tip without a terminal.
                         Leave a royal review!
@@ -93,7 +94,6 @@ export const BusinessAdvantages = () => {
                     <div class="content-text">
                       <h2 data-key="advantagesTitleFast">Fast Sales Boost</h2>
                       <p data-key="advantagesTitleIncreases">
-
                         Increases sales volumes, thanks to fast customer
                         service.
                       </p>
@@ -102,7 +102,6 @@ export const BusinessAdvantages = () => {
                 </div>
                 <div>
                   <div class="card">
-
                     <h2 class="top">05</h2>
                     <video
                       src="../assets/business/5.mp4"

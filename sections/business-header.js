@@ -35,7 +35,7 @@ export const HeaderSection = () => {
               style="height: 100%"
             >
               <h1
-                class="text-[58px] max-w-[474px] mr-[200px] z-[2] header-text max-lg:text-center max-lg:max-w-full max-lg:mr-0 max-md:text-[40px] max-sm:text-[30px]"
+                class="text-[58px] max-w-[474px] mr-[200px]  z-[2] header-text max-lg:text-center max-lg:max-w-full max-lg:mr-0 max-md:text-[40px] max-sm:text-[30px]"
                 data-key="businessHeaderTitle"
               >
                 Tomorrow of the online menu has arrived today with us!
