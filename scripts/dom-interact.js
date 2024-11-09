@@ -114,7 +114,6 @@ export const InteractWithDom = async () => {
         console.error("faqContentContainer not found in the DOM.");
         return;
       }
-      faqContentContainer.innerHTML = contentData;
       if (!category?.items) return;
 
       category.items.forEach((details, index) => {
