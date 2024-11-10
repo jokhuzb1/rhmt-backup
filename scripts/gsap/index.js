@@ -4,7 +4,6 @@ export const Gsap = async () => {
       console.log("Initializing GSAP animations...");
 
       const { PayReviewAnimation } = await import("./pay-review-animation.js");
-      const { applyGSAPAnimations } = await import("./apply-gsap-animation.js");
       const { AdvantagesAnimation } = await import("./advantages-animation.js");
       const { PosSystemsAnimation } = await import(
         "./pos-systems-animation.js"
@@ -34,7 +33,6 @@ export const Gsap = async () => {
       await HowItWorksAnimation();
       await PartnersAnimation();
       await PayReviewAnimation();
-      await applyGSAPAnimations();
       await FooterAnimation();
       resolve("GSAP animations ready");
     } catch (err) {
