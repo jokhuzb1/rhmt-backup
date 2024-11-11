@@ -11,7 +11,9 @@ export const NavbarSection = () => {
             <div
               class="flex justify-between items-start my-[10px] max-md:mt-[10px]"
             >
-              <img src="/assets/logo.svg" alt="Logo" class="logo" />
+              <a href="/" class="cursor-pointer">
+                <img src="/assets/logo.svg" alt="Logo" class="logo" />
+              </a>
               <div class="flex items-start">
                 <div class="nav-links-drop-down max-lg:!hidden">
                   <button
@@ -72,37 +74,6 @@ export const NavbarSection = () => {
                     </li>
                   </ul>
                 </div>
-
-                <!-- <ul class="nav-links mr-[134px] max-lg:!hidden">
-                  <li>
-                    <a
-                      href="/"
-                      class="text-[#888888] text-[14px] leading-[18px] active"
-                      data-key="projects"
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      href="/"
-                      class="text-[#888888] text-[14px] leading-[18px]"
-                      data-key="payments"
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      href="/"
-                      class="text-[#888888] text-[14px] leading-[18px]"
-                      data-key="onlineMenu"
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      href="/"
-                      class="text-[#888888] text-[14px] leading-[18px]"
-                      data-key="delivery"
-                    ></a>
-                  </li>
-                </ul> -->
                 <div
                   class="flex items-center gap-[20px] mr-[60px] nav-buttons max-lg:hidden"
                 >
@@ -114,7 +85,7 @@ export const NavbarSection = () => {
                       class="chevron chevronIcon"
                     />
                   </button>
-                  <a href="#contact-us">
+                  <a href="#contacts">
                     <button class="btn" data-key="becomePartner">
                       Become a partner
                     </button>
@@ -214,12 +185,15 @@ export const NavbarSection = () => {
               >
             </a>
           </div>
-          <h3
-            class="text-[40px] max-sm:text-[20px] pl-[36px] max-sm:pl-0 mt-[36px] pop-up-animation"
-            data-key="rahmatBusiness"
-          >
-            Rahmat business
-          </h3>
+          <a href="/business.html" class="cursor-pointer">
+            <h3
+              class="text-[40px] max-sm:text-[20px] pl-[36px] max-sm:pl-0 mt-[36px] pop-up-animation"
+              data-key="rahmatBusiness"
+            >
+              Rahmat business
+            </h3>
+          </a>
+
           <div
             class="flex items-center gap-[32px] pl-[36px] max-sm:pl-0 mt-[20px] question-links"
           >
