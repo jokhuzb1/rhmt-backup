@@ -222,22 +222,53 @@ img {
   bottom: 1rem;
   right: 1rem;
 }
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .overlay-text {
+@media (max-width: 1251px) {
+  .self-container > div {
+    padding: 0.6rem;
+    width: 100%;
+    max-width: 85%;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  .text-content > h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: start;
+  }
+  .header-text {
+    font-size: 2.8rem;
+    text-align: right;
+  }
+  .overlay-text > h2 {
     font-size: 1.6rem;
   }
   .overlay-text > p {
-    font-size: 1rem;
+    font-size: 0.6rem;
   }
-  /* Hide top elements */
+  .text-bottom-right > p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: -0.8rem;
+  }
+}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .text-bottom-right {
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    transform: none;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+  }
   .text-top-left,
   .text-top-right {
     display: none;
   }
 
-  /* Center bottom-left at the top with 100% width */
   .text-bottom-left {
     top: 1rem;
     left: 0;
@@ -251,10 +282,10 @@ img {
   }
 
   .text-bottom-right > p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 300;
-    letter-spacing: 1px;
     text-align: center;
+    margin-bottom: -0.8rem;
   }
 }
 .container-pay-review {
