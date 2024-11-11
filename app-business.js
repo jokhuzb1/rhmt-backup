@@ -8,15 +8,17 @@ import { BusinessAdvantages } from "./sections/business-advantages.js";
 import { SelfService } from "./sections/self-service.js";
 import { BusinessFaqSection } from "./sections/business-faq.js";
 import { HeaderAnimation } from "./scripts/gsap/header-animation.js";
+import { HeaderSection } from "./sections/business-header.js";
+import { InteractWithDom } from "./scripts/dom-interact.js";
+import { MultiLanguage } from "./scripts/multi-lang.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
   try {
-    const { InteractWithDom } = await import("./scripts/dom-interact.js");
-    const { MultiLanguage } = await import("./scripts/multi-lang.js");
     const { starLoader } = await import("./scripts/gsap/start-loader.js");
 
     const functions = [
       NavbarSection,
+      HeaderSection,
       HowItWorksBusinessSection,
       BusinessAdvantages,
       SelfService,
@@ -28,6 +30,18 @@ document.addEventListener("DOMContentLoaded", async () => {
       FooterAnimation,
       InteractWithDom,
     ];
+    // HeaderSection();
+    // NavbarSection();
+    // HowItWorksBusinessSection();
+    // BusinessAdvantages();
+    // SelfService();
+    // // BusinessFaqSection()
+    // FooterSection();
+    // HowItWorksBusinessAnimation();
+    // HeaderAnimation();
+    // MultiLanguage();
+    // FooterAnimation();
+    // InteractWithDom();
 
     const totalFunctions = functions.length;
     await starLoader(totalFunctions, functions);
