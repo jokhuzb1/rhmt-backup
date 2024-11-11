@@ -66,7 +66,6 @@
     "telegramLink": "Telegram Bot",
     "socialsTitle": "Socials",
     "footerCopyright": "© 2024 Rahmatpay. All rights reserved.",
-    "snackbarText": "✅ Sent successfully",
     "scanQr": "Scan QR-code",
     "scanQrHeading": "Scan the QR-code <br /> to <span class=\"text-[#888888]\">Pay Securely</span>",
     "scanQrInstruction": "Simply point your phone's camera at the QR code to scan and complete your payment instantly. Enjoy a fast, secure, and hassle-free transaction experience.",
@@ -112,12 +111,11 @@
     "howItWorksBusinessYou": " You can leave a review upon the waiter's request.",
     "howItWorksBusinessScan": "Scan QR-code",
     "howItWorksBusinessMenu": "Menu",
-    "SelfService":"Self-service information terminal",
-    "SelfServiceInformation":"Self-service information terminal",
-    "SelfServiceInfoterminal":"Infoterminal is a hardware and software complex that ensuresthe acceptance of payments from individuals.",
-   " SelfServiceHow":"How it works",
-   "SelfServiceGuests" :" Guests can browse the menu, place orders, and pay, all without waiting for a waiter. Payment and tipping are done directly through the Infoterminal."
-   
+    "SelfService": "Self-service information terminal",
+    "SelfServiceInformation": "Self-service information terminal",
+    "SelfServiceInfoterminal": "Infoterminal is a hardware and software complex that ensuresthe acceptance of payments from individuals.",
+    " SelfServiceHow": "How it works",
+    "SelfServiceGuests": " Guests can browse the menu, place orders, and pay, all without waiting for a waiter. Payment and tipping are done directly through the Infoterminal."
   },
   "ru": {
     "projects": "Проекты.",
@@ -186,7 +184,6 @@
     "telegramLink": "Телеграм Бот",
     "socialsTitle": "Социальные сети",
     "footerCopyright": "© 2024 Rahmatpay. Все права защищены.",
-    "snackbarText": "✅ Отправлено успешно",
     "scanQr": "Сканируйте QR-код",
     "scanQrHeading": "Сканируйте QR-код <br /> для <span class=\"text-[#888888]\">Безопасной Оплаты</span>",
     "scanQrInstruction": "Просто наведите камеру телефона на QR-код, чтобы сканировать и завершить оплату мгновенно. Наслаждайтесь быстрым, безопасным и удобным процессом оплаты.",
@@ -232,12 +229,11 @@
     "howItWorksBusinessYou": " Вы можете оставить отзыв по просьбе официанта.",
     "howItWorksBusinessScan": "Сканировать QR-код",
     "howItWorksBusinessMenu": " Меню",
-    "SelfService":"Информационный терминал самообслуживания",
-    "SelfServiceInformation":"Информационный терминал самообслуживания",
-    "SelfServiceInfoterminal":"Инфотерминал – аппаратно-программный комплекс, обеспечивающий прием платежей от физических лиц.",
-    "SelfServiceHow":" Как это работает",
-    "SelfServiceGuests" :" Гости могут просматривать меню, размещать заказы и оплачивать их, не дожидаясь официанта. Оплата и чаевые производятся непосредственно через Инфотерминал.."
-
+    "SelfService": "Информационный терминал самообслуживания",
+    "SelfServiceInformation": "Информационный терминал самообслуживания",
+    "SelfServiceInfoterminal": "Инфотерминал – аппаратно-программный комплекс, обеспечивающий прием платежей от физических лиц.",
+    "SelfServiceHow": " Как это работает",
+    "SelfServiceGuests": " Гости могут просматривать меню, размещать заказы и оплачивать их, не дожидаясь официанта. Оплата и чаевые производятся непосредственно через Инфотерминал.."
   },
   "uz": {
     "projects": "Loyihalar.",
@@ -306,7 +302,6 @@
     "telegramLink": "Telegram Bot",
     "socialsTitle": "Ijtimoiy tarmoqlar",
     "footerCopyright": "© 2024 Rahmatpay. Barcha huquqlar himoyalangan.",
-    "snackbarText": "✅ Muvaffaqiyatli jo'natildi",
     "scanQr": "QR-kodni skaner qiling",
     "scanQrHeading": "QR-kodni skaner qiling <br /> va <span class=\"text-[#888888]\">Xavfsiz To'lovni</span> amalga oshiring",
     "scanQrInstruction": "Telefoningiz kamerasi orqali QR-kodni skanerlab, to'lovingizni tez va oson bajaring. Tez, xavfsiz va qulay tranzaksiya tajribasidan bahramand bo'ling.",
@@ -351,11 +346,11 @@
     "howItWorksBusinessWaiter": "Ofitsiant sharh qoldirishni taklif qilishi mumkin.",
     "howItWorksBusinessYou": " Ofitsiantning iltimosiga binoan sharh qoldirishingiz mumkin.",
     "howItWorksBusinessScan": "QR-kodni skanerlang",
-     "howItWorksBusinessMenu": "Menyu",
-     "SelfService":"O'z-o'ziga xizmat ko'rsatish ma'lumot terminali",
-     "SelfServiceInformation":"O'z-o'ziga xizmat ko'rsatish ma'lumot terminali",
-     "SelfServiceInfoterminal":"Infoterminal - bu jismoniy shaxslardan to'lovlarni qabul qilish imkonini beruvchi apparat-dasturiy kompleks.",
-     "SelfServiceHow":" U qanday ishlaydi",
-     "SelfServiceGuests" :"Mehmonlar ofitsiantsiz menyuni ko'rib chiqishlari, buyurtma berishlari va to'lashlari mumkin. To'lov va to'lov to'g'ridan-to'g'ri Infoterminal orqali amalga oshiriladi."
+    "howItWorksBusinessMenu": "Menyu",
+    "SelfService": "O'z-o'ziga xizmat ko'rsatish ma'lumot terminali",
+    "SelfServiceInformation": "O'z-o'ziga xizmat ko'rsatish ma'lumot terminali",
+    "SelfServiceInfoterminal": "Infoterminal - bu jismoniy shaxslardan to'lovlarni qabul qilish imkonini beruvchi apparat-dasturiy kompleks.",
+    "SelfServiceHow": " U qanday ishlaydi",
+    "SelfServiceGuests": "Mehmonlar ofitsiantsiz menyuni ko'rib chiqishlari, buyurtma berishlari va to'lashlari mumkin. To'lov va to'lov to'g'ridan-to'g'ri Infoterminal orqali amalga oshiriladi."
   }
 }

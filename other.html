@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rahmat - оплата счета и чаевых в ресторанах и кафе</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.10/base.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.3.1/framer-motion.umd.js"></script>
+
+    <link rel="stylesheet" href="./input.css" />
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/button.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" class="w-full mt-[4px]"></nav>
+    <section id="contacts"></section>
+  </body>
+  <script>
+    const html = (strings, ...values) => strings.raw[0];
+
+    const Contacts = () => {
+      return new Promise((resolve, reject) => {
+        const contacts = document.getElementById("contacts");
+
+        if (contacts) {
+          contacts.innerHTML = html`
+            <div class="flex-container">
+              <div class="text-content">
+                <h2 data-key="ContactOne">Contact Us</h2>
+                <p data-key="ContactHear">
+                  We'd love to hear from you! Please fill out the form on the
+                  right or reach out to us via email or phone.
+                </p>
+                <p data-key="ContactOur">
+                  Our team is available to assist you with any inquiries or
+                  support you may need.
+                </p>
+              </div>
+              <div class="form-container">
+                <!-- Form will be injected here -->
+              </div>
+            </div>
+            <style>
+              /* General styles for the contact section */
+              #contacts {
+                padding: 30px;
+                background-color: #ffff; /* Light background for contrast */
+                border-radius: 8px; /* Rounded corners for the section */
+              }
+              .b24-form-shadow {
+                box-shadow: none !important;
+                -webkit-box-shadow: none !important;
+              }
+              .flex-container {
+                display: flex;
+                justify-content: center; /* Center the content horizontally */
+                align-items: center; /* Center items vertically */
+                flex-wrap: wrap; /* Allow wrapping for smaller screens */
+                flex-direction: column;
+              }
+
+              .text-content {
+                flex: 1; /* Allow text content to take up available space */
+                max-width: 50%; /* Limit the maximum width */
+                margin-right: 20px; /* Add some margin to the right */
+                min-width: 250px; /* Ensure it doesn't get too small */
+                text-align: center; /* Center text */
+                font-family: "Arial", sans-serif; /* Font family */
+                color: #333; /* Dark text color */
+              }
+
+              .text-content h2 {
+                font-size: 2.5rem; /* Larger font size for the heading */
+                font-weight: bold; /* Bold font style for emphasis */
+                margin-bottom: 15px; /* Space below heading */
+              }
+
+              .text-content p {
+                font-size: 1.2rem; /* Medium font size for paragraphs */
+                margin-bottom: 10px; /* Space below paragraphs */
+              }
+
+              .form-container {
+                flex: 1;
+                max-width: 50%;
+                min-width: 250px;
+              }
+
+              .contact-button {
+                background-color: transparent;
+                color: #ed6a2a;
+                border: 2px solid #ed6a2a;
+                padding: 10px 20px;
+                border-radius: 25px;
+                cursor: pointer;
+                font-size: 1.2rem;
+                transition: background-color 0.3s, color 0.3s;
+                margin-top: 15px;
+                text-transform: uppercase;
+              }
+
+              .contact-button:hover {
+                background-color: #ed6a2a;
+                color: white;
+              }
+
+              /* Responsive Styles */
+              @media (max-width: 768px) {
+                .flex-container {
+                  flex-direction: column;
+                }
+                .text-content,
+                .form-container {
+                  max-width: 100%;
+                  margin-right: 0;
+                }
+              }
+            </style>
+          `;
+
+          const script = document.createElement("script");
+          script.setAttribute("data-b24-form", "inline/37/fui8yo");
+          script.setAttribute("data-skip-moving", "true");
+          script.async = true;
+          script.src =
+            "https://crm.multibank.uz/upload/crm/form/loader_37_fui8yo.js";
+
+          contacts.querySelector(".form-container").appendChild(script);
+
+          resolve("contacts loaded");
+        } else {
+          reject(new Error("contacts element not found!"));
+        }
+      });
+    };
+    Contacts();
+  </script>
+</html>

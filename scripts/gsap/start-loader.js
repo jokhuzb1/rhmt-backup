@@ -38,25 +38,21 @@ export const starLoader = (totalFunctions, functions) => {
         delay: 0.1,
         duration: 0.3,
         onComplete: async () => {
-          // Create an array of promises for each bar animation
-          const barAnimations = Array.from(bar).map(
-            (i, index) =>
-              gsap
-                .to(i, {
-                  height: 0,
-                  opacity: 0,
-                  duration: 1,
-                  backgroundColor: "white",
-                  ease: "power4.inOut",
-                  delay: 0.02 * (index + 1),
-                })
-                .then() // Ensure each gsap animation returns a promise
+          const barAnimations = Array.from(bar).map((i, index) =>
+            gsap
+              .to(i, {
+                height: 0,
+                opacity: 0,
+                duration: 1,
+                backgroundColor: "white",
+                ease: "power4.inOut",
+                delay: 0.02 * (index + 1),
+              })
+              .then()
           );
 
-          // Wait for all bar animations to complete
           await Promise.all(barAnimations);
 
-          // Enable scroll and resolve the promise
           enableScroll();
           resolve("Loader animation complete");
         },

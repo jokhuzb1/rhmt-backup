@@ -28,9 +28,11 @@ export const Contacts = () => {
             padding: 30px;
             background-color: #ffff; /* Light background for contrast */
             border-radius: 8px; /* Rounded corners for the section */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
           }
-
+          .b24-form-shadow {
+            box-shadow: none !important;
+            -webkit-box-shadow: none !important;
+          }
           .flex-container {
             display: flex;
             justify-content: center; /* Center the content horizontally */
