@@ -16,23 +16,29 @@ export const HeaderAnimation = () => {
       }
 
       const headerTextSpan = document.querySelectorAll(".header-text-word");
+      if (headerTextSpan) {
+        Array.from(headerTextSpan).map((i, idx) => {
+          console.log("it is header text", i);
+          gsap.fromTo(
+            i,
+            { y: 100, opacity: 0 },
+            {
+              y: 0,
+              opacity: 1,
+              stagger: 0.2,
+              duration: 2,
+              delay: 2 + 0.1 * idx,
+              ease: "power4.out",
+              scrollTrigger: {
+                trigger: HeaderSection,
+              },
+            }
+          );
+        });
+      } else {
+        console.log("header sapn not found");
+      }
 
-      gsap.fromTo(
-        headerTextSpan,
-        { y: 100, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          stagger: 0.2,
-          duration: 2,
-          ease: "power4.out",
-          scrollTrigger: {
-            trigger: HeaderSection,
-            start: "top center",
-            end: "bottom top",
-          },
-        }
-      );
       gsap.to(HeaderSection, {
         opacity: 0,
         ease: "power1.out",
@@ -48,7 +54,7 @@ export const HeaderAnimation = () => {
         x: "-100%",
         opacity: 0,
         duration: 0.8,
-        delay: 0.2,
+        delay: 2,
         stagger: 0.1,
         scrollTrigger: {
           trigger: HeaderSection,
@@ -61,7 +67,7 @@ export const HeaderAnimation = () => {
         x: "-100%",
         opacity: 0,
         duration: 0.8,
-        delay: 0.4,
+        delay: 2.5,
         stagger: 0.1,
         scrollTrigger: {
           trigger: HeaderSection,
@@ -74,7 +80,7 @@ export const HeaderAnimation = () => {
         x: "-100%",
         opacity: 0,
         duration: 0.8,
-        delay: 0.8,
+        delay: 3,
         stagger: 0.1,
         scrollTrigger: {
           trigger: HeaderSection,
@@ -97,7 +103,7 @@ export const HeaderAnimation = () => {
           scale: 1,
           opacity: 1,
           duration: 0.8,
-          delay: 0.5,
+          delay: 2,
           stagger: 0.1,
           scrollTrigger: {
             trigger: HeaderSection,
@@ -116,7 +122,7 @@ export const HeaderAnimation = () => {
             scale: 1,
             opacity: 1,
             duration: 0.8,
-            delay: 0.5,
+            delay: 2,
             stagger: 0.1,
             scrollTrigger: {
               trigger: HeaderSection,
@@ -136,7 +142,7 @@ export const HeaderAnimation = () => {
           scale: 1,
           opacity: 1,
           duration: 0.8,
-          delay: 0.5,
+          delay: 2,
           stagger: 0.1,
           scrollTrigger: {
             trigger: HeaderSection,

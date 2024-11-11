@@ -52,23 +52,6 @@
     <section id="business-faq"></section>
     <section id="contacts"></section>
     <footer id="footer"></footer>
-    <script type="module" defer>
-      import { NavbarSection } from "./sections/navbar.js";
-      import { HeaderSection } from "./sections/business-header.js";
-      import { HowItWorksBusinessSection } from "./sections/how-it-works-business.js";
-
-      document.addEventListener("DOMContentLoaded", () => {
-        NavbarSection()
-          .then((message) => console.log(message))
-          .catch((error) => console.error(error));
-        HeaderSection()
-          .then((message) => console.log(message))
-          .catch((error) => console.error(error));
-        HowItWorksBusinessSection()
-          .then((message) => console.log(message))
-          .catch((error) => console.error(error));
-      });
-    </script>
     <script type="module" src="./app-business.js" defer></script>
   </body>
 </html>
