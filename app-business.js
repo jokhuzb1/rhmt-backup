@@ -19,29 +19,17 @@ document.addEventListener("DOMContentLoaded", async () => {
     const functions = [
       NavbarSection,
       HeaderSection,
+      HeaderAnimation,
       HowItWorksBusinessSection,
+      HowItWorksBusinessAnimation,
       BusinessAdvantages,
       SelfService,
       // BusinessFaqSection,
       FooterSection,
-      HowItWorksBusinessAnimation,
-      HeaderAnimation,
+      InteractWithDom,
       MultiLanguage,
       FooterAnimation,
-      InteractWithDom,
     ];
-    // HeaderSection();
-    // NavbarSection();
-    // HowItWorksBusinessSection();
-    // BusinessAdvantages();
-    // SelfService();
-    // // BusinessFaqSection()
-    // FooterSection();
-    // HowItWorksBusinessAnimation();
-    // HeaderAnimation();
-    // MultiLanguage();
-    // FooterAnimation();
-    // InteractWithDom();
 
     const totalFunctions = functions.length;
     await starLoader(totalFunctions, functions);

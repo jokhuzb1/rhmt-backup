@@ -130,7 +130,7 @@ export const NavbarSection = () => {
           </div>
           <div class="menu-links flex flex-col gap-[2px] mt-[30px]">
             <a
-              href="#how-it-works"
+              href="/#how-it-works"
               class="flex hover:text-[#F05039] transition items-center gap-[20px]"
             >
               <span class="text-[16px] relative top-[-6px] max-sm:top-[1px]"
@@ -141,7 +141,7 @@ export const NavbarSection = () => {
               >
             </a>
             <a
-              href="#advantages"
+              href="/#advantages"
               class="flex hover:text-[#F05039] transition items-center gap-[20px]"
             >
               <span class="text-[16px] relative top-[-6px] max-sm:top-[1px]"
@@ -152,7 +152,7 @@ export const NavbarSection = () => {
               >
             </a>
             <a
-              href="#pos-systems"
+              href="/#pos-systems"
               class="flex hover:text-[#F05039] transition items-center gap-[20px]"
             >
               <span class="text-[16px] relative top-[-6px] max-sm:top-[1px]"
@@ -163,7 +163,7 @@ export const NavbarSection = () => {
               >
             </a>
             <a
-              href="#partners"
+              href="/#partners"
               class="flex hover:text-[#F05039] transition items-center gap-[20px]"
             >
               <span class="text-[16px] relative top-[-6px] max-sm:top-[1px]"
@@ -174,7 +174,7 @@ export const NavbarSection = () => {
               >
             </a>
             <a
-              href="#faq"
+              href="/#faq"
               class="flex hover:text-[#F05039] transition items-center gap-[20px]"
             >
               <span class="text-[16px] relative top-[-6px] max-sm:top-[1px]"
@@ -198,19 +198,19 @@ export const NavbarSection = () => {
             class="flex items-center gap-[32px] pl-[36px] max-sm:pl-0 mt-[20px] question-links"
           >
             <a
-              href="#how-it-works"
+              href="/business.html#how-it-works-business"
               class="text-[24px] max-sm:text-[16px] transition hover:text-[#F05039] pop-up-animation"
               data-key="howItWorks"
               >How it works</a
             >
             <a
-              href="#advantages"
+              href="/business.html#business-advantages"
               class="text-[24px] max-sm:text-[16px] transition hover:text-[#F05039] pop-up-animation"
               data-key="advantages"
               >Advantages</a
             >
             <a
-              href="#faq"
+              href="/business.html#business-faq"
               class="text-[24px] max-sm:text-[16px] transition hover:text-[#F05039] pop-up-animation"
               data-key="faq"
               >FAQ</a

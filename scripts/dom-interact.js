@@ -55,7 +55,7 @@ export const InteractWithDom = async () => {
     );
 
     toDownBtn?.addEventListener("click", () => {
-      window.scrollBy({ top: window.innerHeight * 1.5, behavior: "smooth" });
+      window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
     });
 
     toTopBtn?.addEventListener("click", () => {

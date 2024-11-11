@@ -30,7 +30,9 @@ export const FooterSection = () => {
               class="relative py-[60px] border-b-[#D8D9D8] border-b-[1px] flex justify-between max-sm:flex-col max-sm:gap-[23px]"
             >
               <div class="flex justify-between flex-col">
-                <img src="./assets/logo.svg" alt="logo" class="w-[90px]" />
+                <a href="/">
+                  <img src="./assets/logo.svg" alt="logo" class="w-[90px]" />
+                </a>
                 <div class="max-sm:hidden">
                   <p
                     class="text-[25px] text-[#010101] tracking-[-1px]"
@@ -104,22 +106,22 @@ export const FooterSection = () => {
                   </p>
                   <div class="grid gap-[12px]">
                     <a
-                      href="#how-it-works"
+                      href="/business.html#how-it-works-business"
                       class="text-[16px] text-[#010101] hover:underline w-max"
                       data-key="howItWorksLink2"
                       >How it works</a
                     >
                     <a
-                      href="#advantages"
+                      href="/business.html#business-advantages"
                       class="text-[16px] text-[#010101] hover:underline w-max"
                       data-key="advantagesLink2"
                       >Advantages</a
                     >
                     <a
-                      href="#pos-systems"
+                      href="/business.html#self-service"
                       class="text-[16px] text-[#010101] hover:underline w-max"
                       data-key="posSystemsLink2"
-                      >POS-Systems</a
+                      >Self Service</a
                     >
                   </div>
                 </div>

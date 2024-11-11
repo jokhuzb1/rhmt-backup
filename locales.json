@@ -114,7 +114,7 @@
     "SelfService": "Self-service information terminal",
     "SelfServiceInformation": "Self-service information terminal",
     "SelfServiceInfoterminal": "Infoterminal is a hardware and software complex that ensuresthe acceptance of payments from individuals.",
-    " SelfServiceHow": "How it works",
+    "SelfServiceHow": "How it works",
     "SelfServiceGuests": " Guests can browse the menu, place orders, and pay, all without waiting for a waiter. Payment and tipping are done directly through the Infoterminal."
   },
   "ru": {
@@ -129,7 +129,7 @@
     "advantages": "Преимущества",
     "posSystems": "POS-Системы",
     "partners": "Партнеры",
-    "faq": "ЧАВО",
+    "faq": "FAQ",
     "language": "Ru",
     "headerTitle": "Оплатите счет, оставьте отзывы и чаевые через QR-код!",
     "contactUs": "Связаться с нами",
@@ -247,7 +247,7 @@
     "advantages": "Afzalliklari",
     "posSystems": "POS-Tizimlar",
     "partners": "Hamkorlar",
-    "faq": "Savollar",
+    "faq": "FAQ",
     "language": "Uz",
     "headerTitle": "To‘lovni amalga oshiring, fikrlar va choy pulini QR kod orqali qoldiring!",
     "contactUs": "Biz bilan bog'lanish",

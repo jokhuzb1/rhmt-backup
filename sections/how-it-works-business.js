@@ -6,7 +6,7 @@ export const HowItWorksBusinessSection = () => {
 
     if (howItWorks) {
       howItWorks.innerHTML = html`
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 ">
+        <div class="grid grid-cols-1  gap-4 ">
           <div class="video-section col-span-1 relative">
             <div
               class="video-container relative p-5"
@@ -107,7 +107,7 @@ export const HowItWorksBusinessSection = () => {
                 </h2>
               </div>
               <div style="color:white;" class="overlay-text text-bottom-right">
-                <p>
+                <p data-key="howItWorksBusinessAfter">
                   After menu review, order and pay bill plus tip seamlessly via
                   Rahmat's integrated system.
                 </p>

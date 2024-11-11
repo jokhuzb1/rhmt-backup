@@ -5,7 +5,6 @@ export const HeaderAnimation = () => {
       const HeaderSection = document.querySelector(".showcase-section");
 
       if (HeaderText) {
-        // Wrap each word in a span for animation
         const headerTextWords = HeaderText.innerText.split(" ");
         HeaderText.innerHTML = headerTextWords
           .map((word) => `<span class="header-text-word">${word}</span>`)
@@ -18,7 +17,6 @@ export const HeaderAnimation = () => {
       const headerTextSpan = document.querySelectorAll(".header-text-word");
       if (headerTextSpan) {
         Array.from(headerTextSpan).map((i, idx) => {
-          console.log("it is header text", i);
           gsap.fromTo(
             i,
             { y: 100, opacity: 0 },
