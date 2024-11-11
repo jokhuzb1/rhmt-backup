@@ -34,7 +34,7 @@ export const SelfService = () => {
               <img src="../assets/selfservice/machine.png" />
             </div>
             <div class="self-bottom-text text-content responsive">
-              <h2  data-key="SelfServiceHow">How it works</h2>
+              <h2 data-key="SelfServiceHow">How it works</h2>
               <p data-key="SelfServiceGuests">
                 Guests can browse the menu, place orders, and pay, all without
                 waiting for a waiter. Payment and tipping are done directly

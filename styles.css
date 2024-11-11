@@ -141,24 +141,6 @@ img {
   }
 }
 
-.video-container {
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.vid {
-  max-width: 50%;
-  max-height: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 0.5s;
-}
 .texts-for-video {
   position: absolute;
   top: 50%;
@@ -172,10 +154,7 @@ img {
 }
 
 @media screen and (max-width: 435px) {
-  .texts-for-video,
-  .video-container {
-    padding: 5px !important;
-  }
+  .texts-for-video;
 }
 
 /* WIll Change  */
@@ -200,6 +179,7 @@ img {
 
 /* Overlay Text Styles */
 .overlay-text,
+.texts-for-video,
 .text-top-left,
 .text-top-right,
 .text-bottom-left,
@@ -216,22 +196,23 @@ img {
 .overlay-text {
   font-size: 2rem; /* Base font size */
   padding: 2rem;
+  text-align: start;
 }
 
 .text-bottom-right > p {
-  font-size: 1rem; /* Base font size */
-  max-width: 320px;
+  font-size: 1.5rem; /* Base font size */
 }
 
 /* Default Positions */
 .text-top-left {
-  top: 3.6rem;
+  top: 1rem;
   left: 1rem;
 }
 .text-top-right {
-  top: 3.6rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  top: 1rem;
   right: 1rem;
-  padding: 0 !important;
 }
 .text-bottom-left {
   bottom: 1rem;
@@ -258,22 +239,21 @@ img {
 
   /* Center bottom-left at the top with 100% width */
   .text-bottom-left {
-    top: 2rem;
+    top: 1rem;
     left: 0;
     right: 0;
     transform: none;
     width: 100%;
+    font-size: 2rem;
+    font-weight: 400;
     text-align: center;
     bottom: auto;
   }
 
-  .text-bottom-right {
-    bottom: 0rem;
-    left: 0;
-    right: 0;
-    width: 100%;
-    max-width: 100%;
-    font-size: 8px !important;
+  .text-bottom-right > p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
     text-align: center;
   }
 }

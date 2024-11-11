@@ -1,14 +1,4 @@
-<<<<<<< HEAD
-/* 
-/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-=======
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
->>>>>>> origin/main
 
 .overlay-text,
 .texts-for-video,
@@ -177,8 +167,8 @@
 }
 
 .content-text h2 {
-  font-size: 1.5rem;} /* Base font size */
-
+  font-size: 1.5rem; /* Base font size */
+}
 
 .content-text > p {
   font-size: 1rem; /* Base font size */
@@ -519,4 +509,4 @@
   background: none;
   border: none;
   cursor: pointer;
-} 
+}
