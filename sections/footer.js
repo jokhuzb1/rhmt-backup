@@ -66,31 +66,31 @@ export const FooterSection = () => {
                   </p>
                   <div class="grid gap-[12px]">
                     <a
-                      href="#how-it-works"
+                      href="/#how-it-works"
                       class="text-[16px] text-[#010101] hover:underline w-max"
                       data-key="howItWorksLink"
                       >How it works</a
                     >
                     <a
-                      href="#advantages"
+                      href="/#advantages"
                       class="text-[16px] text-[#010101] hover:underline w-max"
                       data-key="advantagesLink"
                       >Advantages</a
                     >
                     <a
-                      href="#pos-systems"
+                      href="/#pos-systems"
                       class="text-[16px] text-[#010101] hover:underline w-max"
                       data-key="posSystemsLink"
                       >POS-Systems</a
                     >
                     <a
-                      href="#partners"
+                      href="/#partners"
                       class="text-[16px] text-[#010101] hover:underline w-max"
                       data-key="partnersLink"
                       >Partners</a
                     >
                     <a
-                      href="#faq"
+                      href="/#faq"
                       class="text-[16px] text-[#010101] hover:underline w-max"
                       data-key="faqLink"
                       >FAQ</a
