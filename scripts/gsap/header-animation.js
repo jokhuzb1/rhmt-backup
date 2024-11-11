@@ -90,7 +90,10 @@ export const HeaderAnimation = () => {
       /* NAVBAR */
       const logo = document.querySelector(".logo");
       const dropdownButtons = document.querySelectorAll(".dropdown-button");
+      const onemoreDropDownButton = document.querySelector(".become-partner");
+      const buttons = [...dropdownButtons, onemoreDropDownButton];
       const BurgerIcon = document.querySelector(".burger-icon");
+
       gsap.fromTo(
         logo,
         {
@@ -109,7 +112,7 @@ export const HeaderAnimation = () => {
           },
         }
       );
-      dropdownButtons.forEach((dropdownButton) => {
+      buttons.forEach((dropdownButton) => {
         gsap.fromTo(
           dropdownButton,
           {
