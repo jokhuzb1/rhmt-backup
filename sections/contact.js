@@ -36,7 +36,7 @@ export const Contacts = () => {
           .flex-container {
             display: flex;
             justify-content: center; /* Center the content horizontally */
-            align-items: center; /* Center items vertically */
+            align-items: start; /* Center items vertically */
             flex-wrap: wrap; /* Allow wrapping for smaller screens */
           }
 
@@ -83,6 +83,11 @@ export const Contacts = () => {
           .contact-button:hover {
             background-color: #ed6a2a;
             color: white;
+          }
+
+          .b24-form-btn {
+            border-radius: 50px !important;
+            padding: 0 14px !important;
           }
 
           /* Responsive Styles */

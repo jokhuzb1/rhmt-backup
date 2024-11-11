@@ -134,13 +134,17 @@ export const FooterSection = () => {
                   </p>
                   <div class="grid gap-[12px]">
                     <a
-                      href="#"
+                      href="tel:+998555060101"
                       class="text-[16px] text-[#010101] flex items-center gap-[3px]"
                     >
                       <img src="./assets/icons/phone-icon.svg" alt="phone" />
                       <span>+998 55 506 01 01</span>
                     </a>
-                    <a href="#" class="text-[16px] flex items-center gap-[3px]">
+                    <a
+                      href="https://t.me/rahmat_info"
+                      target="_blank"
+                      class="text-[16px] flex items-center gap-[3px]"
+                    >
                       <img
                         src="./assets/icons/telegram-icon.svg"
                         alt="telegram"
@@ -160,28 +164,40 @@ export const FooterSection = () => {
                   </p>
                   <div class="flex items-center gap-[20px] header-social-links">
                     <div>
-                      <button class="icon-btn white">
+                      <a
+                        href="https://www.facebook.com/rhmtuz/?locale=ru_RU"
+                        target="_blank"
+                        class="icon-btn white"
+                      >
                         <img
                           src="./assets/icons/facebook-icon.svg"
                           alt="Facebook"
                         />
-                      </button>
+                      </a>
                     </div>
                     <div>
-                      <button class="icon-btn white">
+                      <a
+                        href="https://t.me/rahmat_info"
+                        target="_blank"
+                        class="icon-btn white"
+                      >
                         <img
-                          src="./assets/icons/twitter-icon.svg"
-                          alt="Twitter"
+                          src="./assets/icons/telegram-icon copy.svg"
+                          alt="Telegram"
                         />
-                      </button>
+                      </a>
                     </div>
                     <div>
-                      <button class="icon-btn white">
+                      <a
+                        href="https://www.instagram.com/rahmatqr.uz?igsh=cDFxcm5qOHE1OGJq"
+                        target="_blank"
+                        class="icon-btn white"
+                      >
                         <img
                           src="./assets/icons/instagram-icon.svg"
                           alt="Instagram"
                         />
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>
