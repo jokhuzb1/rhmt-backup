@@ -47,7 +47,7 @@
     "termsAndConditionsText": "You accept the <a href=\"#\" class=\"underline\">Terms & Conditions</a> and <br/> <a href=\"#\" class=\"underline\">Privacy Policy</a> by submitting your request.",
     "termsAndConditionsLink": "Terms & Conditions",
     "privacyPolicyLink": "Privacy Policy",
-    "becomePartnerButton": "Become a partner",
+    "becomePartnerButton": "Станьте партнером",
     "footerSecurityText": "All transactions are secure and processed swiftly with RAHMAT's payment system.",
     "fastText": "Fast.",
     "noRegistrationsText": "No registrations.",
@@ -96,7 +96,7 @@
     "advantagesTitleAlways": "Always up-to-date menu, easy change of the list of dishes.",
     "advantagesTitleSave": "Save your time!",
     "advantagesTitleEverything": "Everything will be quick and easy!",
-    "businessHeaderTitle": "Tomorrow of the online menu has arrived today with us!",
+    "businessHeaderTitle": "The online menu of tomorrow has already arrived with us today!",
     "ContactOne": "Contact Us",
     "ContactHear": "We'd love to hear from you! Please fill out the form on the right or reach out to us via email or phone.",
     "ContactOur": "  Our team is available to assist you with any inquiries or support you may need.",
@@ -112,12 +112,11 @@
     "howItWorksBusinessYou": " You can leave a review upon the waiter's request.",
     "howItWorksBusinessScan": "Scan QR-code",
     "howItWorksBusinessMenu": "Menu",
-    "SelfService":"Self-service information terminal",
-    "SelfServiceInformation":"Self-service information terminal",
-    "SelfServiceInfoterminal":"Infoterminal is a hardware and software complex that ensuresthe acceptance of payments from individuals.",
-   " SelfServiceHow":"How it works",
-   "SelfServiceGuests" :" Guests can browse the menu, place orders, and pay, all without waiting for a waiter. Payment and tipping are done directly through the Infoterminal."
-   
+    "SelfService": "Self-service information terminal",
+    "SelfServiceInformation": "Self-service information terminal",
+    "SelfServiceInfoterminal": "Infoterminal is a hardware and software complex that ensuresthe acceptance of payments from individuals.",
+    " SelfServiceHow": "How it works",
+    "SelfServiceGuests": " Guests can browse the menu, place orders, and pay, all without waiting for a waiter. Payment and tipping are done directly through the Infoterminal."
   },
   "ru": {
     "projects": "Проекты.",
@@ -216,7 +215,7 @@
     "advantagesTitleAlways": "Всегда актуальное меню, легкое изменение списка тарелки.",
     "advantagesTitleSave": "Экономьте свое время!",
     "advantagesTitleEverything": "Все будет быстро и легко!",
-    "businessHeaderTitle": " Завтра онлайн-меню прибыло сегодня к нам!",
+    "businessHeaderTitle": " Завтрашний день онлайн меню, с нами наступил уже сегодня!",
     "ContactOne": "Связаться с нами",
     "ContactHear": "Мы хотели бы услышать ваше мнение! Пожалуйста, заполните форму справа или свяжитесь с нами по электронной почте или телефону.",
     "ContactOur": "Наша команда готова помочь вам с любыми вопросами или поддержкой. вам может понадобиться.",
@@ -232,12 +231,11 @@
     "howItWorksBusinessYou": " Вы можете оставить отзыв по просьбе официанта.",
     "howItWorksBusinessScan": "Сканировать QR-код",
     "howItWorksBusinessMenu": " Меню",
-    "SelfService":"Информационный терминал самообслуживания",
-    "SelfServiceInformation":"Информационный терминал самообслуживания",
-    "SelfServiceInfoterminal":"Инфотерминал – аппаратно-программный комплекс, обеспечивающий прием платежей от физических лиц.",
-    "SelfServiceHow":" Как это работает",
-    "SelfServiceGuests" :" Гости могут просматривать меню, размещать заказы и оплачивать их, не дожидаясь официанта. Оплата и чаевые производятся непосредственно через Инфотерминал.."
-
+    "SelfService": "Информационный терминал самообслуживания",
+    "SelfServiceInformation": "Информационный терминал самообслуживания",
+    "SelfServiceInfoterminal": "Инфотерминал – аппаратно-программный комплекс, обеспечивающий прием платежей от физических лиц.",
+    "SelfServiceHow": " Как это работает",
+    "SelfServiceGuests": " Гости могут просматривать меню, размещать заказы и оплачивать их, не дожидаясь официанта. Оплата и чаевые производятся непосредственно через Инфотерминал.."
   },
   "uz": {
     "projects": "Loyihalar.",
@@ -324,7 +322,7 @@
     "section03": "03",
     "section04": "04",
     "advantagesTitleSpan": "Afzalliklar",
-    "advantagesTitleInstant": "Onlayn tezkor buyurtmalar",
+    "advantagesTitleInstant": "Tezkor onlayn buyurtmalar",
     "advantagesTitleOnline": "“Rahmat” onlayn menyusi korxonangizga tashrif buyuruvchilarga ofitsiantni kutmasdan o‘zlari xohlagan taomni tanlash va buyurtma berish imkonini beradi.",
     "advantagesTitleApplication": "Murojaat qilish shart emas",
     "advantagesTitleInstall": "Alohida dasturni o'rnatishning hojati yo'q.",
@@ -336,7 +334,7 @@
     "advantagesTitleAlways": "Har doim yangilangan menyu, plastinka ro'yxatini oson o'zgartirish.",
     "advantagesTitleSave": "Vaqtingizni tejang!",
     "advantagesTitleEverything": "Hamma narsa tez va oson bo'ladi!",
-    "businessHeaderTitle": "Ertangi onlayn menyu bugun yetib keldi!",
+    "businessHeaderTitle": "Ertangi kunning onlayn menyusi bugun biz bilan birga keldi!",
     "ContactOne": "Biz bilan bog'lanish",
     "ContactHear": "Fikrlaringizni eshitishni istardik! Iltimos, o'ng tarafdagi shaklni to'ldiring yoki elektron pochta yoki telefon orqali biz bilan bog'laning.",
     "ContactOur": "Bizning jamoamiz har qanday savol yoki yordam bilan sizga yordam berishga tayyor. kerak bo'lishi mumkin.",
@@ -351,11 +349,11 @@
     "howItWorksBusinessWaiter": "Ofitsiant sharh qoldirishni taklif qilishi mumkin.",
     "howItWorksBusinessYou": " Ofitsiantning iltimosiga binoan sharh qoldirishingiz mumkin.",
     "howItWorksBusinessScan": "QR-kodni skanerlang",
-     "howItWorksBusinessMenu": "Menyu",
-     "SelfService":"O'z-o'ziga xizmat ko'rsatish ma'lumot terminali",
-     "SelfServiceInformation":"O'z-o'ziga xizmat ko'rsatish ma'lumot terminali",
-     "SelfServiceInfoterminal":"Infoterminal - bu jismoniy shaxslardan to'lovlarni qabul qilish imkonini beruvchi apparat-dasturiy kompleks.",
-     "SelfServiceHow":" U qanday ishlaydi",
-     "SelfServiceGuests" :"Mehmonlar ofitsiantsiz menyuni ko'rib chiqishlari, buyurtma berishlari va to'lashlari mumkin. To'lov va to'lov to'g'ridan-to'g'ri Infoterminal orqali amalga oshiriladi."
+    "howItWorksBusinessMenu": "Menyu",
+    "SelfService": "O'z-o'ziga xizmat ko'rsatish ma'lumot terminali",
+    "SelfServiceInformation": "O'z-o'ziga xizmat ko'rsatish ma'lumot terminali",
+    "SelfServiceInfoterminal": "Infoterminal - bu jismoniy shaxslardan to'lovlarni qabul qilish imkonini beruvchi apparat-dasturiy kompleks.",
+    "SelfServiceHow": " U qanday ishlaydi",
+    "SelfServiceGuests": "Mehmonlar ofitsiantsiz menyuni ko'rib chiqishlari, buyurtma berishlari va to'lashlari mumkin. To'lov va to'lov to'g'ridan-to'g'ri Infoterminal orqali amalga oshiriladi."
   }
 }
