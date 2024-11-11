@@ -72,7 +72,7 @@ export const NavbarSection = () => {
             </button>
           </div>
 
-          <div class="menu-links flex flex-col gap-2 mt-6">
+          <div class="menu-links flex flex-col gap-2 mt-2 xl:mt-4">
             <a
               href="/#how-it-works"
               class="flex hover:text-[#F05039] transition items-center gap-5"
@@ -147,7 +147,7 @@ export const NavbarSection = () => {
 
           <a
             href="/business.html"
-            class="cursor-pointer hover:text-[#F05039] transition mt-8 block"
+            class="cursor-pointer hover:text-[#F05039] transition mt-2 xl:mt-4 block"
           >
             <h3
               class="lg:text-[40px] text-[20px] sm:text-[28px] sm:pl-4 pl-0 mt-4 pop-up-animation"
@@ -157,7 +157,7 @@ export const NavbarSection = () => {
             </h3>
           </a>
 
-          <div class="flex flex-wrap gap-8 sm:pl-4 pl-0 mt-4 question-links">
+          <div class="flex flex-wrap gap-8 sm:pl-4 pl-0 mt-2 question-links">
             <a
               href="/business.html#how-it-works-business"
               class="sm:text-[24px] text-[16px] transition hover:text-[#F05039] pop-up-animation"
@@ -179,7 +179,7 @@ export const NavbarSection = () => {
           </div>
 
           <div
-            class="flex flex-col sm:flex-row justify-between sm:items-start items-center sm:mt-12 mt-8 gap-4"
+            class="flex flex-col sm:flex-row justify-between sm:items-start items-center mt-2 xl:mt-4 gap-4"
           >
             <a href="/#contacts">
               <button class="btn big pop-up-animation" data-key="becomePartner">
