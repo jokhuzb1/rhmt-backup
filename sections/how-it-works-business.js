@@ -8,13 +8,25 @@ export const HowItWorksBusinessSection = () => {
       howItWorks.innerHTML = html`
         <div class="grid grid-cols-1  gap-4 ">
           <div class="video-section col-span-1 relative">
+            <div class="right-illustrator-business illus">
+              <img
+                src="./assets/icons/showcase-right-illustrator.svg"
+                alt="Right Illustrator"
+              />
+            </div>
+            <div class="left-illustrator-business  illus">
+              <img
+                src="./assets/icons/showcase-left-illustrator.svg"
+                alt="Left Illustrator"
+              />
+            </div>
             <div
               class="video-container relative p-5"
               style="padding-top: 60px; background:black;"
             >
               <!-- Video 1 -->
               <video
-                class="vid w-full h-auto active"
+                class="vid w-full h-auto active   "
                 autoplay
                 muted
                 loop
