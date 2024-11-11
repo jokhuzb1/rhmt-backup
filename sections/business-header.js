@@ -35,10 +35,10 @@ export const HeaderSection = () => {
               style="height: 100%"
             >
               <h1
-                class="text-[58px] max-w-[474px] mr-[200px]  z-[2] header-text max-lg:text-center max-lg:max-w-full max-lg:mr-0 max-md:text-[40px] max-sm:text-[30px]"
+                class="text-[58px] max-w-[600px] mr-[120px] z-[2] header-text  max-lg:text-center max-lg:max-w-full max-lg:mr-0 max-md:text-[40px] max-sm:text-[30px]"
                 data-key="businessHeaderTitle"
               >
-                Tomorrow of the online menu has arrived today with us!
+                The online menu of tomorrow has already arrived with us today!
               </h1>
               <div class="hidden max-lg:block">
                 <a href="#contact-us">

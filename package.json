@@ -9,8 +9,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "testing website in mobile version animatinos",
   "dependencies": {
     "tailwindcss": "^3.4.10"
-  }
+  },
+  "devDependencies": {}
 }

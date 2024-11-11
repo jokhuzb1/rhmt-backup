@@ -28,7 +28,7 @@ export const FooterAnimation = () => {
               scale: 1.05, // Scale slightly above 1 for a subtle pulse effect
               opacity: 1,
               y: 0, // Moves to the final position
-              duration: 2, // Adjusted duration for a slower effect
+              duration: 1.5, // Adjusted duration for a slower effect
               ease: "power2.out",
             },
             idx * 0.25 // Increased stagger for smoother element spacing

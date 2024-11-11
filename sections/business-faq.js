@@ -38,6 +38,7 @@ export const BusinessFaqSection = () => {
           </div>
         `;
 
+        console.log("something");
         // Set up the FAQ interactions
         const faqItems = document.querySelectorAll(".business-faq-item");
 
@@ -87,11 +88,10 @@ export const BusinessFaqSection = () => {
                   }
                 },
               });
-              button.textContent = "-"; // Change to -
+              button.textContent = "-";
             }
           });
         });
-
         resolve("faq loaded");
       } else {
         reject(new Error("faq element not found!"));

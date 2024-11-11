@@ -30,7 +30,9 @@ export const FooterSection = () => {
               class="relative py-[60px] border-b-[#D8D9D8] border-b-[1px] flex justify-between max-sm:flex-col max-sm:gap-[23px]"
             >
               <div class="flex justify-between flex-col">
-                <img src="./assets/logo.svg" alt="logo" class="w-[90px]" />
+                <a href="/">
+                  <img src="./assets/logo.svg" alt="logo" class="w-[90px]" />
+                </a>
                 <div class="max-sm:hidden">
                   <p
                     class="text-[25px] text-[#010101] tracking-[-1px]"
@@ -64,31 +66,31 @@ export const FooterSection = () => {
                   </p>
                   <div class="grid gap-[12px]">
                     <a
-                      href="#how-it-works"
+                      href="/#how-it-works"
                       class="text-[16px] text-[#010101] hover:underline w-max"
                       data-key="howItWorksLink"
                       >How it works</a
                     >
                     <a
-                      href="#advantages"
+                      href="/#advantages"
                       class="text-[16px] text-[#010101] hover:underline w-max"
                       data-key="advantagesLink"
                       >Advantages</a
                     >
                     <a
-                      href="#pos-systems"
+                      href="/#pos-systems"
                       class="text-[16px] text-[#010101] hover:underline w-max"
                       data-key="posSystemsLink"
                       >POS-Systems</a
                     >
                     <a
-                      href="#partners"
+                      href="/#partners"
                       class="text-[16px] text-[#010101] hover:underline w-max"
                       data-key="partnersLink"
                       >Partners</a
                     >
                     <a
-                      href="#faq"
+                      href="/#faq"
                       class="text-[16px] text-[#010101] hover:underline w-max"
                       data-key="faqLink"
                       >FAQ</a
@@ -104,22 +106,22 @@ export const FooterSection = () => {
                   </p>
                   <div class="grid gap-[12px]">
                     <a
-                      href="#how-it-works"
+                      href="/business.html#how-it-works-business"
                       class="text-[16px] text-[#010101] hover:underline w-max"
                       data-key="howItWorksLink2"
                       >How it works</a
                     >
                     <a
-                      href="#advantages"
+                      href="/business.html#business-advantages"
                       class="text-[16px] text-[#010101] hover:underline w-max"
                       data-key="advantagesLink2"
                       >Advantages</a
                     >
                     <a
-                      href="#pos-systems"
+                      href="/business.html#self-service"
                       class="text-[16px] text-[#010101] hover:underline w-max"
                       data-key="posSystemsLink2"
-                      >POS-Systems</a
+                      >Self Service</a
                     >
                   </div>
                 </div>
@@ -132,13 +134,17 @@ export const FooterSection = () => {
                   </p>
                   <div class="grid gap-[12px]">
                     <a
-                      href="#"
+                      href="tel:+998555060101"
                       class="text-[16px] text-[#010101] flex items-center gap-[3px]"
                     >
                       <img src="./assets/icons/phone-icon.svg" alt="phone" />
                       <span>+998 55 506 01 01</span>
                     </a>
-                    <a href="#" class="text-[16px] flex items-center gap-[3px]">
+                    <a
+                      href="https://t.me/rahmat_info"
+                      target="_blank"
+                      class="text-[16px] flex items-center gap-[3px]"
+                    >
                       <img
                         src="./assets/icons/telegram-icon.svg"
                         alt="telegram"
@@ -158,28 +164,40 @@ export const FooterSection = () => {
                   </p>
                   <div class="flex items-center gap-[20px] header-social-links">
                     <div>
-                      <button class="icon-btn white">
+                      <a
+                        href="https://www.facebook.com/rhmtuz/?locale=ru_RU"
+                        target="_blank"
+                        class="icon-btn white"
+                      >
                         <img
                           src="./assets/icons/facebook-icon.svg"
                           alt="Facebook"
                         />
-                      </button>
+                      </a>
                     </div>
                     <div>
-                      <button class="icon-btn white">
+                      <a
+                        href="https://t.me/rahmat_info"
+                        target="_blank"
+                        class="icon-btn white"
+                      >
                         <img
-                          src="./assets/icons/twitter-icon.svg"
-                          alt="Twitter"
+                          src="./assets/icons/telegram-icon copy.svg"
+                          alt="Telegram"
                         />
-                      </button>
+                      </a>
                     </div>
                     <div>
-                      <button class="icon-btn white">
+                      <a
+                        href="https://www.instagram.com/rahmatqr.uz?igsh=cDFxcm5qOHE1OGJq"
+                        target="_blank"
+                        class="icon-btn white"
+                      >
                         <img
                           src="./assets/icons/instagram-icon.svg"
                           alt="Instagram"
                         />
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>

@@ -5,7 +5,6 @@ export const HeaderAnimation = () => {
       const HeaderSection = document.querySelector(".showcase-section");
 
       if (HeaderText) {
-        // Wrap each word in a span for animation
         const headerTextWords = HeaderText.innerText.split(" ");
         HeaderText.innerHTML = headerTextWords
           .map((word) => `<span class="header-text-word">${word}</span>`)
@@ -16,23 +15,28 @@ export const HeaderAnimation = () => {
       }
 
       const headerTextSpan = document.querySelectorAll(".header-text-word");
+      if (headerTextSpan) {
+        Array.from(headerTextSpan).map((i, idx) => {
+          gsap.fromTo(
+            i,
+            { y: 100, opacity: 0 },
+            {
+              y: 0,
+              opacity: 1,
+              stagger: 0.2,
+              duration: 2,
+              delay: 2 + 0.1 * idx,
+              ease: "power4.out",
+              scrollTrigger: {
+                trigger: HeaderSection,
+              },
+            }
+          );
+        });
+      } else {
+        console.log("header sapn not found");
+      }
 
-      gsap.fromTo(
-        headerTextSpan,
-        { y: 100, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          stagger: 0.1,
-          duration: 2,
-          ease: "power4.out",
-          scrollTrigger: {
-            trigger: HeaderSection,
-            start: "top center",
-            end: "bottom top",
-          },
-        }
-      );
       gsap.to(HeaderSection, {
         opacity: 0,
         ease: "power1.out",
@@ -48,7 +52,7 @@ export const HeaderAnimation = () => {
         x: "-100%",
         opacity: 0,
         duration: 0.8,
-        delay: 0.2,
+        delay: 2,
         stagger: 0.1,
         scrollTrigger: {
           trigger: HeaderSection,
@@ -61,7 +65,7 @@ export const HeaderAnimation = () => {
         x: "-100%",
         opacity: 0,
         duration: 0.8,
-        delay: 0.4,
+        delay: 2.5,
         stagger: 0.1,
         scrollTrigger: {
           trigger: HeaderSection,
@@ -74,7 +78,7 @@ export const HeaderAnimation = () => {
         x: "-100%",
         opacity: 0,
         duration: 0.8,
-        delay: 0.8,
+        delay: 3,
         stagger: 0.1,
         scrollTrigger: {
           trigger: HeaderSection,
@@ -86,7 +90,10 @@ export const HeaderAnimation = () => {
       /* NAVBAR */
       const logo = document.querySelector(".logo");
       const dropdownButtons = document.querySelectorAll(".dropdown-button");
+      const onemoreDropDownButton = document.querySelector(".become-partner");
+      const buttons = [...dropdownButtons, onemoreDropDownButton];
       const BurgerIcon = document.querySelector(".burger-icon");
+
       gsap.fromTo(
         logo,
         {
@@ -97,7 +104,7 @@ export const HeaderAnimation = () => {
           scale: 1,
           opacity: 1,
           duration: 0.8,
-          delay: 0.5,
+          delay: 2,
           stagger: 0.1,
           scrollTrigger: {
             trigger: HeaderSection,
@@ -105,7 +112,7 @@ export const HeaderAnimation = () => {
           },
         }
       );
-      dropdownButtons.forEach((dropdownButton) => {
+      buttons.forEach((dropdownButton) => {
         gsap.fromTo(
           dropdownButton,
           {
@@ -116,7 +123,7 @@ export const HeaderAnimation = () => {
             scale: 1,
             opacity: 1,
             duration: 0.8,
-            delay: 0.5,
+            delay: 2,
             stagger: 0.1,
             scrollTrigger: {
               trigger: HeaderSection,
@@ -136,7 +143,7 @@ export const HeaderAnimation = () => {
           scale: 1,
           opacity: 1,
           duration: 0.8,
-          delay: 0.5,
+          delay: 2,
           stagger: 0.1,
           scrollTrigger: {
             trigger: HeaderSection,

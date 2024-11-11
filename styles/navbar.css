@@ -148,11 +148,7 @@
 
 .main-menu.active {
   visibility: visible;
-  max-height: 1000px;
   padding: 20px 30px 30px 30px;
-}
-
-.navbar.active .main-menu {
 }
 
 @media screen and (max-width: 570px) {
@@ -232,6 +228,25 @@
 
 .main-menu.active .menu-links a:nth-child(5) {
   animation: slideIn 0.5s ease forwards 0.9s;
+}
+@media screen and (min-height: 650px) {
+  .main-menu {
+    max-height: 650px;
+    height: 100vh !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .main-menu {
+    max-height: 100vh !important;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  .main-menu {
+    max-height: 100vh;
+    height: 100vh;
+  }
 }
 
 @keyframes slideIn {

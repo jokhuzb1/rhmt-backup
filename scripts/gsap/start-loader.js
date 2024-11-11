@@ -1,6 +1,9 @@
 export const starLoader = (totalFunctions, functions) => {
   return new Promise(async (resolve, reject) => {
     try {
+      const startTime = Date.now(); // Start time of the loading process
+      const minLoadingTime = 1700;
+      const hash = window.location.hash;
       window.scrollTo({ top: 0, behavior: "smooth" });
       const counterElement = document.querySelector(".counter");
       const overlay = document.querySelector(".overlay");
@@ -16,6 +19,15 @@ export const starLoader = (totalFunctions, functions) => {
         document.documentElement.style.overflow = "";
         document.body.style.overflow = "";
         overlay.style.visibility = "hidden";
+        if (hash) {
+          const section = document.querySelector(hash);
+          if (section) {
+            window.scrollTo({
+              top: section.offsetTop,
+              behavior: "smooth",
+            });
+          }
+        }
       }
 
       function updateCounter() {
@@ -32,31 +44,34 @@ export const starLoader = (totalFunctions, functions) => {
           updateCounter();
         }
       }
+
+      const elapsedTime = Date.now() - startTime; // Calculate elapsed time
+      const remainingTime = minLoadingTime - elapsedTime; // Calculate remaining time to reach 2 seconds
+
+      // Wait for remaining time if the loading finished in less than 2 seconds
+      if (remainingTime > 0)
+        await new Promise((resolve) => setTimeout(resolve, remainingTime));
       gsap.to(".counter", {
         opacity: 0,
         visibility: "hidden",
         delay: 0.1,
         duration: 0.3,
         onComplete: async () => {
-          // Create an array of promises for each bar animation
-          const barAnimations = Array.from(bar).map(
-            (i, index) =>
-              gsap
-                .to(i, {
-                  height: 0,
-                  opacity: 0,
-                  duration: 1,
-                  backgroundColor: "white",
-                  ease: "power4.inOut",
-                  delay: 0.02 * (index + 1),
-                })
-                .then() // Ensure each gsap animation returns a promise
+          const barAnimations = Array.from(bar).map((i, index) =>
+            gsap
+              .to(i, {
+                height: 0,
+                opacity: 0,
+                duration: 1,
+                backgroundColor: "white",
+                ease: "power4.inOut",
+                delay: 0.02 * (index + 1),
+              })
+              .then()
           );
 
-          // Wait for all bar animations to complete
           await Promise.all(barAnimations);
 
-          // Enable scroll and resolve the promise
           enableScroll();
           resolve("Loader animation complete");
         },

@@ -6,7 +6,7 @@ export const HowItWorksSection = () => {
 
     if (howItWorks) {
       howItWorks.innerHTML = html`
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
+        <div class="grid grid-cols-1  gap-4 ">
           <div class="video-section col-span-1 relative">
             <div class="video-container relative p-5" style="padding-top: 60px">
               <!-- Video 1 -->
@@ -24,7 +24,7 @@ export const HowItWorksSection = () => {
                 class="overlay-text text-top-left"
                 data-key="scanQr"
                 style="
-                padding: 0px 23px;
+                padding: 2px 23px;
                 border-radius: 50px;
                 border: 1px solid #d8d9d8;
                 font-size: 16px;
@@ -62,7 +62,7 @@ export const HowItWorksSection = () => {
                 class="overlay-text  text-top-left"
                 data-key="payment"
                 style="
-                padding: 0px 23px;
+                padding: 2px 23px;
                 border-radius: 50px;
                 border: 1px solid #d8d9d8;
                 font-size: 16px;
@@ -102,7 +102,7 @@ export const HowItWorksSection = () => {
                 class="overlay-text text-top-left"
                 data-key="gratuities"
                 style="
-                padding: 0px 23px;
+                padding: 2px 23px;
                 border-radius: 50px;
                 border: 1px solid #d8d9d8;
                 font-size: 16px;
@@ -140,7 +140,7 @@ export const HowItWorksSection = () => {
                 class="overlay-text text-top-left"
                 data-key="reviews"
                 style="
-                padding: 0px 23px;
+                padding: 2px 23px;
                 border-radius: 50px;
                 border: 1px solid #d8d9d8;
                 font-size: 16px;
