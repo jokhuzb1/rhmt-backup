@@ -89,7 +89,9 @@ export const InteractWithDom = async () => {
     };
 
     const renderCategories = (data) => {
-      faqButtonsContainer.innerHTML = "";
+      if (faqButtonsContainer) {
+        faqButtonsContainer.innerHTML = "";
+      }
 
       data.forEach((category, index) => {
         const button = document.createElement("button");
@@ -104,14 +106,15 @@ export const InteractWithDom = async () => {
           updateButtons(data);
           addAnimation();
         });
-
-        faqButtonsContainer.appendChild(button);
+        if (faqButtonsContainer) {
+          faqButtonsContainer.appendChild(button);
+        }
       });
     };
 
     const renderFAQContent = (category) => {
       if (!faqContentContainer) {
-        console.error("faqContentContainer not found in the DOM.");
+        console.log("faqContentContainer not found in the DOM.");
         return;
       }
       faqContentContainer.innerHTML = "";

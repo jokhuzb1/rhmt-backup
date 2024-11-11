@@ -23,7 +23,7 @@ export const HeaderAnimation = () => {
         {
           y: 0,
           opacity: 1,
-          stagger: 0.1,
+          stagger: 0.2,
           duration: 2,
           ease: "power4.out",
           scrollTrigger: {
