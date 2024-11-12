@@ -7,12 +7,13 @@ export const PosSystemsSection = () => {
     if (posSystems) {
       posSystems.innerHTML = html`
         <div class="pos-system-section">
-          <div class="h-[100vh]">
+          <div class="h-[100vh] relative">
             <div
-              class="flex justify-center items-center flex-col text-center font-[400] h-[100vh]"
+              class="flex justify-center relative items-center mx-auto w-full  flex-col text-center font-[400] h-[100vh]"
             >
               <video
-                class="ellipse-gif fixed max-w-[550px] !touch-none max-lg:hidden"
+                class="ellipse-gif  fixed left-[50%] -translate-x-[50%] max-w-[550px] !touch-none max-lg:hidden"
+                style="left: '50%';transform:'translateX(-50%)';"
                 autoplay
                 muted
                 loop
@@ -65,6 +66,7 @@ export const PosSystemsSection = () => {
                     <h2
                       class="text-[50px] mt-[30px] pos-system-text-word opacity-0 max-lg:text-center max-md:text-[35px] max-sm:text-[25px] max-sm:max-w-[235px]"
                       data-key="supportAllPos"
+                      style="opacity: 0;"
                     >
                       We support all popular POS systems
                     </h2>
@@ -72,6 +74,7 @@ export const PosSystemsSection = () => {
                   <p
                     class="text-[16px] font-[500] max-lg:text-center mt-[40px] mb-[20px] pos-system-imgs-text"
                     data-key="integrationPlugIn"
+                    style="opacity: 0;"
                   >
                     Plug-in for integration with:
                   </p>
@@ -96,6 +99,7 @@ export const PosSystemsSection = () => {
                   <p
                     class="text-[16px] font-[500] max-lg:text-center pos-system-last-text"
                     data-key="partnerWithUs"
+                    style="opacity: 0;"
                   >
                     Partner with us to effortlessly integrate with <br />
                     top POS systems
