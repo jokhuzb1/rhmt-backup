@@ -45,6 +45,7 @@ export const PosSystemsAnimation = () => {
           },
         })
         .to(wordSpans, { color: "#F05039", stagger: 0.1 });
+
       const scaleAnimations = [
         { target: posSystemTitle, scale: 0.5, opacity: 1 },
         { target: ellipseGif, scale: 0, opacity: 1, duration: 1.2 },
@@ -66,22 +67,44 @@ export const PosSystemsAnimation = () => {
           }
         );
       });
-      gsap.fromTo(
-        ellipseGif,
-        { left: window.innerWidth <= 1300 ? "29%" : "32%" },
-        {
-          left: "-30vw",
-          top: "148%",
-          scrollTrigger: {
-            trigger: sectionWithEllipse,
-            start: "top bottom",
-            end: "bottom top",
-            scrub: true,
-          },
-        }
-      );
+      gsap.matchMedia().add("(max-width: 1300px)", () => {
+        // If the viewport width is 1300px or less
+        gsap.fromTo(
+          ellipseGif,
+          { left: "29%" },
+          {
+            left: "-30vw",
+            top: "148%",
+            scrollTrigger: {
+              trigger: sectionWithEllipse,
+              start: "top bottom",
+              end: "bottom top",
+              marker: true,
+              scrub: true,
+            },
+          }
+        );
+      });
 
-      //under
+      // For viewports wider than 1300px
+      gsap.matchMedia().add("(min-width: 1301px)", () => {
+        gsap.fromTo(
+          ellipseGif,
+          { left: "32%" },
+          {
+            left: "-30vw",
+            top: "148%",
+            scrollTrigger: {
+              trigger: sectionWithEllipse,
+              start: "top bottom",
+              end: "bottom top",
+              marker: true,
+              scrub: true,
+            },
+          }
+        );
+      });
+
       const posSystemRightContent = document.querySelector(
         ".pos-system-right-content"
       );

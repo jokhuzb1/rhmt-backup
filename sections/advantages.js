@@ -331,7 +331,7 @@ export const AdvantagesSection = () => {
               </div>
             </div>
             <div
-              class="advantages-details bg-[#D8D9D8] rounded-[8px] w-full my-[20px] relative"
+              class="advantages-details bg-[#FFFFFF] rounded-[8px] w-full my-[20px] relative"
             >
               <h2
                 class="text-[25px] text-center mt-[40px] max-w-[250px]"

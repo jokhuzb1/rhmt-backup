@@ -16,7 +16,6 @@ export const BusinessAdvantages = () => {
                 <div>
                   <div class="card">
                     <h2>01</h2>
-                    <!-- <img src="../menu.png" alt="test" class="image" /> -->
                     <video
                       src="../assets/business/order.webm"
                       class="image"
