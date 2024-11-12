@@ -127,8 +127,8 @@ export const InteractWithDom = async () => {
         detailsElement.style = "padding:15px 20px;width:100%";
         detailsElement.innerHTML = `
           <summary class="flex justify-between items-center">
-            <h3 class="max-md:hidden text-[16px] mr-2">0${index + 1}</h3>
-            <div class="flex items-center justify-between w-full">
+          <div class="flex items-center justify-between w-full">
+          <h3 class="max-md:hidden text-[16px] mr-2">0${index + 1}</h3>
               <h1 class="text-[30px] max-w-[350px] max-lg:text-[25px] max-sm:text-[16px] max-sm:max-w-[200px]">
                 ${getTextByLang(details, "question")}
               </h1>

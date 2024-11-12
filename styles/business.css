@@ -118,13 +118,16 @@
 }
 
 .video-container {
-  height: 100vh;
   position: relative;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 40px;
+  padding-top: 60px;
+  background: black;
+  /* max-height: 90vh;
+  margin-top: 3rem;
+  border-radius: 48px; */
 }
 
 .vid {
@@ -558,4 +561,12 @@
   background: none;
   border: none;
   cursor: pointer;
+}
+.rounded-title {
+  background-color: #f7f7f7;
+  padding: 0.2rem 1.1rem;
+  border-radius: 32px;
+  font-size: 16px;
+  margin-top: 2rem;
+  margin-left: 1.6rem;
 }

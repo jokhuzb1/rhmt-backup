@@ -18,11 +18,12 @@ export const BusinessAdvantages = () => {
                     <h2>01</h2>
                     <!-- <img src="../menu.png" alt="test" class="image" /> -->
                     <video
-                      src="../assets/business/order.mp4"
+                      src="../assets/business/order.webm"
                       class="image"
                       autoplay
                       loop
                       muted
+                      type="video/webm"
                     ></video>
                     <div class="content-text">
                       <h2 data-key="advantagesTitleInstant">
@@ -40,11 +41,12 @@ export const BusinessAdvantages = () => {
                   <div class="card">
                     <h2>02</h2>
                     <video
-                      src="../assets/business/noapplication.mp4"
+                      src="../assets/business/noapplication.webm"
                       class="image"
                       autoplay
                       loop
                       muted
+                      type="video/webm"
                     ></video>
                     <div class="content-text">
                       <h2 data-key="advantagesTitleApplication">
@@ -62,11 +64,12 @@ export const BusinessAdvantages = () => {
                       <h2 class="top">03</h2>
                     </div>
                     <video
-                      src="../assets/business/advantages.mp4"
+                      src="../assets/business/advantages.webm"
                       class="image"
                       autoplay
                       loop
                       muted
+                      type="video/webm"
                     ></video>
                     <div class="content-text">
                       <h2 data-key="advantagesTitleSeamless">
@@ -84,11 +87,12 @@ export const BusinessAdvantages = () => {
                   <div class="card">
                     <h2 class="top">04</h2>
                     <video
-                      src="../assets/business/scheme.mp4"
+                      src="../assets/business/scheme.webm"
                       class="image"
                       autoplay
                       loop
                       muted
+                      type="video/webm"
                     ></video>
 
                     <div class="content-text">
@@ -104,11 +108,12 @@ export const BusinessAdvantages = () => {
                   <div class="card">
                     <h2 class="top">05</h2>
                     <video
-                      src="../assets/business/5.mp4"
+                      src="../assets/business/5.webm"
                       class="image "
                       autoplay
                       loop
                       muted
+                      type="video/webm"
                     ></video>
                     <div class="content-text top">
                       <h2 data-key="advantagesTitleEasy">Easy Menu Updates</h2>
@@ -123,11 +128,12 @@ export const BusinessAdvantages = () => {
                   <div class="card">
                     <h2>06</h2>
                     <video
-                      src="../assets/business/6.mp4"
+                      src="../assets/business/6.webm"
                       class="image"
                       autoplay
                       loop
                       muted
+                      type="video/webm"
                     ></video>
                     <div class="content-text">
                       <h2 data-key="advantagesTitleSave">Save your time!</h2>
