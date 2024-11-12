@@ -71,7 +71,7 @@ export const PosSystemsAnimation = () => {
         // If the viewport width is 1300px or less
         gsap.fromTo(
           ellipseGif,
-          { left: "29%" },
+          { left: "50%" },
           {
             left: "-30vw",
             top: "148%",
@@ -90,7 +90,7 @@ export const PosSystemsAnimation = () => {
       gsap.matchMedia().add("(min-width: 1301px)", () => {
         gsap.fromTo(
           ellipseGif,
-          { left: "32%" },
+          { left: "50%" },
           {
             left: "-30vw",
             top: "148%",
@@ -98,7 +98,6 @@ export const PosSystemsAnimation = () => {
               trigger: sectionWithEllipse,
               start: "top bottom",
               end: "bottom top",
-              marker: true,
               scrub: true,
             },
           }
