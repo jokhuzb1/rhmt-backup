@@ -140,10 +140,6 @@ export const Contacts = () => {
               gap: 10px;
             }
           }
-          /* .b24-form-control-alert-message::before,
-          .b24-form-control-alert-message::after {
-            content: "" !important;
-          } */
         </style>
       `;
 
@@ -153,8 +149,8 @@ export const Contacts = () => {
       script.async = true;
       script.src =
         "https://crm.multibank.uz/upload/crm/form/loader_37_fui8yo.js";
-
       contacts.querySelector(".form-container").appendChild(script);
+
       // const observer = new MutationObserver((mutationsList, observer) => {
       //   const alertElements = document.querySelectorAll(
       //     ".b24-form-control-alert-message"
@@ -173,6 +169,7 @@ export const Contacts = () => {
       //   childList: true,
       //   subtree: true,
       // });
+
 
       resolve("contacts loaded");
     } else {

@@ -20,7 +20,7 @@ export const PosSystemsSection = () => {
                 playsinline
                 webkit-playsinline
               >
-                <source src="../assets/gifs/rmbg.mp4" type="video/mp4" />
+                <source src="../assets/gifs/rmbg.webm" type="video/webm" />
               </video>
               <video
                 class="absolute ellipse-gif-mobile !touch-none  !max-w-[50vw] hidden max-lg:block max-md:max-w-[400px] max-sm:max-w-[235px]"
@@ -30,7 +30,7 @@ export const PosSystemsSection = () => {
                 playsinline
                 webkit-playsinline
               >
-                <source src="../assets/gifs/rmbg.mp4" type="video/mp4" />
+                <source src="../assets/gifs/rmbg.webm" type="video/webm" />
               </video>
               <p
                 class="section-title !text-[#000] min-w-[150px] pos-system-title"

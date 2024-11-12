@@ -6,7 +6,7 @@ export const HowItWorksSection = () => {
 
     if (howItWorks) {
       howItWorks.innerHTML = html`
-        <div class="grid grid-cols-1  gap-4 ">
+        <div class="grid grid-cols-1  gap-4 untouchable">
           <div class="video-section col-span-1 relative">
             <div class="video-container relative p-5" style="padding-top: 60px">
               <!-- Video 1 -->
@@ -18,7 +18,7 @@ export const HowItWorksSection = () => {
                 playsinline
                 webkit-playsinline
               >
-                <source src="./assets/howitworks/1.mp4" type="video/mp4" />
+                <source src="./assets/howitworks/1.webm" type="video/webm" />
               </video>
               <div
                 class="overlay-text text-top-left"
@@ -134,7 +134,7 @@ export const HowItWorksSection = () => {
                 playsinline
                 webkit-playsinline
               >
-                <source src="./assets/howitworks/4.mp4" type="video/mp4" />
+                <source src="./assets/howitworks/4.webm" type="video/webm" />
               </video>
               <div
                 class="overlay-text text-top-left"
