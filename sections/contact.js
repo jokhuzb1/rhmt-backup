@@ -149,9 +149,7 @@ export const Contacts = () => {
       script.async = true;
       script.src =
         "https://crm.multibank.uz/upload/crm/form/loader_37_fui8yo.js";
-
       contacts.querySelector(".form-container").appendChild(script);
-
       resolve("contacts loaded");
     } else {
       reject(new Error("contacts element not found!"));
