@@ -426,19 +426,12 @@
     font-weight: 400;
     text-align: start;
   }
-  .header-text {
-    font-size: 2.8rem;
-    text-align: right;
-  }
+
   .overlay-text > p {
     font-size: 1rem;
   }
 }
 @media (max-width: 1024px) {
-  .header-text {
-    font-size: 2.8rem;
-    text-align: center;
-  }
   .text-content {
     width: 100%;
     padding: 0;
