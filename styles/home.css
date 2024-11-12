@@ -1,12 +1,12 @@
 @keyframes jumpInfinite {
   0% {
-    top: -12px;
+    top: -16px;
   }
   50% {
-    top: 12px;
+    top: 0px;
   }
   100% {
-    top: -12px;
+    top: -16px;
   }
 }
 
