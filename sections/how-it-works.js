@@ -18,7 +18,7 @@ export const HowItWorksSection = () => {
                 playsinline
                 webkit-playsinline
               >
-                <source src="./assets/howitworks/1.mp4" type="video/mp4" />
+                <source src="./assets/howitworks/1.webm" type="video/webm" />
               </video>
               <div
                 class="overlay-text text-top-left"
@@ -134,7 +134,7 @@ export const HowItWorksSection = () => {
                 playsinline
                 webkit-playsinline
               >
-                <source src="./assets/howitworks/4.mp4" type="video/mp4" />
+                <source src="./assets/howitworks/4.webm" type="video/webm" />
               </video>
               <div
                 class="overlay-text text-top-left"
