@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     const functions = [
       NavbarSection,
       HeaderSection,
-      HeaderAnimation,
       HowItWorksBusinessSection,
       HowItWorksBusinessAnimation,
       BusinessAdvantages,
@@ -28,6 +27,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       FooterSection,
       InteractWithDom,
       MultiLanguage,
+      HeaderAnimation,
       FooterAnimation,
     ];
 
