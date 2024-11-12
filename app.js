@@ -27,8 +27,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       PartnersSection,
       FaqSection,
       FooterSection,
-      MultiLanguage,
       Contacts,
+      MultiLanguage,
       Gsap,
       InteractWithDom,
     ];

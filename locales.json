@@ -115,7 +115,8 @@
     "SelfServiceInformation": "Self-service information terminal",
     "SelfServiceInfoterminal": "Infoterminal is a hardware and software complex that ensuresthe acceptance of payments from individuals.",
     "SelfServiceHow": "How it works",
-    "SelfServiceGuests": " Guests can browse the menu, place orders, and pay, all without waiting for a waiter. Payment and tipping are done directly through the Infoterminal."
+    "SelfServiceGuests": " Guests can browse the menu, place orders, and pay, all without waiting for a waiter. Payment and tipping are done directly through the Infoterminal.",
+    "alert": "This field is required"
   },
   "ru": {
     "projects": "Проекты.",
@@ -233,7 +234,8 @@
     "SelfServiceInformation": "Информационный терминал самообслуживания",
     "SelfServiceInfoterminal": "Инфотерминал – аппаратно-программный комплекс, обеспечивающий прием платежей от физических лиц.",
     "SelfServiceHow": " Как это работает",
-    "SelfServiceGuests": " Гости могут просматривать меню, размещать заказы и оплачивать их, не дожидаясь официанта. Оплата и чаевые производятся непосредственно через Инфотерминал.."
+    "SelfServiceGuests": " Гости могут просматривать меню, размещать заказы и оплачивать их, не дожидаясь официанта. Оплата и чаевые производятся непосредственно через Инфотерминал..",
+    "alert": "Поле обязательно для заполнения"
   },
   "uz": {
     "projects": "Loyihalar.",
@@ -351,6 +353,7 @@
     "SelfServiceInformation": "O'z-o'ziga xizmat ko'rsatish ma'lumot terminali",
     "SelfServiceInfoterminal": "Infoterminal - bu jismoniy shaxslardan to'lovlarni qabul qilish imkonini beruvchi apparat-dasturiy kompleks.",
     "SelfServiceHow": " U qanday ishlaydi",
-    "SelfServiceGuests": "Mehmonlar ofitsiantsiz menyuni ko'rib chiqishlari, buyurtma berishlari va to'lashlari mumkin. To'lov va to'lov to'g'ridan-to'g'ri Infoterminal orqali amalga oshiriladi."
+    "SelfServiceGuests": "Mehmonlar ofitsiantsiz menyuni ko'rib chiqishlari, buyurtma berishlari va to'lashlari mumkin. To'lov va to'lov to'g'ridan-to'g'ri Infoterminal orqali amalga oshiriladi.",
+    "alert": "Ushbu qator to'ldirilishi shart"
   }
 }
