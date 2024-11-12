@@ -22,7 +22,7 @@ export const PosSystemsSection = () => {
                 <source src="../assets/gifs/rmbg.mp4" type="video/mp4" />
               </video>
               <video
-                class="absolute ellipse-gif-mobile !touch-none max-sm:top-[33vh] max-w-[550px] hidden max-lg:block max-md:max-w-[400px] max-sm:max-w-[235px]"
+                class="absolute ellipse-gif-mobile !touch-none  !max-w-[50vw] hidden max-lg:block max-md:max-w-[400px] max-sm:max-w-[235px]"
                 autoplay
                 muted
                 loop
