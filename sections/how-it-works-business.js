@@ -20,10 +20,7 @@ export const HowItWorksBusinessSection = () => {
                 alt="Left Illustrator"
               />
             </div>
-            <div
-              class="video-container relative p-5"
-              style="padding-top: 60px; background:black;"
-            >
+            <div class="video-container relative p-5" style=" ">
               <!-- Video 1 -->
               <video
                 class="vid w-full h-auto active   "
@@ -37,8 +34,7 @@ export const HowItWorksBusinessSection = () => {
               </video>
               <div
                 data-key="howItWorksBusinessScan"
-                style="color:white;"
-                class="overlay-text text-top-left "
+                class="overlay-text text-top-left rounded-title"
               >
                 Scan QR-code
               </div>
@@ -71,8 +67,7 @@ export const HowItWorksBusinessSection = () => {
 
               <div
                 data-key="howItWorksBusinessMenu"
-                style="color:white;"
-                class="overlay-text text-top-left"
+                class="overlay-text text-top-left rounded-title"
               >
                 Menu
               </div>
@@ -105,8 +100,7 @@ export const HowItWorksBusinessSection = () => {
 
               <div
                 data-key="howItWorksBusinessPay"
-                style="color:white;"
-                class="overlay-text text-top-left"
+                class="overlay-text text-top-left rounded-title"
               >
                 Pay the bill and tip
               </div>
@@ -138,8 +132,7 @@ export const HowItWorksBusinessSection = () => {
               </video>
               <div
                 data-key="howItWorksBusinessLeave"
-                style="color:white;"
-                class="overlay-text text-top-left"
+                class="overlay-text text-top-left rounded-title"
               >
                 Leave review
               </div>
