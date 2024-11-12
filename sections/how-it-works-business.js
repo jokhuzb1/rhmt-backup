@@ -6,7 +6,7 @@ export const HowItWorksBusinessSection = () => {
 
     if (howItWorks) {
       howItWorks.innerHTML = html`
-        <div class="grid grid-cols-1  gap-4 ">
+        <div class="grid grid-cols-1  gap-4 untouchable">
           <div class="video-section col-span-1 relative">
             <div class="right-illustrator-business illus">
               <img

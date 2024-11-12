@@ -6,7 +6,7 @@ export const BusinessAdvantages = () => {
 
     if (advantages) {
       advantages.innerHTML = html`
-        <div class="card-wrapped">
+        <div class="card-wrapped untouchable">
           <section id="horizontal-scoll">
             <span class="ad-title" data-key="advantagesTitleSpan"
               >Advantages</span
