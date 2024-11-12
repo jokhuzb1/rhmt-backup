@@ -148,9 +148,6 @@ export const BusinessAdvantages = () => {
         </div>
       `;
 
-      // GSAP ScrollTrigger animation
-      gsap.registerPlugin(ScrollTrigger);
-
       let horizontalSection = document.querySelector(".horizontal");
 
       // console.log(horizontalSection.scrollWidth);

@@ -8,26 +8,32 @@ export const Contacts = () => {
       contacts.innerHTML = html`
         <div class="flex-container">
           <div class="text-content">
-            <h2 data-key="ContactOne">Contact Us</h2>
-            <p data-key="ContactHear">
-              We'd love to hear from you! Please fill out the form on the right
-              or reach out to us via email or phone.
-            </p>
-            <p data-key="ContactOur">
-              Our team is available to assist you with any inquiries or support
-              you may need.
-            </p>
+            <h2
+              data-key="contactUs"
+              style="
+                padding: 2px 23px;
+                border-radius: 50px;
+                border: 1px solid #d8d9d8;
+                font-size: 16px;
+                width: max-content;
+                "
+            >
+              Contact Us
+            </h2>
+            <h3
+              class="text-[50px] text-[#010101] mt-[40px] w-full max-w-[500px] max-md:text-[25px] max-md:!text-center"
+              data-key="becomePartnerTitle"
+            >
+              Become a Valued Partner Today !
+            </h3>
           </div>
-          <div class="form-container">
-            <!-- Form will be injected here -->
-          </div>
+          <div class="form-container"></div>
         </div>
         <style>
-          /* General styles for the contact section */
           #contacts {
             padding: 30px;
-            background-color: #ffff; /* Light background for contrast */
-            border-radius: 8px; /* Rounded corners for the section */
+            background-color: #ffff;
+            border-radius: 8px;
           }
           .b24-form-shadow {
             box-shadow: none !important;
@@ -35,70 +41,103 @@ export const Contacts = () => {
           }
           .flex-container {
             display: flex;
-            justify-content: center; /* Center the content horizontally */
-            align-items: start; /* Center items vertically */
-            flex-wrap: wrap; /* Allow wrapping for smaller screens */
+            justify-content: space-between;
+            align-items: start;
+            flex-wrap: wrap;
           }
 
           .text-content {
-            flex: 1; /* Allow text content to take up available space */
-            max-width: 50%; /* Limit the maximum width */
-            margin-right: 20px; /* Add some margin to the right */
-            min-width: 250px; /* Ensure it doesn't get too small */
-            text-align: center; /* Center text */
-            font-family: "Arial", sans-serif; /* Font family */
-            color: #333; /* Dark text color */
+            flex: 1;
+            max-width: 50%;
+            margin-right: 20px;
+            min-width: 250px;
+            text-align: start;
+            font-family: "Arial", sans-serif;
+            color: #333;
           }
 
           .text-content h2 {
-            font-size: 2.5rem; /* Larger font size for the heading */
-            font-weight: bold; /* Bold font style for emphasis */
-            margin-bottom: 15px; /* Space below heading */
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 15px;
           }
 
           .text-content p {
-            font-size: 1.2rem; /* Medium font size for paragraphs */
-            margin-bottom: 10px; /* Space below paragraphs */
+            font-size: 1.2rem;
+            margin-bottom: 10px;
           }
 
           .form-container {
             flex: 1;
-            max-width: 50%;
+            max-width: 70%;
             min-width: 250px;
           }
 
-          .contact-button {
-            background-color: transparent;
-            color: #ed6a2a;
-            border: 2px solid #ed6a2a;
-            padding: 10px 20px;
-            border-radius: 25px;
-            cursor: pointer;
-            font-size: 1.2rem;
-            transition: background-color 0.3s, color 0.3s;
-            margin-top: 15px;
-            text-transform: uppercase;
+          .b24-form-btn-container,
+          .b24-form-btn-block {
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
           }
-
-          .contact-button:hover {
-            background-color: #ed6a2a;
-            color: white;
+          .form-container form > div:first-child {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
           }
 
           .b24-form-btn {
-            border-radius: 50px !important;
+            background-color: #010101;
+            color: white;
             padding: 0 14px !important;
+            border-radius: 50px !important;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: opacity 0.3s, color 0.3s;
+            margin-top: 15px;
+            text-transform: uppercase;
+            min-width: 177px !important;
+            max-width: auto !important;
+            width: auto !important;
+            max-height: auto !important;
+            height: 40px !important;
+            min-height: auto !important;
           }
 
-          /* Responsive Styles */
+          .b24-form-btn:hover {
+            opacity: 0.9;
+            background-color: #010101 !important;
+            color: white !important;
+          }
+
           @media (max-width: 768px) {
             .flex-container {
               flex-direction: column;
+              justify-content: center;
+              align-items: center;
             }
+
             .text-content,
             .form-container {
               max-width: 100%;
-              margin-right: 0;
+            }
+            .text-content {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+            }
+            .text-conent h2,
+            .text-conent {
+              text-align: center !important;
+              margin: 0 auto;
+              background: blue !important;
+            }
+          }
+
+          @media (max-width: 400px) {
+            .form-container form > div:first-child {
+              grid-template-columns: repeat(1, minmax(0, 1fr));
+              gap: 10px;
             }
           }
         </style>
