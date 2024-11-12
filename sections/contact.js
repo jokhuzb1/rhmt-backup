@@ -26,18 +26,8 @@ export const Contacts = () => {
             >
               Become a Valued Partner Today !
             </h3>
-            <!-- <p data-key="ContactHear">
-              We'd love to hear from you! Please fill out the form on the right
-              or reach out to us via email or phone.
-            </p>
-            <p data-key="ContactOur">
-              Our team is available to assist you with any inquiries or support
-              you may need.
-            </p> -->
           </div>
-          <div class="form-container">
-            <!-- Form will be injected here -->
-          </div>
+          <div class="form-container"></div>
         </div>
         <style>
           #contacts {
