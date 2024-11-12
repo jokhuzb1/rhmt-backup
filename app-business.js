@@ -14,7 +14,15 @@ import { MultiLanguage } from "./scripts/multi-lang.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
   try {
+    gsap.registerPlugin(ScrollTrigger);
     const { starLoader } = await import("./scripts/gsap/start-loader.js");
+    const progressBar = document.getElementById("progress-bar");
+    window.addEventListener("scroll", () => {
+      const scrollTop = window.scrollY;
+      const documentHeight = document.body.scrollHeight - window.innerHeight;
+      const progress = (scrollTop / documentHeight) * 100;
+      gsap.to(progressBar, { width: `${progress}%`, duration: 0.2 });
+    });
 
     const functions = [
       NavbarSection,
