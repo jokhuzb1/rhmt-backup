@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       FaqSection,
       FooterSection,
       Contacts,
-      MultiLanguage,
+      () => MultiLanguage(false),
       Gsap,
       () => InteractWithDom(false),
     ];
