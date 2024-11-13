@@ -31,7 +31,25 @@ export const starLoader = (totalFunctions, functions) => {
       }
 
       function updateCounter() {
-        counterElement.textContent = `${Math.round(currentProgress)}%`;
+        const text = `Rahmat ${Math.round(currentProgress)}%`;
+        counterElement.innerHTML = text
+          .split("")
+          .map((char) => `<span class="bounce-letter">${char}</span>`)
+          .join("");
+
+        // Apply GSAP bounce animation to each letter
+        gsap.fromTo(
+          ".bounce-letter",
+          { y: -10 },
+          {
+            y: 0,
+            duration: 0.5,
+            stagger: 0.05,
+            ease: "bounce.out",
+            repeat: -1,
+            repeatDelay: 0.5,
+          }
+        );
       }
 
       const executedFunctions = new Set();
