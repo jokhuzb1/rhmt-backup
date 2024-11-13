@@ -47,13 +47,13 @@ export const PayReviewAnimation = () => {
           {
             opacity: 0,
             position: "fixed",
-            left: "50vw",
+            left: "50%",
             xPercent: -50,
           },
           {
             opacity: 1,
             position: "fixed",
-            x: "-16vw",
+            x: "-12vw",
             ease: "power2.out",
             duration: 0.5,
           },
@@ -64,13 +64,13 @@ export const PayReviewAnimation = () => {
           {
             opacity: 0,
             position: "fixed",
-            left: "50vw",
+            left: "50%",
             xPercent: -50,
           },
           {
             opacity: 1,
             position: "fixed",
-            x: "16vw",
+            x: "12vw",
             ease: "power2.out",
             duration: 0.5,
           },

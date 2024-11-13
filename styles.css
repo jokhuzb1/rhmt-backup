@@ -296,6 +296,26 @@ img {
   width: 120px;
 }
 
+@media screen and (min-width: 1200px) {
+  .right-illustrator img,
+  .left-illustrator img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .right-illustrator,
+  .left-illustrator {
+    height: 30vh !important;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .main-div {
+    bottom: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .bottom-divs,
   .top-divs {
@@ -304,7 +324,21 @@ img {
   }
   .right-illustrator img,
   .left-illustrator img {
-    height: 35vh !important;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .right-illustrator,
+  .left-illustrator {
+    top: 50%;
+    transform: translateY(-50%);
+    height: 30vh !important;
+  }
+
+  .main-div {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -321,37 +355,38 @@ img {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .bottom-divs,
   .top-divs {
-    height: 40vh !important;
+    height: 30vh !important;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     display: grid;
+    gap: 0;
   }
   .top-div:nth-of-type(1) {
-    transform: translateX(20px);
+    transform: translateX(15px);
   }
   .top-div:nth-of-type(2) {
-    transform: translateX(-20px);
+    transform: translateX(-15px);
   }
   .top-div:nth-of-type(3) {
-    transform: translateX(-60px);
+    transform: translateX(-70px);
   }
   .top-div:nth-of-type(4) {
-    transform: translateX(60px);
+    transform: translateX(70px);
   }
 
   .bottom-div:nth-of-type(1) {
-    transform: translateX(-60px);
+    transform: translateX(-70px);
   }
   .bottom-div:nth-of-type(2) {
-    transform: translateX(60px);
+    transform: translateX(70px);
   }
   .bottom-div:nth-of-type(3) {
-    transform: translateX(20px);
+    transform: translateX(15px);
   }
   .bottom-div:nth-of-type(4) {
-    transform: translateX(-20px);
+    transform: translateX(-15px);
   }
   .bottom-div,
   .top-div {
@@ -360,10 +395,10 @@ img {
     margin: 0 auto;
   }
   .main-div {
-    height: 45vh;
+    height: 40vh;
   }
-  .right-illustrator img,
-  .left-illustrator img {
+  .right-illustrator,
+  .left-illustrator {
     height: 30vh !important;
   }
 }
@@ -404,8 +439,8 @@ img {
     height: 35vh;
   }
 
-  .right-illustrator img,
-  .left-illustrator img {
+  .right-illustrator,
+  .left-illustrator {
     height: 20vh !important;
   }
 }
@@ -424,6 +459,12 @@ img {
     padding: 0px;
   }
 
+  .right-illustrator,
+  .left-illustrator {
+    height: 12vh !important;
+    top: 50%;
+    transform: translateY(-50%);
+  }
   .bottom-div,
   .top-div {
     transform: translateX(0px) !important;

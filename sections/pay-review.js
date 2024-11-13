@@ -48,9 +48,7 @@ export const PayReviewSection = () => {
               class="phone-image w-full h-full object-contain z-[9999]"
             />
           </div>
-          <div
-            class="bottom-divs flex z-[999] max-[1200px]:w-full  !h-[15vh] translate-x-[1500px]"
-          >
+          <div class="bottom-divs flex z-[999]  !h-[15vh] translate-x-[1500px]">
             <img
               src="/assets/payment-images/img_4.png"
               alt="animated payment img"
