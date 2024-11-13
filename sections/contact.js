@@ -170,7 +170,6 @@ export const Contacts = () => {
       //   subtree: true,
       // });
 
-
       resolve("contacts loaded");
     } else {
       reject(new Error("contacts element not found!"));
