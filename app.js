@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       Contacts,
       MultiLanguage,
       Gsap,
-      InteractWithDom,
+      () => InteractWithDom(false),
     ];
 
     const totalFunctions = functions.length;

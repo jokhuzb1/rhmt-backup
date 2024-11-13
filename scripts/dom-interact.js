@@ -1,7 +1,7 @@
-export const InteractWithDom = async () => {
+export const InteractWithDom = async (b) => {
   try {
     console.log("Function is loading");
-
+    console.log("it is b", b);
     const $ = (selector) => document.querySelector(selector);
     const $$ = (selector) => document.querySelectorAll(selector);
 
@@ -21,7 +21,6 @@ export const InteractWithDom = async () => {
     allDropDownButtons?.forEach((btn) => {
       btn.addEventListener("click", (e) => {
         e.stopPropagation();
-        console.log("button is clicked");
         const chevronIcon = btn.querySelector(".chevronIcon");
         chevronIcon?.classList.toggle("rotate-180");
         btn.classList.toggle("active");
@@ -64,7 +63,6 @@ export const InteractWithDom = async () => {
 
     nextSectionButtons?.forEach((btn) => {
       btn.addEventListener("click", () => {
-        console.log("button clicked");
         window.scrollBy({ top: window.innerHeight, behavior: "smooth" });
       });
     });
@@ -127,9 +125,11 @@ export const InteractWithDom = async () => {
         detailsElement.style = "padding:15px 20px;width:100%";
         detailsElement.innerHTML = `
           <summary class="flex justify-between items-center">
-          <div class="flex items-center justify-between w-full">
-          <h3 class="max-md:hidden text-[16px] mr-2">0${index + 1}</h3>
-              <h1 class="text-[30px] max-w-[350px] max-lg:text-[25px] max-sm:text-[16px] max-sm:max-w-[200px]">
+            <div class="flex items-center justify-between w-full">
+              <h3 class="max-md:hidden text-[16px] mr-2">0${index + 1}</h3>
+              <h1
+                class="text-[30px] max-w-[350px] max-lg:text-[25px] max-sm:text-[16px] max-sm:max-w-[200px]"
+              >
                 ${getTextByLang(details, "question")}
               </h1>
               <div>

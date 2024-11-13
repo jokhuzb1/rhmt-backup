@@ -23,7 +23,6 @@ export const HowItWorksBusinessAnimation = () => {
       });
 
       function changeVideoAndText(index) {
-        // Hide all videos and overlay texts first
         videos.forEach((video) => {
           gsap.to(video, { opacity: 0, duration: 0.5 });
           video.pause();
@@ -33,14 +32,13 @@ export const HowItWorksBusinessAnimation = () => {
           gsap.to(text, { opacity: 0, duration: 0.5 });
         });
 
-        // Pause all icons and ensure they are initially hidden
         icons.forEach((icon) => {
           gsap.to(icon, { opacity: 0, duration: 1 });
         });
-
-        // Show the current video and play it
-        gsap.to(videos[index], { opacity: 1, duration: 0.5 });
-        videos[index].play();
+        if (videos && videos.length !== 0 && videos[index]) {
+          gsap.to(videos[index], { opacity: 1, duration: 0.5 });
+          videos[index].play();
+        }
 
         // Show overlay texts for the current video
         const textsToShow = [
@@ -49,9 +47,10 @@ export const HowItWorksBusinessAnimation = () => {
           document.querySelectorAll(".text-bottom-left")[index],
           document.querySelectorAll(".text-bottom-right")[index],
         ];
-
         textsToShow.forEach((text) => {
-          gsap.to(text, { opacity: 1, duration: 0.5 });
+          if (text) {
+            gsap.to(text, { opacity: 1, duration: 0.5 });
+          }
         });
 
         // Ensure the icon for the current video section is always shown
