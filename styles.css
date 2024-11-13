@@ -95,6 +95,7 @@ img {
   transform: translate(-50%, -50%);
   z-index: 999999;
   color: #fff;
+  background-color: aqua;
   font-family: "Carpenter", sans-serif;
   font-size: 3rem;
   text-align: center;
