@@ -37,7 +37,6 @@ export const starLoader = (totalFunctions, functions) => {
           .map((char) => `<span class="bounce-letter">${char}</span>`)
           .join("");
 
-        // Apply GSAP bounce animation to each letter
         gsap.fromTo(
           ".bounce-letter",
           { y: -10 },
