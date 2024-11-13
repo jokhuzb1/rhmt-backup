@@ -246,7 +246,8 @@ img {
     font-size: 2.8rem;
   }
   .overlay-text > h2 {
-    font-size: 1.6rem;
+    font-size: 2.2rem;
+    font-weight: 400;
   }
   .overlay-text > p {
     font-size: 0.6rem;
@@ -272,7 +273,7 @@ img {
     transform: none;
     width: 100%;
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: bold;
     text-align: center;
     bottom: auto;
   }

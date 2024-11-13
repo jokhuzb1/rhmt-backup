@@ -29,7 +29,9 @@
 section {
   padding: 20px 0; /* Combined top and bottom padding */
 }
-
+#bold-text {
+  font-weight: 500;
+}
 .word,
 .partner-text-word,
 .header-text-word,

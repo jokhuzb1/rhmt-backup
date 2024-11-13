@@ -18,7 +18,7 @@ export const HowItWorksSection = () => {
                 playsinline
                 webkit-playsinline
               >
-                <source src="./assets/howitworks/1.webm" type="video/webm" />
+                <source src="./assets/howitworks/1.mp4" type="video/mp4" />
               </video>
               <div
                 class="overlay-text text-top-left"
@@ -34,9 +34,12 @@ export const HowItWorksSection = () => {
               </div>
               <div class="overlay-text text-top-right">01</div>
               <div class="overlay-text text-bottom-left">
-                <h2 data-key="scanQrHeading">
+                <h2 data-key="scanQrHeading" id="bold-text">
                   Scan the QR-code <br />
-                  to <span class="text-[#888888]">Pay Securely</span>
+                  to
+                  <span class="text-[#888888]" id="bold-text"
+                    >Pay Securely</span
+                  >
                 </h2>
               </div>
               <div class="overlay-text text-bottom-right">
@@ -72,9 +75,9 @@ export const HowItWorksSection = () => {
               </div>
               <div class="overlay-text text-top-right">02</div>
               <div class="overlay-text text-bottom-left">
-                <h2 data-key="paymentHeading">
+                <h2 data-key="paymentHeading" id="bold-text">
                   Guests can
-                  <span class="text-[#888888]"
+                  <span class="text-[#888888]" id="bold-text"
                     >pay their <br />
                     bill easily</span
                   >
@@ -112,8 +115,9 @@ export const HowItWorksSection = () => {
               </div>
               <div class="overlay-text text-top-right">03</div>
               <div class="overlay-text text-bottom-left">
-                <h2 data-key="gratuitiesHeading">
-                  <span class="text-[#888888]">Seamless</span> Service <br />
+                <h2 data-key="gratuitiesHeading" id="bold-text">
+                  <span class="text-[#888888]" id="bold-text">Seamless</span>
+                  Service <br />
                   and Easy Get Tipping!
                 </h2>
               </div>
@@ -134,7 +138,7 @@ export const HowItWorksSection = () => {
                 playsinline
                 webkit-playsinline
               >
-                <source src="./assets/howitworks/4.webm" type="video/webm" />
+                <source src="./assets/howitworks/4.mp4" type="video/mp4" />
               </video>
               <div
                 class="overlay-text text-top-left"
@@ -150,9 +154,10 @@ export const HowItWorksSection = () => {
               </div>
               <div class="overlay-text text-top-right">04</div>
               <div class="overlay-text text-bottom-left">
-                <h2 data-key="reviewsHeading">
+                <h2 data-key="reviewsHeading" id="bold-text">
                   Real-Time <br />
-                  Guest <span class="text-[#888888]">Feedback!</span>
+                  Guest
+                  <span class="text-[#888888]" id="bold-text">Feedback!</span>
                 </h2>
               </div>
               <div class="overlay-text text-bottom-right">

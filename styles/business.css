@@ -16,6 +16,7 @@
 }
 
 .overlay-text {
+  font-family: "Roboto", sans-serif;
   font-size: 2rem; /* Base font size */
   padding: 2rem;
   text-align: start;
