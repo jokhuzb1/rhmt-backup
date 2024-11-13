@@ -6,7 +6,7 @@ export const Contacts = () => {
 
     if (contacts) {
       contacts.innerHTML = html`
-        <div class="flex-container">
+        <div class="flex-container container">
           <div class="text-content">
             <h2
               data-key="contactUs"
@@ -142,24 +142,22 @@ export const Contacts = () => {
           }
         </style>
       `;
-
       const script = document.createElement("script");
       script.setAttribute("data-b24-form", "inline/37/fui8yo");
       script.setAttribute("data-skip-moving", "true");
       script.async = true;
       script.src =
-        "https://crm.multibank.uz/upload/crm/form/loader_37_fui8yo.js";
+        "https://crm.multibank.uz/upload/crm/form/loader_37_fui8yo.js?lang=uz";
       contacts.querySelector(".form-container").appendChild(script);
-
       // const observer = new MutationObserver((mutationsList, observer) => {
       //   const alertElements = document.querySelectorAll(
       //     ".b24-form-control-alert-message"
       //   );
       //   if (alertElements.length > 0) {
-      // alertElements.forEach((i) => {
-      //   i.setAttribute("data-key", "alert");
-      //   i.innerText = "";
-      // });
+      //     alertElements.forEach((i) => {
+      //       i.setAttribute("data-key", "alert");
+      //       i.innerText = "";
+      //     });
       //     observer.disconnect();
       //     resolve("contacts loaded");
       //   }
@@ -169,7 +167,6 @@ export const Contacts = () => {
       //   childList: true,
       //   subtree: true,
       // });
-
 
       resolve("contacts loaded");
     } else {
