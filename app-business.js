@@ -6,7 +6,7 @@ import { FooterSection } from "./sections/footer.js";
 import { HowItWorksBusinessAnimation } from "./scripts/gsap/how-it-workds-business-animations.js";
 import { BusinessAdvantages } from "./sections/business-advantages.js";
 import { SelfService } from "./sections/self-service.js";
-import { BusinessFaqSection } from "./sections/business-faq.js";
+import { FaqBusinessSection } from "./sections/business-faq.js";
 import { HeaderAnimation } from "./scripts/gsap/header-animation.js";
 import { HeaderSection } from "./sections/business-header.js";
 import { InteractWithDom } from "./scripts/dom-interact.js";
@@ -31,9 +31,9 @@ document.addEventListener("DOMContentLoaded", async () => {
       HowItWorksBusinessAnimation,
       BusinessAdvantages,
       SelfService,
-      // BusinessFaqSection,
+      FaqBusinessSection,
       FooterSection,
-      InteractWithDom,
+      () => InteractWithDom(true),
       MultiLanguage,
       HeaderAnimation,
       FooterAnimation,
