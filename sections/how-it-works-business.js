@@ -42,7 +42,7 @@ export const HowItWorksBusinessSection = () => {
                 01
               </div>
               <div style="color:white;" class="overlay-text text-bottom-left">
-                <h2 data-key="howItWorksBusinessGuest">
+                <h2 data-key="howItWorksBusinessGuest" id="bold-text">
                   Guest scans the QR code
                 </h2>
               </div>
@@ -75,7 +75,7 @@ export const HowItWorksBusinessSection = () => {
                 02
               </div>
               <div style="color:white;" class="overlay-text text-bottom-left">
-                <h2 data-key="howItWorksBusinessReviewing">
+                <h2 data-key="howItWorksBusinessReviewing" id="bold-text">
                   Reviewing the menu and form an order
                 </h2>
               </div>
@@ -108,7 +108,7 @@ export const HowItWorksBusinessSection = () => {
                 03
               </div>
               <div style="color:white;" class="overlay-text text-bottom-left">
-                <h2 data-key="howItWorksBusinessUpon">
+                <h2 data-key="howItWorksBusinessUpon" id="bold-text">
                   Upon completion, the bill and tip are paid.
                 </h2>
               </div>
@@ -140,7 +140,7 @@ export const HowItWorksBusinessSection = () => {
                 04
               </div>
               <div style="color:white;" class="overlay-text text-bottom-left">
-                <h2 data-key="howItWorksBusinessWaiter">
+                <h2 data-key="howItWorksBusinessWaiter" id="bold-text">
                   The waiter may offer to leave a review.
                 </h2>
               </div>
