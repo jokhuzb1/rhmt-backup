@@ -62,7 +62,7 @@ export const HowItWorksBusinessSection = () => {
                 playsinline
                 webkit-playsinline
               >
-                <source src="./assets/howitworks/2.webm" type="video/webm" />
+                <source src="./assets/howitworks/1AVI.webm" type="video/webm" />
               </video>
 
               <div
@@ -95,7 +95,7 @@ export const HowItWorksBusinessSection = () => {
                 playsinline
                 webkit-playsinline
               >
-                <source src="./assets/howitworks/1.webm" type="video/webm" />
+                <source src="./assets/howitworks/3AV.webm" type="video/webm" />
               </video>
 
               <div
@@ -128,7 +128,7 @@ export const HowItWorksBusinessSection = () => {
                 playsinline
                 webkit-playsinline
               >
-                <source src="./assets/howitworks/4.webm" type="video/mp4" />
+                <source src="./assets/howitworks/2AVI.webm" type="video/mp4" />
               </video>
               <div
                 data-key="howItWorksBusinessLeave"

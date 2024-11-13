@@ -17,13 +17,19 @@ export const BusinessAdvantages = () => {
                   <div class="card">
                     <h2>01</h2>
                     <video
-                      src="../assets/business/order.webm"
                       class="image"
                       autoplay
-                      loop
                       muted
-                      type="video/webm"
-                    ></video>
+                      playsinline
+                      loop
+                      webkit-playsinline
+                    >
+                      <source
+                        src="../assets/business/order.webm"
+                        type="video/webm"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
                     <div class="content-text">
                       <h2 data-key="advantagesTitleInstant">
                         Instant Online Orders
@@ -40,13 +46,19 @@ export const BusinessAdvantages = () => {
                   <div class="card">
                     <h2>02</h2>
                     <video
-                      src="../assets/business/noapplication.webm"
                       class="image"
                       autoplay
-                      loop
                       muted
-                      type="video/webm"
-                    ></video>
+                      playsinline
+                      loop
+                      webkit-playsinline
+                    >
+                      <source
+                        src="../assets/business/noapplication.webm"
+                        type="video/webm"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
                     <div class="content-text">
                       <h2 data-key="advantagesTitleApplication">
                         No need application
@@ -63,13 +75,19 @@ export const BusinessAdvantages = () => {
                       <h2 class="top">03</h2>
                     </div>
                     <video
-                      src="../assets/business/advantages.webm"
                       class="image"
                       autoplay
-                      loop
                       muted
-                      type="video/webm"
-                    ></video>
+                      playsinline
+                      loop
+                      webkit-playsinline
+                    >
+                      <source
+                        src="../assets/business/advantages.webm"
+                        type="video/webm"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
                     <div class="content-text">
                       <h2 data-key="advantagesTitleSeamless">
                         Seamless Ordering and Tipping
@@ -86,14 +104,19 @@ export const BusinessAdvantages = () => {
                   <div class="card">
                     <h2 class="top">04</h2>
                     <video
-                      src="../assets/business/scheme.webm"
                       class="image"
                       autoplay
-                      loop
                       muted
-                      type="video/webm"
-                    ></video>
-
+                      playsinline
+                      loop
+                      webkit-playsinline
+                    >
+                      <source
+                        src="../assets/business/scheme.webm"
+                        type="video/webm"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
                     <div class="content-text">
                       <h2 data-key="advantagesTitleFast">Fast Sales Boost</h2>
                       <p data-key="advantagesTitleIncreases">
@@ -107,13 +130,19 @@ export const BusinessAdvantages = () => {
                   <div class="card">
                     <h2 class="top">05</h2>
                     <video
-                      src="../assets/business/5.webm"
-                      class="image "
+                      class="image"
                       autoplay
-                      loop
                       muted
-                      type="video/webm"
-                    ></video>
+                      playsinline
+                      loop
+                      webkit-playsinline
+                    >
+                      <source
+                        src="../assets/business/5.webm"
+                        type="video/webm"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
                     <div class="content-text top">
                       <h2 data-key="advantagesTitleEasy">Easy Menu Updates</h2>
                       <p data-key="advantagesTitleAlways">
@@ -127,13 +156,19 @@ export const BusinessAdvantages = () => {
                   <div class="card">
                     <h2>06</h2>
                     <video
-                      src="../assets/business/6.webm"
                       class="image"
                       autoplay
-                      loop
                       muted
-                      type="video/webm"
-                    ></video>
+                      playsinline
+                      loop
+                      webkit-playsinline
+                    >
+                      <source
+                        src="../assets/business/6.webm"
+                        type="video/webm"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
                     <div class="content-text">
                       <h2 data-key="advantagesTitleSave">Save your time!</h2>
                       <p data-key="advantagesTitleEverything">
