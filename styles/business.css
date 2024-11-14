@@ -49,6 +49,7 @@
 @media (max-width: 768px) {
   .overlay-text {
     font-size: 1.6rem;
+    padding: 0.5rem;
   }
   .overlay-text > p {
     font-size: 1rem;
