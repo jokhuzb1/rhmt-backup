@@ -27,12 +27,11 @@ export const PayReviewAnimation = () => {
             opacity: 0,
           },
           {
-            left: "50%",
-            xPercent: -50,
-            position: "fixed",
             top: "50%",
-            opacity: 1,
             yPercent: -50,
+            left: "50%",
+            position: "fixed",
+            opacity: 1,
             duration: 0.5,
             ease: "power2.out",
           }
