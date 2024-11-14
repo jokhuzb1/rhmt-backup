@@ -81,7 +81,7 @@ export const PosSystemsAnimation = () => {
           { left: "50%" },
           {
             left: "-30vw",
-            top: "148%",
+            // top: "148%",
             scrollTrigger: {
               trigger: sectionWithEllipse,
               start: "top bottom",

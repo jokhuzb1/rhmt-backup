@@ -615,7 +615,7 @@ img {
 
 @media screen and (max-height: 800px) {
   #how-it-works {
-    min-height: 400vh;
+    min-height: 500vh;
   }
 }
 
