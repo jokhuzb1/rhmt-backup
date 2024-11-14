@@ -558,7 +558,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 40px;
 }
 
 .vid {
@@ -580,10 +579,6 @@ img {
     top: 45%;
     transform: translate(-50, 45%);
   }
-
-  .video-container {
-    padding-top: 5px !important;
-  }
   .text-bottom-right p {
     bottom: 0;
     left: 0;
@@ -600,8 +595,11 @@ img {
     top: 0;
     padding: 0;
   }
+  .overlay-text {
+    padding: 1rem;
+  }
   .text-bottom-right {
-    bottom: 0;
+    bottom: 5%;
     width: 100%;
     max-width: 100%;
     left: 50%;
