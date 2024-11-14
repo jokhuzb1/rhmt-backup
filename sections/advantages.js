@@ -28,8 +28,8 @@ export const AdvantagesSection = () => {
                     webkit-playsinline
                   >
                     <source
-                      src="/assets/gifs/advantages-text-bg.mp4"
-                      type="video/mp4"
+                      src="/assets/gifs/advantages-text-bg.webm"
+                      type="video/webm"
                     />
                   </video>
                   <div class="flex items-center z-[2]">
@@ -91,8 +91,8 @@ export const AdvantagesSection = () => {
                       webkit-playsinline
                     >
                       <source
-                        src="./assets/gifs/integrations.mp4"
-                        type="video/mp4"
+                        src="./assets/gifs/integrations.webm"
+                        type="video/webm"
                       />
                     </video>
                     <div class="h-[146px]"></div>
@@ -123,8 +123,8 @@ export const AdvantagesSection = () => {
                       webkit-playsinline
                     >
                       <source
-                        src="./assets/gifs/analytics.mp4"
-                        type="video/mp4"
+                        src="./assets/gifs/analytics.webm"
+                        type="video/webm"
                       />
                     </video>
                     <div class="h-[146px]"></div>
@@ -156,8 +156,8 @@ export const AdvantagesSection = () => {
                       webkit-playsinline
                     >
                       <source
-                        src="./assets/gifs/integration.mp4"
-                        type="video/mp4"
+                        src="./assets/gifs/integration.webm"
+                        type="video/webm"
                       />
                     </video>
                     <div class="h-[146px]"></div>
@@ -174,7 +174,7 @@ export const AdvantagesSection = () => {
         </div>
 
         <!-- mobile -->
-        <div class="hidden max-lg:block mt-[200px]">
+        <div class="hidden max-lg:block mt-[200px] untouchable">
           <div class="relative advantages-1">
             <div class="bg-[#010101] w-full rounded-[16px] py-[20px]">
               <div class="container">
@@ -220,7 +220,10 @@ export const AdvantagesSection = () => {
                 playsinline
                 webkit-playsinline
               >
-                <source src="./assets/gifs/integrations.mp4" type="video/mp4" />
+                <source
+                  src="./assets/gifs/integrations.webm"
+                  type="video/webm"
+                />
               </video>
               <div class="h-[146px]"></div>
               <img
@@ -254,8 +257,8 @@ export const AdvantagesSection = () => {
                         webkit-playsinline
                       >
                         <source
-                          src="./assets/gifs/advantages-text-bg.mp4"
-                          type="video/mp4"
+                          src="./assets/gifs/advantages-text-bg.webm"
+                          type="video/webm"
                         />
                       </video>
                     </div>
@@ -284,7 +287,7 @@ export const AdvantagesSection = () => {
                 playsinline
                 webkit-playsinline
               >
-                <source src="./assets/gifs/analytics.mp4" type="video/mp4" />
+                <source src="./assets/gifs/analytics.webm" type="video/webm" />
               </video>
               <div class="h-[146px]"></div>
               <img
@@ -318,8 +321,8 @@ export const AdvantagesSection = () => {
                         webkit-playsinline
                       >
                         <source
-                          src="./assets/gifs/advantages-text-bg.mp4"
-                          type="video/mp4"
+                          src="./assets/gifs/advantages-text-bg.webm"
+                          type="video/webm"
                         />
                       </video>
                     </div>
@@ -348,7 +351,10 @@ export const AdvantagesSection = () => {
                 playsinline
                 webkit-playsinline
               >
-                <source src="./assets/gifs/integration.mp4" type="video/mp4" />
+                <source
+                  src="./assets/gifs/integration.webm"
+                  type="video/webm"
+                />
               </video>
               <img
                 src="./assets/icons/showcase-bottom-illustrator.svg"
