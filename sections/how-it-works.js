@@ -18,7 +18,10 @@ export const HowItWorksSection = () => {
                 playsinline
                 preload="auto"
               >
-                <source src="./assets/howitworks/1.mp4" type="video/mp4" />
+                <source
+                  src="./assets/howitworkswebm/1.webm"
+                  type="video/webm"
+                />
               </video>
               <div
                 class="overlay-text text-top-left"
@@ -59,7 +62,10 @@ export const HowItWorksSection = () => {
                 playsinline
                 preload="auto"
               >
-                <source src="./assets/howitworks/2.mp4" type="video/mp4" />
+                <source
+                  src="./assets/howitworkswebm/2.webm"
+                  type="video/webm"
+                />
               </video>
               <div
                 class="overlay-text  text-top-left"
@@ -99,7 +105,10 @@ export const HowItWorksSection = () => {
                 playsinline
                 preload="auto"
               >
-                <source src="./assets/howitworks/3.mp4" type="video/mp4" />
+                <source
+                  src="./assets/howitworkswebm/3.webm"
+                  type="video/webm"
+                />
               </video>
               <div
                 class="overlay-text text-top-left"
@@ -138,7 +147,10 @@ export const HowItWorksSection = () => {
                 playsinline
                 preload="auto"
               >
-                <source src="./assets/howitworks/4.mp4" type="video/mp4" />
+                <source
+                  src="./assets/howitworkswebm/4.webm"
+                  type="video/webm"
+                />
               </video>
               <div
                 class="overlay-text text-top-left"
