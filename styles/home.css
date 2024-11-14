@@ -464,7 +464,6 @@ summary::-webkit-details-marker {
 .pos-system-section,
 .section-with-ellipse {
   position: relative;
-  overflow: hidden; /* Ensures nothing spills outside the section */
 }
 
 .ellipse-gif,

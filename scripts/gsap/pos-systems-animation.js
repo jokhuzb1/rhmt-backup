@@ -9,17 +9,17 @@ export const PosSystemsAnimation = () => {
         ".section-with-ellipse"
       );
 
+      // Split the text into words and animate them
       const words = posSystemText.innerText.split(" ");
       posSystemText.innerHTML = words
         .map((word) => `<span class="word">${word}</span>`)
         .join(" ");
       const wordSpans = document.querySelectorAll(".word");
+
+      // Stagger animation for each word
       gsap.fromTo(
         wordSpans,
-        {
-          y: 100,
-          opacity: 0,
-        },
+        { y: 100, opacity: 0 },
         {
           y: 0,
           opacity: 1,
@@ -34,6 +34,8 @@ export const PosSystemsAnimation = () => {
           },
         }
       );
+
+      // Color change animation on scroll
       gsap
         .timeline({
           scrollTrigger: {
@@ -46,10 +48,12 @@ export const PosSystemsAnimation = () => {
         })
         .to(wordSpans, { color: "#F05039", stagger: 0.1 });
 
+      // Scale animations for the title and video
       const scaleAnimations = [
         { target: posSystemTitle, scale: 0.5, opacity: 1 },
         { target: ellipseGif, scale: 0, opacity: 1, duration: 1.2 },
       ];
+
       scaleAnimations.forEach(({ target, scale, opacity, duration = 1 }) => {
         gsap.fromTo(
           target,
@@ -67,8 +71,11 @@ export const PosSystemsAnimation = () => {
           }
         );
       });
-      gsap.matchMedia().add("(max-width: 1300px)", () => {
-        // If the viewport width is 1300px or less
+
+      // Media queries for responsive animations
+      const mm = gsap.matchMedia();
+
+      mm.add("(max-width: 1300px)", () => {
         gsap.fromTo(
           ellipseGif,
           { left: "50%" },
@@ -86,8 +93,7 @@ export const PosSystemsAnimation = () => {
         );
       });
 
-      // For viewports wider than 1300px
-      gsap.matchMedia().add("(min-width: 1301px)", () => {
+      mm.add("(min-width: 1301px)", () => {
         gsap.fromTo(
           ellipseGif,
           { left: "50%" },
@@ -104,6 +110,7 @@ export const PosSystemsAnimation = () => {
         );
       });
 
+      // Right content animations
       const posSystemRightContent = document.querySelector(
         ".pos-system-right-content"
       );
@@ -111,12 +118,10 @@ export const PosSystemsAnimation = () => {
         ".pos-system-text-word"
       );
 
+      // Stagger animation for right content text
       gsap.fromTo(
         posSystemTextWords,
-        {
-          y: 100,
-          opacity: 0,
-        },
+        { y: 100, opacity: 0 },
         {
           y: 0,
           opacity: 1,
@@ -132,6 +137,7 @@ export const PosSystemsAnimation = () => {
         }
       );
 
+      // Content animation based on scroll
       gsap.fromTo(
         posSystemRightContent,
         { className: "w-[50%] pos-system-right-content max-lg:!w-[100%]" },
