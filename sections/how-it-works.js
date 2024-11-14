@@ -16,7 +16,7 @@ export const HowItWorksSection = () => {
                 muted
                 loop
                 playsinline
-                webkit-playsinline
+                preload="auto"
               >
                 <source src="./assets/howitworks/1.mp4" type="video/mp4" />
               </video>
@@ -52,12 +52,12 @@ export const HowItWorksSection = () => {
 
               <!-- Video 2 -->
               <video
-                class="vid w-full h-auto"
+                class="vid w-full h-auto active"
                 autoplay
                 muted
                 loop
                 playsinline
-                webkit-playsinline
+                preload="auto"
               >
                 <source src="./assets/howitworks/2.mp4" type="video/mp4" />
               </video>
@@ -92,12 +92,12 @@ export const HowItWorksSection = () => {
 
               <!-- Video 3 -->
               <video
-                class="vid w-full h-auto"
+                class="vid w-full h-auto active"
                 autoplay
                 muted
                 loop
                 playsinline
-                webkit-playsinline
+                preload="auto"
               >
                 <source src="./assets/howitworks/3.mp4" type="video/mp4" />
               </video>
@@ -131,12 +131,12 @@ export const HowItWorksSection = () => {
 
               <!-- Video 4 -->
               <video
-                class="vid w-full h-auto"
+                class="vid w-full h-auto active"
                 autoplay
                 muted
                 loop
                 playsinline
-                webkit-playsinline
+                preload="auto"
               >
                 <source src="./assets/howitworks/4.mp4" type="video/mp4" />
               </video>
