@@ -5,8 +5,6 @@ export const starLoader = (totalFunctions, functions) => {
       const minLoadingTime = 1700;
       const hash = window.location.hash;
       window.scrollTo({ top: 0, behavior: "smooth" });
-      const counterElement = document.querySelector(".counter");
-      const rahmatLoader = document.querySelector(".loader-rahmat");
       const overlay = document.querySelector(".overlay");
       const bar = document.querySelectorAll(".bar");
       let currentProgress = 0;
@@ -31,35 +29,23 @@ export const starLoader = (totalFunctions, functions) => {
         }
       }
 
-      // Update counter percentage text
-      // function updateCounter() {
-      //   counterElement.innerHTML = `${Math.round(currentProgress)}%`;
-      // }
-
-      // Split "Rahmat" into span elements for the bounce effect
-
-      // Apply GSAP bounce animation to each letter of "Rahmat"
-
       const executedFunctions = new Set();
 
-      // Execute all functions with progress tracking
       for (const func of functions) {
         if (!executedFunctions.has(func)) {
           await func();
           executedFunctions.add(func);
           currentProgress += progressIncrement;
-          // updateCounter();
         }
       }
 
-      const elapsedTime = Date.now() - startTime; // Calculate elapsed time
-      const remainingTime = minLoadingTime - elapsedTime; // Calculate remaining time to reach 2 seconds
+      const elapsedTime = Date.now() - startTime;
+      const remainingTime = minLoadingTime - elapsedTime;
 
-      // Wait for remaining time if the loading finished in less than 2 seconds
       if (remainingTime > 0)
         await new Promise((resolve) => setTimeout(resolve, remainingTime));
 
-      gsap.to(".counter", {
+      gsap.to(".loader-wrapper", {
         opacity: 0,
         visibility: "hidden",
         delay: 0.1,
