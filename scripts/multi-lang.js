@@ -4,7 +4,7 @@ export const MultiLanguage = async () => {
 
     const langButtons = document.querySelectorAll(".lang-btn");
     const textElements = document.querySelectorAll("[data-key]");
-    let currentLang = localStorage.getItem("selectedLanguage") || "en";
+    let currentLang = localStorage.getItem("selectedLanguage") || "ru";
     const loadLanguageData = async () => {
       try {
         const response = await fetch("locales.json");
