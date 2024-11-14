@@ -108,6 +108,12 @@ export const FooterSection = () => {
                     <a
                       href="/business.html#how-it-works-business"
                       class="text-[16px] text-[#010101] hover:underline w-max"
+                      data-key="business-main-link"
+                      >Main</a
+                    >
+                    <a
+                      href="/business.html#how-it-works-business"
+                      class="text-[16px] text-[#010101] hover:underline w-max"
                       data-key="howItWorksLink2"
                       >How it works</a
                     >
@@ -221,7 +227,7 @@ export const FooterSection = () => {
               class="font-[600] bg-[#F5F5F5 text-center p-[20px]"
               data-key="footerCopyright"
             >
-              © 2024 Rahmatpay. All rights reserved.
+              АО «Multicard Payment». All rights reserved.
             </h3>
           </div>
         </div>

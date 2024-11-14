@@ -642,3 +642,7 @@ img {
     min-height: 900vh;
   }
 }
+
+.b24-form-success {
+  background-color: #f05039 !important;
+}
