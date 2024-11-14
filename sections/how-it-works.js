@@ -8,7 +8,7 @@ export const HowItWorksSection = () => {
       howItWorks.innerHTML = html`
         <div class="grid grid-cols-1  gap-4 untouchable">
           <div class="video-section col-span-1 relative">
-            <div class="video-container relative p-5" style="padding-top: 60px">
+            <div class="video-container relative p-5">
               <!-- Video 1 -->
               <video
                 class="vid w-full h-auto active"

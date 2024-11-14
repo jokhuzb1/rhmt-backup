@@ -20,7 +20,7 @@ export const HowItWorksBusinessSection = () => {
                 alt="Left Illustrator"
               />
             </div>
-            <div class="video-container relative p-5" style=" ">
+            <div class="video-container relative p-5">
               <!-- Video 1 -->
               <video
                 class="vid w-full h-auto active"
