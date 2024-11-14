@@ -340,7 +340,7 @@ img {
     right: 0;
     transform: none;
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
     bottom: auto;
@@ -576,8 +576,8 @@ img {
 }
 @media screen and (max-width: 1000px) {
   .vid {
-    top: 40%;
-    transform: translate(-50, 40%);
+    top: 45%;
+    transform: translate(-50, 45%);
   }
 
   .video-container {
