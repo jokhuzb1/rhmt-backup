@@ -6,6 +6,7 @@ export const starLoader = (totalFunctions, functions) => {
       const hash = window.location.hash;
       window.scrollTo({ top: 0, behavior: "smooth" });
       const counterElement = document.querySelector(".counter");
+      const rahmatLoader = document.querySelector(".loader-rahmat");
       const overlay = document.querySelector(".overlay");
       const bar = document.querySelectorAll(".bar");
       let currentProgress = 0;
@@ -30,35 +31,24 @@ export const starLoader = (totalFunctions, functions) => {
         }
       }
 
-      function updateCounter() {
-        const text = `Rahmat ${Math.round(currentProgress)}%`;
-        counterElement.innerHTML = text
-          .split("")
-          .map((char) => `<span class="bounce-letter">${char}</span>`)
-          .join("");
+      // Update counter percentage text
+      // function updateCounter() {
+      //   counterElement.innerHTML = `${Math.round(currentProgress)}%`;
+      // }
 
-        gsap.fromTo(
-          ".bounce-letter",
-          { y: -10 },
-          {
-            y: 0,
-            duration: 0.5,
-            stagger: 0.05,
-            ease: "bounce.out",
-            repeat: -1,
-            repeatDelay: 0.5,
-          }
-        );
-      }
+      // Split "Rahmat" into span elements for the bounce effect
+
+      // Apply GSAP bounce animation to each letter of "Rahmat"
 
       const executedFunctions = new Set();
 
+      // Execute all functions with progress tracking
       for (const func of functions) {
         if (!executedFunctions.has(func)) {
           await func();
           executedFunctions.add(func);
           currentProgress += progressIncrement;
-          updateCounter();
+          // updateCounter();
         }
       }
 
@@ -68,6 +58,7 @@ export const starLoader = (totalFunctions, functions) => {
       // Wait for remaining time if the loading finished in less than 2 seconds
       if (remainingTime > 0)
         await new Promise((resolve) => setTimeout(resolve, remainingTime));
+
       gsap.to(".counter", {
         opacity: 0,
         visibility: "hidden",
