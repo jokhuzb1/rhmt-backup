@@ -23,15 +23,16 @@ export const HowItWorksBusinessSection = () => {
             <div class="video-container relative p-5" style=" ">
               <!-- Video 1 -->
               <video
-                class="vid w-full h-auto active   "
+                class="vid w-full h-auto active"
                 autoplay
                 muted
                 loop
                 playsinline
-                webkit-playsinline
+                preload="auto"
               >
                 <source src="./assets/howitworks/1.webm" type="video/webm" />
               </video>
+
               <div
                 data-key="howItWorksBusinessScan"
                 class="overlay-text text-top-left rounded-title"
@@ -55,12 +56,12 @@ export const HowItWorksBusinessSection = () => {
 
               <!-- Video 2 -->
               <video
-                class="vid w-full h-auto"
+                class="vid w-full h-auto active"
                 autoplay
                 muted
                 loop
                 playsinline
-                webkit-playsinline
+                preload="auto"
               >
                 <source src="./assets/howitworks/1AVI.webm" type="video/webm" />
               </video>
@@ -88,16 +89,15 @@ export const HowItWorksBusinessSection = () => {
 
               <!-- Video 3 -->
               <video
-                class="vid w-full h-auto"
+                class="vid w-full h-auto active"
                 autoplay
                 muted
                 loop
                 playsinline
-                webkit-playsinline
+                preload="auto"
               >
                 <source src="./assets/howitworks/3AV.webm" type="video/webm" />
               </video>
-
               <div
                 data-key="howItWorksBusinessPay"
                 class="overlay-text text-top-left rounded-title"
@@ -126,9 +126,9 @@ export const HowItWorksBusinessSection = () => {
                 muted
                 loop
                 playsinline
-                webkit-playsinline
+                preload="auto"
               >
-                <source src="./assets/howitworks/2AVI.webm" type="video/mp4" />
+                <source src="./assets/howitworks/2AVI.webm" type="video/webm" />
               </video>
               <div
                 data-key="howItWorksBusinessLeave"

@@ -458,3 +458,40 @@ summary::-webkit-details-marker {
   line-height: 1.6rem;
   color: #3b3b3b;
 }
+
+/* NEW GSAP CSS */
+
+.pos-system-section,
+.section-with-ellipse {
+  position: relative;
+  overflow: hidden; /* Ensures nothing spills outside the section */
+}
+
+.ellipse-gif,
+.ellipse-gif-mobile {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 550px;
+  z-index: -1;
+}
+
+@media (max-width: 1300px) {
+  .ellipse-gif {
+    display: none;
+  }
+  .ellipse-gif-mobile {
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 50vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .ellipse-gif-mobile {
+    max-width: 235px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
