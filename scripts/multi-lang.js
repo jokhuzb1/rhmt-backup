@@ -33,6 +33,9 @@ export const MultiLanguage = async () => {
       // Save the selected language
       localStorage.setItem("selectedLanguage", language);
       currentLang = language;
+      window.dispatchEvent(
+        new CustomEvent("languageChange", { detail: { language: language } })
+      );
     };
 
     const languageData = await loadLanguageData();

@@ -132,7 +132,6 @@ const faqData = {
 export const InteractWithDom = async (b) => {
   try {
     console.log("Function is loading");
-    console.log("it is b", b);
     const $ = (selector) => document.querySelector(selector);
     const $$ = (selector) => document.querySelectorAll(selector);
 
@@ -149,6 +148,7 @@ export const InteractWithDom = async (b) => {
     const langButtons = $$(".lang-btn");
     let currentCategoryIdx = 0;
     let currentLang = localStorage.getItem("selectedLanguage");
+    let data = null;
 
     allDropDownButtons?.forEach((btn) => {
       btn.addEventListener("click", (e) => {
@@ -205,9 +205,10 @@ export const InteractWithDom = async (b) => {
           "https://rahmatback.pythonanywhere.com/api/get_faq/"
         );
         if (b) {
+          data = faqData;
           renderFAQContent(faqData);
         } else {
-          const data = response.data;
+          data = response.data;
           renderCategories(data);
           renderFAQContent(data[currentCategoryIdx]);
         }
@@ -216,6 +217,16 @@ export const InteractWithDom = async (b) => {
         console.error("Error fetching data:", error);
       }
     };
+
+    window.addEventListener("languageChange", (e) => {
+      currentLang = e.detail.language;
+      if (b) {
+        renderFAQContent(data);
+      } else {
+        renderCategories(data);
+        renderFAQContent(data[currentCategoryIdx]);
+      }
+    });
 
     const getTextByLang = (details, field) => {
       const currentDetail = details?.[`${field}_${currentLang}`] || "en";
