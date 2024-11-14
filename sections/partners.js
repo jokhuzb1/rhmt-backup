@@ -14,7 +14,7 @@ export const PartnersSection = () => {
                 class="partners-card animated-card animated-card-1  fixed top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-[3]"
               >
                 <img
-                  src="./assets/partners/img_1.png"
+                  src="./assets/partners/1.png"
                   alt="partner 1"
                   class="max-w-[200px]"
                 />
@@ -24,7 +24,7 @@ export const PartnersSection = () => {
                 class="partners-card animated-card animated-card-2  fixed top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
               >
                 <img
-                  src="./assets/partners/img_2.png"
+                  src="./assets/partners/2.png"
                   alt="partner 1"
                   class="max-w-[200px]"
                 />
@@ -34,7 +34,7 @@ export const PartnersSection = () => {
                 class="partners-card animated-card animated-card-3  fixed top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
               >
                 <img
-                  src="./assets/partners/img_3.png"
+                  src="./assets/partners/3.png"
                   alt="partner 1"
                   class="max-w-[200px]"
                 />
@@ -44,7 +44,7 @@ export const PartnersSection = () => {
                 class="partners-card animated-card animated-card-4 fixed top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
               >
                 <img
-                  src="./assets/partners/img_4.png"
+                  src="./assets/partners/4.png"
                   alt="partner 1"
                   class="max-w-[200px]"
                 />
@@ -54,7 +54,7 @@ export const PartnersSection = () => {
                 class="partners-card animated-card animated-card-5 fixed top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
               >
                 <img
-                  src="./assets/partners/img_5.png"
+                  src="./assets/partners/5.png"
                   alt="partner 1"
                   class="max-w-[200px]"
                 />
@@ -64,7 +64,7 @@ export const PartnersSection = () => {
                 class="partners-card animated-card animated-card-6 fixed top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
               >
                 <img
-                  src="./assets/partners/img_6.png"
+                  src="./assets/partners/6.png"
                   alt="partner 1"
                   class="max-w-[200px]"
                 />
@@ -74,7 +74,7 @@ export const PartnersSection = () => {
                 class="partners-card animated-card animated-card-7 fixed top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
               >
                 <img
-                  src="./assets/partners/img_7.png"
+                  src="./assets/partners/7.png"
                   alt="partner 1"
                   class="max-w-[200px]"
                 />
@@ -84,7 +84,7 @@ export const PartnersSection = () => {
                 class="partners-card animated-card animated-card-8 fixed top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
               >
                 <img
-                  src="./assets/partners/img_8.png"
+                  src="./assets/partners/8.png"
                   alt="partner 1"
                   class="max-w-[200px]"
                 />
@@ -110,140 +110,133 @@ export const PartnersSection = () => {
               >
                 <div class="partners-card">
                   <img
-                    src="./assets/partners/img_1.png"
+                    src="./assets/partners/1.png"
                     alt="partner 1"
                     class="max-w-[200px]"
                   />
                 </div>
                 <div class="partners-card">
                   <img
-                    src="./assets/partners/img_2.png"
+                    src="./assets/partners/2.png"
                     alt="partner 1"
                     class="max-w-[200px]"
                   />
                 </div>
                 <div class="partners-card">
                   <img
-                    src="./assets/partners/img_3.png"
+                    src="./assets/partners/3.png"
                     alt="partner 1"
                     class="max-w-[200px]"
                   />
                 </div>
                 <div class="partners-card">
                   <img
-                    src="./assets/partners/img_4.png"
+                    src="./assets/partners/4.png"
                     alt="partner 1"
                     class="max-w-[200px]"
                   />
                 </div>
                 <div class="partners-card">
                   <img
-                    src="./assets/partners/img_5.png"
+                    src="./assets/partners/5.png"
                     alt="partner 1"
                     class="max-w-[200px]"
                   />
                 </div>
                 <div class="partners-card">
                   <img
-                    src="./assets/partners/img_6.png"
+                    src="./assets/partners/6.png"
                     alt="partner 1"
                     class="max-w-[200px]"
                   />
                 </div>
                 <div class="partners-card">
                   <img
-                    src="./assets/partners/img_7.png"
+                    src="./assets/partners/7.png"
                     alt="partner 1"
                     class="max-w-[200px]"
                   />
                 </div>
                 <div class="partners-card">
                   <img
-                    src="./assets/partners/img_8.png"
+                    src="./assets/partners/8.png"
                     alt="partner 1"
                     class="max-w-[200px]"
                   />
                 </div>
                 <div class="partners-card">
                   <img
-                    src="./assets/partners/img_9.png"
+                    src="./assets/partners/9.png"
                     alt="partner 1"
                     class="max-w-[200px]"
                   />
                 </div>
                 <div class="partners-card">
                   <img
-                    src="./assets/partners/img_10.png"
+                    src="./assets/partners/10.png"
                     alt="partner 1"
                     class="max-w-[200px]"
                   />
                 </div>
                 <div class="partners-card">
                   <img
-                    src="./assets/partners/img_11.png"
+                    src="./assets/partners/11.png"
                     alt="partner 1"
                     class="max-w-[200px]"
                   />
                 </div>
                 <div class="partners-card">
                   <img
-                    src="./assets/partners/img_12.png"
+                    src="./assets/partners/12.png"
                     alt="partner 1"
                     class="max-w-[200px]"
                   />
                 </div>
                 <div class="partners-card">
                   <img
-                    src="./assets/partners/img_13.png"
+                    src="./assets/partners/13.png"
                     alt="partner 1"
                     class="max-w-[200px]"
                   />
                 </div>
                 <div class="partners-card">
                   <img
-                    src="./assets/partners/img_14.png"
+                    src="./assets/partners/14.png"
                     alt="partner 1"
                     class="max-w-[200px]"
                   />
                 </div>
                 <div class="partners-card">
                   <img
-                    src="./assets/partners/img_15.png"
+                    src="./assets/partners/15.png"
                     alt="partner 1"
                     class="max-w-[200px]"
                   />
                 </div>
                 <div class="partners-card">
                   <img
-                    src="./assets/partners/img_16.png"
+                    src="./assets/partners/16.png"
                     alt="partner 1"
                     class="max-w-[200px]"
                   />
                 </div>
                 <div class="partners-card">
                   <img
-                    src="./assets/partners/img_18.png"
+                    src="./assets/partners/18.png"
                     alt="partner 1"
                     class="max-w-[200px]"
                   />
                 </div>
                 <div class="partners-card">
                   <img
-                    src="./assets/partners/img_19.png"
+                    src="./assets/partners/19.png"
                     alt="partner 1"
                     class="max-w-[200px]"
                   />
                 </div>
                 <div class="partners-card">
                   <img
-                    src="./assets/partners/img_20.png"
-                    alt="partner 1"
-                    class="max-w-[200px]"
-                  />
-                </div>
-                <div class="partners-card bg-black">
-                  <img
-                    src="./assets/partners/img_21.png"
+                    src="./assets/partners/20.png"
                     alt="partner 1"
                     class="max-w-[200px]"
                   />
