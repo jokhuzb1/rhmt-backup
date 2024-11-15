@@ -190,7 +190,7 @@ export const AdvantagesSection = () => {
                     </h2>
                     <div class="flex justify-center">
                       <img
-                        src="/assets/gifs/advantages-text-bg.gif"
+                        src="/assets/gifs/advantages-text-bg-mob.gif"
                         alt="gif"
                         class="absolute max-w-[360px] max-sm:w-full h-[250px] object-cover top-[30vh]"
                       />
@@ -248,19 +248,11 @@ export const AdvantagesSection = () => {
                       For employees
                     </h2>
                     <div class="flex justify-center">
-                      <video
-                        class="absolute max-w-[360px] max-sm:w-full h-[250px] object-cover top-[30vh] !touch-none"
-                        autoplay
-                        muted
-                        loop
-                        playsinline
-                        webkit-playsinline
-                      >
-                        <source
-                          src="./assets/gifs/advantages-text-bg.webm"
-                          type="video/webm"
-                        />
-                      </video>
+                      <img
+                        src="/assets/gifs/advantages-text-bg-mob.gif"
+                        alt="gif"
+                        class="absolute max-w-[360px] max-sm:w-full h-[250px] object-cover top-[30vh]"
+                      />
                     </div>
                   </div>
                   <button class="active:scale-[.95] scrollToNextButtonMobile">
@@ -312,19 +304,11 @@ export const AdvantagesSection = () => {
                       For customers
                     </h2>
                     <div class="flex justify-center">
-                      <video
-                        class="absolute max-w-[360px] max-sm:w-full h-[250px] object-cover top-[30vh] !touch-none"
-                        autoplay
-                        muted
-                        loop
-                        playsinline
-                        webkit-playsinline
-                      >
-                        <source
-                          src="./assets/gifs/advantages-text-bg.webm"
-                          type="video/webm"
-                        />
-                      </video>
+                      <img
+                        src="/assets/gifs/advantages-text-bg-mob.gif"
+                        alt="gif"
+                        class="absolute max-w-[360px] max-sm:w-full h-[250px] object-cover top-[30vh]"
+                      />
                     </div>
                   </div>
                   <button class="active:scale-[.95] scrollToNextButtonMobile">
