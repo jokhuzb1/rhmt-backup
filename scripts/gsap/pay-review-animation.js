@@ -21,7 +21,7 @@ export const PayReviewAnimation = () => {
           phoneElement,
           {
             left: "50%",
-            bottom: "-50%",
+            top: "150%",
             autoAlpha: 1,
             position: "fixed",
             opacity: 0,
