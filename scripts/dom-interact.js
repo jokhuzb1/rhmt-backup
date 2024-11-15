@@ -145,7 +145,6 @@ export const InteractWithDom = async (b) => {
     const nextSectionButtons = $$(".scrollToNextButtonMobile");
     const faqButtonsContainer = $("#faqButtons");
     const faqContentContainer = $("#faqContent");
-    const langButtons = $$(".lang-btn");
     let currentCategoryIdx = 0;
     let currentLang = localStorage.getItem("selectedLanguage");
     let data = null;
@@ -222,6 +221,7 @@ export const InteractWithDom = async (b) => {
       currentLang = e.detail.language;
       if (b) {
         renderFAQContent(data);
+        addAnimation();
       } else {
         renderCategories(data);
         renderFAQContent(data[currentCategoryIdx]);
@@ -327,6 +327,7 @@ export const InteractWithDom = async (b) => {
         summary.addEventListener("click", (e) => {
           e.preventDefault();
           if (el.open) {
+            console.log("it is clicked");
             slideUp(content, () => {
               el.open = false;
               plusBtn.style.display = "block";
@@ -343,6 +344,7 @@ export const InteractWithDom = async (b) => {
     };
 
     const slideUp = (element, callback) => {
+      console.log("slide up fired");
       element.style.height = element.offsetHeight + 45 + "px";
       element.offsetHeight;
       element.style.height = "0";
