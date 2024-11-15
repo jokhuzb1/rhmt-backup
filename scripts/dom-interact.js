@@ -327,7 +327,6 @@ export const InteractWithDom = async (b) => {
         summary.addEventListener("click", (e) => {
           e.preventDefault();
           if (el.open) {
-            console.log("it is clicked");
             slideUp(content, () => {
               el.open = false;
               plusBtn.style.display = "block";
@@ -344,7 +343,6 @@ export const InteractWithDom = async (b) => {
     };
 
     const slideUp = (element, callback) => {
-      console.log("slide up fired");
       element.style.height = element.offsetHeight + 45 + "px";
       element.offsetHeight;
       element.style.height = "0";
