@@ -40,7 +40,7 @@ export const PayReviewSection = () => {
             />
           </div>
           <div
-            class="main-div  h-[48vh] fixed  -bottom-[50%]  left-[50%] -translate-x-[50%]"
+            class="main-div  h-[48vh] fixed  top-[150%]  left-[50%] -translate-x-[50%]"
           >
             <img
               src="/assets/phone.png"
