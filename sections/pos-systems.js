@@ -30,7 +30,7 @@ export const PosSystemsSection = () => {
                 playsinline
                 webkit-playsinline
               >
-                <source src="../assets/gifs/rmbg.webm" type="video/webm" />
+                <source src="../assets/gifs/rmbg-mob.webm" type="video/webm" />
               </video>
               <p
                 class="section-title !text-[#000] min-w-[150px] pos-system-title"

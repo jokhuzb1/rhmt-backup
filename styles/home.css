@@ -494,6 +494,6 @@ summary::-webkit-details-marker {
     transform: translateX(-50%);
   }
 }
-/* .b24-form-success {
+.b24-form-success {
   background-color: #f05039 !important;
-} */
+}
