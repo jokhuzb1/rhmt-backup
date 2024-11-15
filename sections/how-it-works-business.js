@@ -30,7 +30,10 @@ export const HowItWorksBusinessSection = () => {
                 playsinline
                 preload="auto"
               >
-                <source src="./assets/howitworks/1.webm" type="video/webm" />
+                <source
+                  src="./assets/businesshowitworks/1new.webm"
+                  type="video/webm"
+                />
               </video>
 
               <div
@@ -63,7 +66,10 @@ export const HowItWorksBusinessSection = () => {
                 playsinline
                 preload="auto"
               >
-                <source src="./assets/howitworks/1AVI.webm" type="video/webm" />
+                <source
+                  src="./assets/businesshowitworks/2new.webm"
+                  type="video/webm"
+                />
               </video>
 
               <div
@@ -96,7 +102,10 @@ export const HowItWorksBusinessSection = () => {
                 playsinline
                 preload="auto"
               >
-                <source src="./assets/howitworks/3AV.webm" type="video/webm" />
+                <source
+                  src="./assets/businesshowitworks/3new.webm"
+                  type="video/webm"
+                />
               </video>
               <div
                 data-key="howItWorksBusinessPay"
@@ -128,7 +137,10 @@ export const HowItWorksBusinessSection = () => {
                 playsinline
                 preload="auto"
               >
-                <source src="./assets/howitworks/2AVI.webm" type="video/webm" />
+                <source
+                  src="./assets/businesshowitworks/4new.webm"
+                  type="video/webm"
+                />
               </video>
               <div
                 data-key="howItWorksBusinessLeave"
