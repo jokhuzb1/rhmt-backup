@@ -106,7 +106,7 @@ export const FooterSection = () => {
                   </p>
                   <div class="grid gap-[12px]">
                     <a
-                      href="/business.html#how-it-works-business"
+                      href="/business.html"
                       class="text-[16px] text-[#010101] hover:underline w-max"
                       data-key="business-main-link"
                       >Main</a
