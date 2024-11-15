@@ -145,7 +145,6 @@ export const InteractWithDom = async (b) => {
     const nextSectionButtons = $$(".scrollToNextButtonMobile");
     const faqButtonsContainer = $("#faqButtons");
     const faqContentContainer = $("#faqContent");
-    const langButtons = $$(".lang-btn");
     let currentCategoryIdx = 0;
     let currentLang = localStorage.getItem("selectedLanguage");
     let data = null;
@@ -222,6 +221,7 @@ export const InteractWithDom = async (b) => {
       currentLang = e.detail.language;
       if (b) {
         renderFAQContent(data);
+        addAnimation();
       } else {
         renderCategories(data);
         renderFAQContent(data[currentCategoryIdx]);
