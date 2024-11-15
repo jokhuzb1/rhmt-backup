@@ -397,6 +397,10 @@ summary::-webkit-details-marker {
 }
 
 @media screen and (max-width: 425px) {
+  .text-bottom-right > p {
+    font-size: 1.2rem !important;
+    margin-bottom: 0.1rem !important;
+  }
   .partners-card img {
     max-width: 70px;
   }
