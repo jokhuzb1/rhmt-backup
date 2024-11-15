@@ -7,7 +7,7 @@ export const PayReviewAnimation = () => {
       const phoneElement = document.querySelector(".main-div");
       const rightIllustrator = document.querySelector(".right-illustrator");
       const leftIllustrator = document.querySelector(".left-illustrator");
-
+      const yPercentValue = window.innerWidth >= 500 ? -50 : "-50%";
       gsap
         .timeline({
           scrollTrigger: {
@@ -28,7 +28,7 @@ export const PayReviewAnimation = () => {
           },
           {
             top: "50%",
-            yPercent: -50,
+            yPercent: yPercentValue,
             left: "50%",
             position: "fixed",
             opacity: 1,

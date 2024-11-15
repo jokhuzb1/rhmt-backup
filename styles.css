@@ -629,9 +629,6 @@ img {
   #how-it-works {
     min-height: 500vh;
   }
-  #pay-review {
-    height: 300rem;
-  }
 }
 
 @media screen and (max-height: 700px) {
