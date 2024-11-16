@@ -147,7 +147,7 @@ export const FooterSection = () => {
                       <span>+998 55 506 01 01</span>
                     </a>
                     <a
-                      href="https://t.me/rahmat_info"
+                      href="https://t.me/rahmat_QR"
                       target="_blank"
                       class="text-[16px] flex items-center gap-[3px]"
                     >
