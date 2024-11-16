@@ -21,6 +21,10 @@ export const FaqBusinessSection = () => {
           >
             Questions <span class="text-[#888888]">&</span> Answers
           </h2>
+          <div
+            class="flex items-center gap-[20px] mt-[60px] faq-buttons max-md:mt-[30px]"
+            id="faqButtons"
+          ></div>
           <div class="mt-[50px] max-md:mt-[30px]">
             <div class="faq-tab-content" id="faqContent"></div>
           </div>
