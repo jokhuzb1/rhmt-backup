@@ -1,14 +1,15 @@
 // Imports for sections and scripts
 import { NavbarSection } from "./sections/navbar.js";
+import { HeaderSection } from "./sections/business-header.js";
 import { HowItWorksBusinessSection } from "./sections/how-it-works-business.js";
-import { FooterAnimation } from "./scripts/gsap/footer-animation.js";
-import { FooterSection } from "./sections/footer.js";
-import { HowItWorksBusinessAnimation } from "./scripts/gsap/how-it-workds-business-animations.js";
 import { BusinessAdvantages } from "./sections/business-advantages.js";
 import { SelfService } from "./sections/self-service.js";
 import { FaqBusinessSection } from "./sections/business-faq.js";
+import { Contacts } from "./sections/contact.js";
+import { FooterSection } from "./sections/footer.js";
+import { FooterAnimation } from "./scripts/gsap/footer-animation.js";
+import { HowItWorksBusinessAnimation } from "./scripts/gsap/how-it-workds-business-animations.js";
 import { HeaderAnimation } from "./scripts/gsap/header-animation.js";
-import { HeaderSection } from "./sections/business-header.js";
 import { InteractWithDom } from "./scripts/dom-interact.js";
 import { MultiLanguage } from "./scripts/multi-lang.js";
 
@@ -33,6 +34,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       SelfService,
       FaqBusinessSection,
       FooterSection,
+      Contacts,
       () => InteractWithDom(true),
       MultiLanguage,
       HeaderAnimation,
