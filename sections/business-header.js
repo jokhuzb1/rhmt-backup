@@ -77,7 +77,7 @@ export const HeaderSection = () => {
                   />
                 </button>
               </div>
-              <a href="#contact-us">
+              <a href="#contacts">
                 <button
                   class="btn big dark contact-us-btn max-lg:hidden"
                   data-key="contactUs"
