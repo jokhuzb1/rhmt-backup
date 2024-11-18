@@ -142,13 +142,36 @@ export const Contacts = () => {
           }
         </style>
       `;
-      const script = document.createElement("script");
-      script.setAttribute("data-b24-form", "inline/37/fui8yo");
-      script.setAttribute("data-skip-moving", "true");
-      script.async = true;
-      script.src =
-        "https://crm.multibank.uz/upload/crm/form/loader_37_fui8yo.js?lang=uz";
-      contacts.querySelector(".form-container").appendChild(script);
+
+      const currentLang = localStorage.getItem("selectedLanguage");
+      if (currentLang === "en") {
+        const scriptEn = document.createElement("script");
+        scriptEn.setAttribute("data-b24-form", "inline/38/d7nb0y");
+        scriptEn.setAttribute("data-skip-moving", "true");
+        scriptEn.async = true;
+        scriptEn.src = `https://crm.multibank.uz/upload/crm/form/loader_38_d7nb0y.js?${Math.floor(
+          Date.now() / 180000
+        )}`;
+        document.querySelector(".form-container").appendChild(scriptEn);
+      } else {
+        const scriptOther = document.createElement("script");
+        scriptOther.setAttribute("data-b24-form", "inline/37/fui8yo");
+        scriptOther.setAttribute("data-skip-moving", "true");
+        scriptOther.async = true;
+        scriptOther.src =
+          "https://crm.multibank.uz/upload/crm/form/loader_37_fui8yo.js";
+        document.querySelector(".form-container").appendChild(scriptOther);
+      }
+      // if(currentLang === 'en'){
+      //   <script data-b24-form="inline/38/d7nb0y" data-skip-moving="true">(function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://crm.multibank.uz/upload/crm/form/loader_38_d7nb0y.js');</script>
+      // }
+      // const script = document.createElement("script");
+      // script.setAttribute("data-b24-form", "inline/37/fui8yo");
+      // script.setAttribute("data-skip-moving", "true");
+      // script.async = true;
+      // script.src =
+      //   "https://crm.multibank.uz/upload/crm/form/loader_37_fui8yo.js";
+      // contacts.querySelector(".form-container").appendChild(script);
       // const observer = new MutationObserver((mutationsList, observer) => {
       //   const alertElements = document.querySelectorAll(
       //     ".b24-form-control-alert-message"

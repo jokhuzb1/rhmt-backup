@@ -2,7 +2,7 @@ export const starLoader = (totalFunctions, functions) => {
   return new Promise(async (resolve, reject) => {
     try {
       const startTime = Date.now(); // Start time of the loading process
-      const minLoadingTime = 1700;
+      const minLoadingTime = 500;
       const hash = window.location.hash;
       window.scrollTo({ top: 0, behavior: "smooth" });
       const overlay = document.querySelector(".overlay");

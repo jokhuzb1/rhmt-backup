@@ -6,8 +6,8 @@ export const SelfService = () => {
 
     if (advantages) {
       advantages.innerHTML = html`
-        <div class="self-wrapper">
-          <span data-key="SelfService" class="ad-title"
+        <div class="self-wrapper container">
+          <span data-key="SelfService" class="ad-title "
             >Self-service information terminal</span
           >
           <div class="self-container">
@@ -22,7 +22,7 @@ export const SelfService = () => {
                 </p>
               </div>
               <div class="self-bottom-text text-content unres ">
-                <h2 data-key="SelfServiceHow">How it works</h2>
+                <h2 data-key="SelfServiceHow" class="text-2xl">How it works</h2>
                 <p data-key="SelfServiceGuests">
                   Guests can browse the menu, place orders, and pay, all without
                   waiting for a waiter. Payment and tipping are done directly
@@ -34,7 +34,7 @@ export const SelfService = () => {
               <img src="../assets/selfservice/machine.png" />
             </div>
             <div class="self-bottom-text text-content responsive">
-              <h2 data-key="SelfServiceHow">How it works</h2>
+              <h2 data-key="SelfServiceHow" class="text-2xl">How it works</h2>
               <p data-key="SelfServiceGuests">
                 Guests can browse the menu, place orders, and pay, all without
                 waiting for a waiter. Payment and tipping are done directly

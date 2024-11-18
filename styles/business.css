@@ -215,8 +215,8 @@
   margin-bottom: 1rem;
 }
 
-.content-text h2 {
-  font-size: 1.5rem; /* Base font size */
+.content-text > h2 {
+  font-size: 1.5rem !important;
 }
 
 .content-text > p {
@@ -238,11 +238,18 @@
   text-align: center;
   align-self: flex-start;
 }
-
+@media (max-width: 1251px) {
+  .text-content > h2 {
+    font-size: 1.2rem !important;
+  }
+  .text-content > p {
+    font-size: 0.9rem !important;
+  }
+}
 /* Responsive Styling */
 @media (max-width: 1024px) {
   .content-text h1 {
-    font-size: 2.2rem; /* Responsive font size */
+    font-size: 1.4rem; /* Responsive font size */
   }
   .content-text h2 {
     font-size: 1rem; /* Responsive font size */
@@ -272,7 +279,7 @@
 
 @media (max-width: 780px) {
   .content-text h1 {
-    font-size: 2rem; /* Responsive font size */
+    font-size: 1.5rem; /* Responsive font size */
   }
   .content-text h2 {
     font-size: 1.5rem; /* Responsive font size */
@@ -403,9 +410,12 @@
 }
 
 .text-content > h2 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 400;
   text-align: center;
+}
+.text-content > p {
+  font-size: 0.6rem;
 }
 .text-content {
   text-align: center;
@@ -509,7 +519,7 @@
   }
 
   .text-content > h2 {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
   }
 
   .self-steps {
