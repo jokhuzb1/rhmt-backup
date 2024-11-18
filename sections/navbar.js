@@ -215,18 +215,6 @@ export const NavbarSection = () => {
           </div>
         </div>
       `;
-      document.querySelectorAll(".lang-btn").forEach((btn) => {
-        btn.addEventListener("click", () => {
-          const selectedLang = btn.getAttribute("data-lang");
-          const currentUrl = new URL(window.location.href);
-
-          // Update or set the `lang` query parameter
-          currentUrl.searchParams.set("lang", selectedLang);
-
-          // Refresh the page with the updated language
-          window.location.href = currentUrl.toString();
-        });
-      });
       resolve("Navbar loaded");
     } else {
       reject(new Error("Navbar element not found!"));
