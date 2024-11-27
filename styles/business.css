@@ -387,7 +387,12 @@
     border-radius: 20px;
   }
 }
-
+@media (max-width: 425px) {
+  .card > video {
+    max-height: 300px;
+    max-width: 140px;
+  }
+}
 .self-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -541,6 +546,11 @@
 
   .self-container > div {
     width: 100%;
+  }
+  .self-steps img {
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .business-faq-section {

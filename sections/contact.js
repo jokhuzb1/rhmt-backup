@@ -71,6 +71,7 @@ export const Contacts = () => {
             flex: 1;
             max-width: 70%;
             min-width: 250px;
+            margin: auto;
           }
 
           .b24-form-btn-container,
@@ -114,6 +115,7 @@ export const Contacts = () => {
               flex-direction: column;
               justify-content: center;
               align-items: center;
+              margin: auto;
             }
 
             .text-content,

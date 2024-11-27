@@ -92,7 +92,7 @@ export const FooterSection = () => {
                     <a
                       href="/#faq"
                       class="text-[16px] text-[#010101] hover:underline w-max"
-                      data-key="faqLink"
+                      data-key="faq"
                       >FAQ</a
                     >
                   </div>
@@ -129,6 +129,12 @@ export const FooterSection = () => {
                       data-key="posSystemsLink2"
                       >Self Service</a
                     >
+                    <a
+                      href="/business.html#business-faq"
+                      class="text-[16px] text-[#010101] hover:underline w-max"
+                      data-key="faq"
+                      >FAQs</a
+                    >
                   </div>
                 </div>
                 <div>
@@ -147,7 +153,7 @@ export const FooterSection = () => {
                       <span>+998 55 506 01 01</span>
                     </a>
                     <a
-                      href="https://t.me/rahmat_QR"
+                      href="https://t.me/rahmat_info"
                       target="_blank"
                       class="text-[16px] flex items-center gap-[3px]"
                     >
@@ -183,7 +189,7 @@ export const FooterSection = () => {
                     </div>
                     <div>
                       <a
-                        href="https://t.me/rahmat_info"
+                        href="https://t.me/rahmat_QR"
                         target="_blank"
                         class="icon-btn white"
                       >

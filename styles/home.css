@@ -376,7 +376,7 @@ summary::-webkit-details-marker {
 
 @media screen and (max-width: 768px) {
   #bold-text {
-    font-size: 1.6rem !important;
+    font-size: 1.2rem !important;
     margin-top: 1.5rem;
   }
   .text-bottom-right > p {
@@ -398,7 +398,8 @@ summary::-webkit-details-marker {
 
 @media screen and (max-width: 425px) {
   .text-bottom-right > p {
-    font-size: 1.2rem !important;
+    font-size: 0.8rem !important;
+    font-weight: 400;
     margin-bottom: 0.1rem !important;
   }
   .partners-card img {
@@ -508,4 +509,18 @@ summary::-webkit-details-marker {
 }
 .b24-form-success {
   background-color: #f05039 !important;
+}
+@media (max-width: 430px) {
+  .responsive-text,
+  h1,
+  h2 {
+    font-size: 1.6rem;
+  }
+  .responsive-text > p {
+    font-size: 0.3rem;
+  }
+  .faq-title,
+  h1 {
+    font-size: 1rem;
+  }
 }

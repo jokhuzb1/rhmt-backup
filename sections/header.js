@@ -37,7 +37,7 @@ export const HeaderSection = () => {
               style="height: 100%"
             >
               <h1
-                class="text-[58px] max-w-[600px]  z-[2] header-text  !text-center lg:!text-left w-full max-lg:!max-w-[450px] max-lg:mr-0 max-md:text-[40px] max-sm:text-[30px]"
+                class="text-[58px] max-w-[600px]  z-[2] header-text  responsive-text !text-center lg:!text-left w-full max-lg:!max-w-[450px] max-lg:mr-0 max-md:text-[40px] max-sm:text-[20px] "
                 data-key="headerTitle"
               >
                 Pay the Bill, Leave Reviews and Tips via QR Code Now!

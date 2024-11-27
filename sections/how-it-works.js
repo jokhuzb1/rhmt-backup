@@ -45,7 +45,7 @@ export const HowItWorksSection = () => {
                   >
                 </h2>
               </div>
-              <div class="overlay-text text-bottom-right">
+              <div class="overlay-text text-bottom-right responsive-text">
                 <p data-key="scanQrInstruction">
                   Simply point your phone's camera at the QR code to scan and
                   complete your payment instantly. Enjoy a fast, secure, and
@@ -90,7 +90,7 @@ export const HowItWorksSection = () => {
                   via QR scan!
                 </h2>
               </div>
-              <div class="overlay-text text-bottom-right">
+              <div class="overlay-text text-bottom-right responsive-text">
                 <p data-key="paymentInstruction">
                   Just scan the QR code RAHMAT and choose a payment method!
                 </p>
@@ -130,7 +130,7 @@ export const HowItWorksSection = () => {
                   and Easy Get Tipping!
                 </h2>
               </div>
-              <div class="overlay-text text-bottom-right">
+              <div class="overlay-text text-bottom-right responsive-text">
                 <p data-key="gratuitiesInstruction">
                   If you are satisfied with your service, the guest can pay the
                   bill and leave a tip in one action. Easily and quickly

@@ -642,3 +642,6 @@ img {
     min-height: 900vh;
   }
 }
+.b24-form-sign {
+  display: none !important;
+}

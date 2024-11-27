@@ -135,14 +135,14 @@ export const InteractWithDom = async (b) => {
         detailsElement.innerHTML = `
           <summary class="flex justify-between items-center">
             <div class="flex items-center justify-between w-full">
-            <div class="flex items-center gap-5">
+            <div class="flex items-center gap-5 responsive-text">
               <h3 class="max-md:hidden text-[16px] mr-2">${
                 index < 9 ? "0" : ""
               }${index + 1}</h3>
               <h1
-                class="text-[30px] max-w-[550px] max-lg:text-[25px] max-sm:text-[16px] max-sm:max-w-[200px]"
+                class="text-[10px]   faq-title  max-w-[550px] max-lg:text-[25px] max-sm:text-[10px] max-sm:max-w-[200px]"
               >
-                ${getTextByLang(details, "question")}
+               ${getTextByLang(details, "question")}
               </h1>
               </div>
               <div>
