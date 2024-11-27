@@ -486,6 +486,7 @@ summary::-webkit-details-marker {
   transform: translateX(-50%);
   max-width: 550px;
   z-index: -1;
+  border: none;
 }
 
 @media (max-width: 1300px) {
@@ -523,4 +524,8 @@ summary::-webkit-details-marker {
   h1 {
     font-size: 1rem;
   }
+}
+video {
+  border-right: none !important;
+  filter: grayscale(0);
 }

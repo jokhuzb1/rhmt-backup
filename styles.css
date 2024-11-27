@@ -645,3 +645,6 @@ img {
 .b24-form-sign {
   display: none !important;
 }
+video {
+  height: unset !important;
+}
