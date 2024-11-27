@@ -194,9 +194,11 @@
   margin: auto;
   padding: 1rem;
 }
+
 .card > video {
   max-height: 350px;
 }
+
 .card > h2 {
   font-size: 1.2em;
   font-weight: 400;
@@ -204,23 +206,24 @@
 
 .image {
   margin: 0 auto;
+  height: 60%;
 }
 .content-text {
   padding: 0.6rem;
 }
 .content-text h1 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #010101;
   font-weight: 500;
   margin-bottom: 1rem;
 }
 
 .content-text > h2 {
-  font-size: 1.5rem !important;
+  font-size: 1.4rem;
 }
 
 .content-text > p {
-  font-size: 1rem; /* Base font size */
+  font-size: 0.9rem; /* Base font size */
   color: #4b4b4b;
   line-height: 1.5;
 }
@@ -239,23 +242,23 @@
   align-self: flex-start;
 }
 @media (max-width: 1251px) {
-  .text-content > h2 {
+  .text-content h2 {
     font-size: 1.2rem !important;
   }
   .text-content > p {
-    font-size: 0.9rem !important;
+    font-size: 0.8rem !important;
   }
 }
 /* Responsive Styling */
 @media (max-width: 1024px) {
   .content-text h1 {
-    font-size: 1.4rem; /* Responsive font size */
+    font-size: 1.1rem; /* Responsive font size */
   }
   .content-text h2 {
     font-size: 1rem; /* Responsive font size */
   }
   .content-text > p {
-    font-size: 0.6rem; /* Responsive font size */
+    font-size: 0.7rem; /* Responsive font size */
   }
 
   .ad-title {
@@ -278,14 +281,8 @@
 }
 
 @media (max-width: 780px) {
-  .content-text h1 {
-    font-size: 1.5rem; /* Responsive font size */
-  }
-  .content-text h2 {
-    font-size: 1.5rem; /* Responsive font size */
-  }
-  .content-text > p {
-    font-size: 0.85rem; /* Responsive font size */
+  .content-text > h2 {
+    font-size: 0.7rem; /* Responsive font size */
   }
 
   .ad-title {
@@ -313,6 +310,8 @@
     top: 5rem;
     font-size: 1.1rem; /* Responsive font size */
     padding: 0.3rem 1rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #horizontal-scoll {
@@ -361,11 +360,9 @@
   .content-text h1 {
     font-size: 1rem; /* Responsive font size */
   }
-  .content-text h2 {
-    font-size: 1rem; /* Responsive font size */
-  }
-  .content-text p {
-    font-size: 0.5rem; /* Responsive font size */
+
+  .content-text > p {
+    font-size: 0.5rem;
   }
 
   .ad-title {
@@ -389,7 +386,7 @@
 }
 @media (max-width: 425px) {
   .card > video {
-    max-height: 300px;
+    max-height: 70vh;
     max-width: 140px;
   }
 }
@@ -415,7 +412,7 @@
 }
 
 .text-content > h2 {
-  font-size: 1.4rem;
+  /* font-size: 1.4rem; */
   font-weight: 400;
   text-align: center;
 }
@@ -542,6 +539,11 @@
 @media (max-width: 480px) {
   .text-content > h2 {
     font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .text-content p {
+    text-align: center;
   }
 
   .self-container > div {

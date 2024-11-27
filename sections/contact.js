@@ -111,11 +111,15 @@ export const Contacts = () => {
           }
 
           @media (max-width: 768px) {
+            .b24-form-content.b24-form-padding-side {
+              margin-left: auto;
+              margin-right: auto;
+            }
             .flex-container {
               flex-direction: column;
               justify-content: center;
               align-items: center;
-              margin: auto;
+              margin: 0 auto;
             }
 
             .text-content,

@@ -71,9 +71,7 @@ export const BusinessAdvantages = () => {
                 </div>
                 <div>
                   <div class="card">
-                    <div class="content-text">
-                      <h2 class="top">03</h2>
-                    </div>
+                    <h2 class="top">03</h2>
                     <video
                       class="image"
                       autoplay
