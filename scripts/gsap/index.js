@@ -25,6 +25,9 @@ export const Gsap = async () => {
         const progress = (scrollTop / documentHeight) * 100;
         gsap.to(progressBar, { width: `${progress}%`, duration: 0.2 });
       });
+      window.addEventListener("languageChange", async () => {
+        await PosSystemsAnimation();
+      });
 
       await HeaderAnimation();
       await FaqAnimation();
