@@ -6,7 +6,7 @@ export const SelfService = () => {
 
     if (advantages) {
       advantages.innerHTML = html`
-        <div class="self-wrapper container">
+        <div class="self-wrapper ">
           <span data-key="SelfService" class="ad-title "
             >Self-service information terminal</span
           >
@@ -50,44 +50,44 @@ export const SelfService = () => {
         </div>
       `;
 
-      // Initialize GSAP animations
-      const animateSection = () => {
-        const selfWrapper = document.querySelector(".self-wrapper");
-        const texts = selfWrapper.querySelectorAll(".text-content");
+      // // Initialize GSAP animations
+      // const animateSection = () => {
+      //   const selfWrapper = document.querySelector(".self-wrapper");
+      //   const texts = selfWrapper.querySelectorAll(".text-content");
 
-        // Center the section vertically in the viewport
-        selfWrapper.style.display = "flex";
-        selfWrapper.style.flexDirection = "column";
-        selfWrapper.style.alignItems = "center";
-        selfWrapper.style.justifyContent = "center";
+      //   // Center the section vertically in the viewport
+      //   selfWrapper.style.display = "flex";
+      //   selfWrapper.style.flexDirection = "column";
+      //   selfWrapper.style.alignItems = "center";
+      //   selfWrapper.style.justifyContent = "center";
 
-        // GSAP animations for text
-        gsap.fromTo(
-          texts,
-          { opacity: 0, y: 20 },
-          { opacity: 1, y: 0, duration: 0.3, stagger: 0.2 }
-        );
+      //   // GSAP animations for text
+      //   gsap.fromTo(
+      //     texts,
+      //     { opacity: 0, y: 20 },
+      //     { opacity: 1, y: 0, duration: 0.3, stagger: 0.2 }
+      //   );
 
-        // Animate images with stagger effect
-        const images = selfWrapper.querySelectorAll("img");
-        gsap.from(images, {
-          opacity: 0,
-          scale: 0.5,
-          duration: 0.5,
-          stagger: 0.2,
-        });
-      };
+      //   // Animate images with stagger effect
+      //   const images = selfWrapper.querySelectorAll("img");
+      //   gsap.from(images, {
+      //     opacity: 0,
+      //     scale: 0.5,
+      //     duration: 0.5,
+      //     stagger: 0.2,
+      //   });
+      // };
 
-      // Set up Intersection Observer
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            animateSection(); // Trigger animation when section is in view
-          }
-        });
-      });
+      // // Set up Intersection Observer
+      // const observer = new IntersectionObserver((entries) => {
+      //   entries.forEach((entry) => {
+      //     if (entry.isIntersecting) {
+      //       animateSection(); // Trigger animation when section is in view
+      //     }
+      //   });
+      // });
 
-      observer.observe(advantages); // Observe the advantages section
+      // observer.observe(advantages); // Observe the advantages section
 
       resolve("advantages loaded");
     } else {

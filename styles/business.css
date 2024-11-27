@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
 #bold-text {
   font-weight: 500;
 }
@@ -241,6 +245,7 @@
   text-align: center;
   align-self: flex-start;
 }
+
 @media (max-width: 1251px) {
   .text-content h2 {
     font-size: 1.2rem !important;
@@ -248,6 +253,12 @@
   .text-content > p {
     font-size: 0.8rem !important;
   }
+}
+.self-wrapper {
+  max-width: 1550px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* Responsive Styling */
 @media (max-width: 1024px) {
@@ -394,21 +405,37 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+  margin-top: 30px;
+  width: 100%;
+}
+.self-top-text,
+.text-content {
+  max-width: 100% !important;
+  min-width: 100% !important;
+  width: 100% !important;
 }
 
 .self-container > div {
   padding: 0.6rem;
   width: 100%;
-  max-width: 70%;
+  max-width: 80%;
   box-sizing: border-box;
   margin: 0 auto;
 }
 
 .self-text-wrapper {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around; */
   height: 95%;
+  width: 100%;
+  max-width: 100%;
+}
+
+.self-top-text {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 40px;
 }
 
 .text-content > h2 {
@@ -420,7 +447,8 @@
   font-size: 0.6rem;
 }
 .text-content {
-  text-align: center;
+  text-align: start;
+  display: block;
 }
 
 .self-steps {
@@ -432,11 +460,20 @@
 .responsive {
   display: none;
 }
+.self-container > div {
+  width: 100%;
+}
+
+.text-content h2 {
+  font-size: 1.8rem !important;
+  text-align: start;
+  width: 100% !important;
+  max-width: 100% !important;
+}
 @media (max-width: 1251px) {
   .self-container > div {
     padding: 0.6rem;
     width: 100%;
-    max-width: 85%;
     box-sizing: border-box;
     margin: 0 auto;
   }
@@ -459,7 +496,7 @@
   .text-content > h2 {
     font-size: 1.3rem;
     font-weight: 400;
-    text-align: center;
+    text-align: start;
   }
   .text-content > p {
     font-size: 1rem;
@@ -480,6 +517,12 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
   }
+  .text-content > h2 {
+    text-align: center;
+  }
+  .text-content > p {
+    text-align: center;
+  }
   .terminal {
     margin: 0 auto;
     display: flex;
@@ -497,7 +540,8 @@
   }
   .self-top-text {
     font-size: 1rem;
-    grid-row: 1;
+    width: 100%;
+    /* grid-row: 1; */
   }
 
   .terminal {
